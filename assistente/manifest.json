@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Copiloto de Risco para Day Trade",
+  "short_name": "Copiloto",
+  "version": "1.0.0",
+  "description": "Painel lateral com limites de risco, calculadora de posição, checklist e diário. Não dá sinais de compra ou venda.",
+  "minimum_chrome_version": "116",
+  "action": {
+    "default_title": "Abrir o Copiloto de Risco",
+    "default_icon": { "16": "icone-16.png", "32": "icone-32.png", "48": "icone-48.png" }
+  },
+  "icons": { "16": "icone-16.png", "32": "icone-32.png", "48": "icone-48.png", "128": "icone-128.png" },
+  "side_panel": { "default_path": "index.html" },
+  "background": { "service_worker": "background.js" },
+  "permissions": ["sidePanel"]
+}

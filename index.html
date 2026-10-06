@@ -1,0 +1,1014 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Day Trade às Claras</title>
+<meta name="description" content="Curso aberto de day trade na B3 com dados reais, calculadoras de risco, simulador, diário e um copiloto de risco para usar ao lado da corretora.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&amp;display=swap">
+<link rel="stylesheet" href="assistente/base.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="fita" aria-label="Números de referência">
+  <div class="fita-trilho">
+    <span class="fita-item"><span>Day traders de WIN com 300+ pregões que perderam (FGV)</span><b class="desce">97% ▼</b></span>
+    <span class="fita-item"><span>Day traders de ações com 300+ pregões no prejuízo (FGV/CVM)</span><b class="desce">91% ▼</b></span>
+    <span class="fita-item"><span>Perdas brutas de pessoas físicas, mar/2020–dez/2023</span><b class="desce">R$ 9,9 bi ▼</b></span>
+    <span class="fita-item"><span>Selic (Copom, 16/09/2026)</span><b class="neutro">13,75% a.a.</b></span>
+    <span class="fita-item"><span>CDI aprox.</span><b class="sobe">13,65% a.a. ▲</b></span>
+    <span class="fita-item"><span>IR day trade</span><b class="neutro">20% · DARF 6015</b></span>
+    <span class="fita-item"><span>WIN</span><b>1 pt = R$ 0,20</b></span>
+    <span class="fita-item"><span>WDO</span><b>1 pt = R$ 10,00</b></span>
+    <span class="fita-item"><span>Perdeu 50% da conta? Para voltar precisa de</span><b class="desce">+100%</b></span>
+  </div>
+</div>
+
+<header class="topo">
+  <button type="button" class="botao botao-menu" id="botao-menu" aria-controls="trilha" aria-expanded="false">Menu</button>
+  <a class="marca" href="#inicio">
+    <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect width="22" height="22" rx="4" class="svg-cobalto"/><rect x="10" y="3" width="2" height="15" fill="#fff"/><rect x="7" y="6" width="8" height="8" fill="#fff"/><rect x="3" y="16" width="16" height="2" fill="#ff7d65"/></svg>
+    <span>Day Trade <span class="longo">às Claras</span></span>
+  </a>
+  <button type="button" class="botao" id="botao-copiloto" title="Abre o copiloto de risco numa janela que fica por cima da corretora">Copiloto</button>
+</header>
+
+<div class="layout">
+  <nav class="trilha" id="trilha" aria-label="Módulos e ferramentas">
+    <p class="trilha-progresso"><span id="progresso-texto">0 de 10 módulos concluídos</span><span class="barra"><span id="progresso-barra"></span></span></p>
+    <h2>Comece aqui</h2>
+    <ul>
+      <li><a href="#inicio"><span class="n">→</span><span>Início</span><span></span></a></li>
+    </ul>
+    <h2>Trilha</h2>
+    <ol>
+      <li><a href="#realidade"><span class="n">0</span><span>A realidade em números</span><span class="ok" data-ok="realidade"></span></a></li>
+      <li><a href="#fundamentos"><span class="n">1</span><span>Como o mercado funciona</span><span class="ok" data-ok="fundamentos"></span></a></li>
+      <li><a href="#ordens"><span class="n">2</span><span>Book, ordens e execução</span><span class="ok" data-ok="ordens"></span></a></li>
+      <li><a href="#grafico"><span class="n">3</span><span>Leitura de gráfico</span><span class="ok" data-ok="grafico"></span></a></li>
+      <li><a href="#setups"><span class="n">4</span><span>Setups e como testá-los</span><span class="ok" data-ok="setups"></span></a></li>
+      <li><a href="#risco"><span class="n">5</span><span>Gestão de risco</span><span class="ok" data-ok="risco"></span></a></li>
+      <li><a href="#mente"><span class="n">6</span><span>Psicologia e vieses</span><span class="ok" data-ok="mente"></span></a></li>
+      <li><a href="#custos"><span class="n">7</span><span>Custos e impostos</span><span class="ok" data-ok="custos"></span></a></li>
+      <li><a href="#plano"><span class="n">8</span><span>Plano, testes e quando parar</span><span class="ok" data-ok="plano"></span></a></li>
+      <li><a href="#alternativas"><span class="n">9</span><span>Day trade vs. alternativas</span><span class="ok" data-ok="alternativas"></span></a></li>
+    </ol>
+    <h2>Ferramentas</h2>
+    <ul>
+      <li><a href="#copiloto"><span class="n">◆</span><span>Copiloto de risco</span><span></span></a></li>
+      <li><a href="#calculadoras"><span class="n">∑</span><span>Calculadoras</span><span></span></a></li>
+      <li><a href="#montecarlo"><span class="n">≈</span><span>Simulação Monte Carlo</span><span></span></a></li>
+      <li><a href="#simulador"><span class="n">▮</span><span>Simulador de tela</span><span></span></a></li>
+      <li><a href="#diario"><span class="n">≡</span><span>Diário de trades</span><span></span></a></li>
+    </ul>
+    <h2>Referência</h2>
+    <ul>
+      <li><a href="#quiz"><span class="n">?</span><span>Teste de conhecimento</span><span></span></a></li>
+      <li><a href="#glossario"><span class="n">A</span><span>Glossário</span><span></span></a></li>
+      <li><a href="#fontes"><span class="n">§</span><span>Fontes e aviso legal</span><span></span></a></li>
+    </ul>
+  </nav>
+
+  <main id="conteudo" tabindex="-1">
+
+<!-- ===================== INÍCIO ===================== -->
+<section class="pagina" data-pagina="inicio">
+  <p class="sobretitulo">Curso aberto + ferramentas · dados conferidos em 6 out. 2026</p>
+  <h1>Aprenda day trade com os números na mesa.</h1>
+  <p class="lead">Este site ensina como o day trade funciona na B3, do book de ofertas ao DARF, e entrega ferramentas para operar com limite de risco. Ele não promete renda. Os dados brasileiros mostram que quase todo mundo que tenta perde dinheiro, e você precisa saber disso antes do primeiro real.</p>
+
+  <div class="numeros" role="list">
+    <div role="listitem"><b class="negativo">97%</b><span>de quem fez day trade de mini-índice por mais de 300 pregões perdeu dinheiro.</span><cite>FGV, dados 2013–2015</cite></div>
+    <div role="listitem"><b class="negativo">91%</b><span>de quem persistiu mais de 300 pregões no day trade de ações terminou no prejuízo.</span><cite>FGV para a CVM, 2012–2017</cite></div>
+    <div role="listitem"><b class="negativo">R$ 9,9 bi</b><span>em perdas brutas de pessoas físicas com day trade, média de R$ 10.200 por pessoa.</span><cite>FGV EESP, mar/2020–dez/2023</cite></div>
+    <div role="listitem"><b>13,75%</b><span>ao ano é a Selic. É o que o dinheiro rende sem risco de mercado e sem tela.</span><cite>Copom, 16/09/2026</cite></div>
+  </div>
+
+  <h2>Como usar este site</h2>
+  <div class="passos">
+    <a href="#realidade"><span class="num">Passo 1</span><strong>Faça a trilha</strong><span>Dez módulos, do mercado ao imposto. Comece pelo módulo 0, que mostra o que os estudos encontraram.</span></a>
+    <a href="#simulador"><span class="num">Passo 2</span><strong>Treine sem dinheiro</strong><span>Opere no simulador e rode a simulação Monte Carlo com os números da sua estratégia.</span></a>
+    <a href="#copiloto"><span class="num">Passo 3</span><strong>Opere com copiloto</strong><span>Abra o copiloto ao lado da plataforma da corretora. Ele calcula a posição e trava quando o plano manda parar.</span></a>
+  </div>
+
+  <h2>O que este site não faz</h2>
+  <ul class="prosa">
+    <li>Não dá sinal de compra ou venda. Nenhuma ferramenta aqui diz quando entrar.</li>
+    <li>Não recomenda corretora, plataforma, curso ou sala de sinais.</li>
+    <li>Não coleta seus dados. O diário e o plano ficam só no seu navegador.</li>
+  </ul>
+  <div class="quadro alerta">
+    <p class="rotulo-quadro">Pergunta para qualquer vendedor de curso</p>
+    <p>Se alguém promete renda diária com day trade, peça o extrato completo e auditado de pelo menos um ano, com perdas, custos e impostos. Depois pergunte qual parte da renda dessa pessoa vem do trade e qual vem de alunos.</p>
+  </div>
+</section>
+
+<!-- ===================== MÓDULO 0 ===================== -->
+<section class="pagina leitura" data-pagina="realidade" hidden>
+  <p class="sobretitulo">Módulo 0 · 12 min</p>
+  <h1>A realidade em números</h1>
+  <p class="lead">Antes de aprender a operar, veja o placar. Os melhores dados do mundo sobre day trade de pessoa física vêm justamente do Brasil, porque a B3 permite rastrear todas as operações de todos os CPFs.</p>
+
+  <h2>O que os estudos encontraram</h2>
+  <div class="tabela">
+    <table>
+      <thead><tr><th>Estudo</th><th>Quem foi observado</th><th>Resultado</th></tr></thead>
+      <tbody>
+        <tr><td>Chague, De-Losso e Giovannetti (FGV), <em>Day Trading for a Living?</em></td><td>Todas as 19.646 pessoas que começaram a fazer day trade de mini-índice entre 2013 e 2015</td><td>Dos que persistiram mais de 300 pregões, <strong>97% perderam dinheiro</strong>. Só 1,1% ganhou mais que um salário mínimo, e cerca de 0,5% mais que o salário inicial de um bancário. Os autores não acharam evidência de aprendizado com o tempo.</td></tr>
+        <tr><td>Chague e Giovannetti (FGV), estudo feito para a CVM</td><td>19.696 pessoas que começaram no day trade de ações entre 2012 e 2017; 1.558 persistiram mais de 300 pregões</td><td><strong>91% dos persistentes tiveram prejuízo.</strong> Só 13 pessoas (0,8%) ganharam mais de R$ 300 por dia em média. Excluindo os primeiros 250 pregões de cada um, cerca de 88% continuaram perdendo.</td></tr>
+        <tr><td>Chague e Giovannetti (FGV EESP), <em>As pandemias de COVID-19 e de day trade no Brasil</em></td><td>Todas as operações de pessoas físicas na B3, de março de 2020 a dezembro de 2023</td><td>No pico, cerca de 100 mil pessoas faziam day trade por dia. <strong>Perdas brutas de R$ 9,9 bilhões</strong>, média de R$ 10.200 por pessoa. Em 96,4% dos pregões, o grupo somado perdeu.</td></tr>
+        <tr><td>Barber, Lee, Liu e Odean, <em>The Cross-Section of Speculator Skill</em></td><td>Day traders de Taiwan, 1992–2006</td><td><strong>Menos de 1%</strong> conseguiu lucro previsível e consistente depois das taxas.</td></tr>
+      </tbody>
+      <caption>Links completos em <a href="#fontes">Fontes</a>.</caption>
+    </table>
+  </div>
+
+  <h2>Por que é tão difícil</h2>
+  <ol>
+    <li><strong>Soma zero antes dos custos, negativa depois.</strong> No mercado futuro, cada real que você ganha saiu do bolso de outra pessoa. Depois de emolumentos, corretagem, derrapagem e imposto, a soma de todos os participantes fica negativa.</li>
+    <li><strong>Do outro lado estão profissionais.</strong> Robôs de alta frequência, formadores de mercado e mesas proprietárias operam com latência de microssegundos, custo por contrato menor que o seu e equipes inteiras de pesquisa.</li>
+    <li><strong>No minuto a minuto, o preço é quase todo ruído.</strong> Em gráficos de 1 a 5 minutos, a maior parte do movimento não tem padrão explorável. O cérebro humano enxerga padrão até em sequência aleatória. Você vai testar isso no <a href="#simulador">simulador</a>.</li>
+    <li><strong>A alavancagem amplia tudo.</strong> Com algumas centenas de reais de margem, um único contrato de mini-índice expõe você a cerca de R$ 28 mil. Um erro de boleta ou um stop que não executa pode custar mais que a margem.</li>
+    <li><strong>Você vê só os vencedores.</strong> Nas redes aparece o print do dia bom. As contas zeradas não postam nada.</li>
+  </ol>
+
+  <h2>Quem ganha dinheiro com certeza</h2>
+  <p>Há participantes com lucro garantido a cada operação, ganhe ou perca o trader:</p>
+  <ul>
+    <li><strong>A B3</strong>, que cobra emolumentos e taxa de registro em cada contrato negociado.</li>
+    <li><strong>As corretoras</strong>, com corretagem, aluguel de plataforma, juros sobre saldo negativo e o fluxo de ordens.</li>
+    <li><strong>Vendedores de curso, salas de sinais e influenciadores</strong>, cuja renda vem de alunos e assinantes. Um curso que ensinasse a ganhar consistentemente valeria mais sendo operado do que vendido.</li>
+    <li><strong>Mesas proprietárias com taxa de avaliação</strong>: o modelo de negócio é cobrar pelo teste. A maior parte dos candidatos reprova, e a taxa fica.</li>
+  </ul>
+
+  <div class="quadro">
+    <p class="rotulo-quadro">Pergunta que você precisa responder</p>
+    <p>Qual é a sua vantagem sobre quem está do outro lado da operação? Se você não consegue responder em uma frase concreta, a vantagem é de quem está do outro lado.</p>
+  </div>
+
+  <h2>Então por que estudar?</h2>
+  <p>Por três motivos. Entender o mercado protege você de golpes e de cursos caros. Ajuda a investir melhor no longo prazo, onde a matemática joga a seu favor. E, se mesmo assim você decidir tentar, o estudo permite fazer isso como um experimento controlado: com dinheiro que pode perder inteiro, limites rígidos, registro de cada operação e um critério escrito para parar.</p>
+
+  <h2>Golpes comuns e como checar</h2>
+  <ul>
+    <li><strong>Retorno garantido</strong> ou "X% ao dia". Não existe no mercado de risco. Promessa assim é sinal de fraude.</li>
+    <li><strong>Robô que nunca perde.</strong> Backtest bonito sem custos e sem amostra fora do período de teste não prova nada.</li>
+    <li><strong>Gerente que opera por você</strong> ou pede sua senha. Nenhuma corretora séria pede senha.</li>
+    <li><strong>Recomendação sem registro.</strong> Quem recomenda ativos precisa de registro como analista (CNPI/Apimec) ou consultor na CVM. Consulte no <a href="https://www.gov.br/cvm/pt-br" target="_blank" rel="noopener">site da CVM</a> antes de pagar qualquer coisa.</li>
+  </ul>
+
+  <div class="fim-modulo"><button type="button" class="botao" data-concluir="realidade">Marcar como concluído</button><span class="espaco"></span><a href="#fundamentos">Próximo: Como o mercado funciona →</a></div>
+</section>
+
+<!-- ===================== MÓDULO 1 ===================== -->
+<section class="pagina leitura" data-pagina="fundamentos" hidden>
+  <p class="sobretitulo">Módulo 1 · 15 min</p>
+  <h1>Como o mercado funciona</h1>
+  <p class="lead">Day trade é comprar e vender o mesmo ativo no mesmo dia, pela mesma corretora. A posição abre e fecha antes do fim do pregão, e o resultado é a diferença entre os preços, menos os custos.</p>
+
+  <h2>Day trade e os outros prazos</h2>
+  <div class="tabela">
+    <table>
+      <thead><tr><th>Estilo</th><th>Prazo</th><th>IR sobre o lucro</th><th>O que exige</th></tr></thead>
+      <tbody>
+        <tr><td>Scalping</td><td>Segundos a minutos</td><td>20%</td><td>Tela o tempo todo, custo baixíssimo, execução rápida</td></tr>
+        <tr><td>Day trade</td><td>Minutos a horas, mesmo dia</td><td>20%</td><td>Tela durante o pregão, controle de risco diário</td></tr>
+        <tr><td>Swing trade</td><td>Dias a semanas</td><td>15% (vendas de ações até R$ 20 mil/mês isentas)</td><td>Aceitar risco de gap entre um dia e outro</td></tr>
+        <tr><td>Investimento de longo prazo</td><td>Anos</td><td>15% em ações; regressivo na renda fixa</td><td>Paciência e diversificação</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Quem é quem</h2>
+  <ul>
+    <li><strong>B3</strong>: a bolsa. Recebe as ordens, casa compradores e vendedores e garante a liquidação pela câmara de compensação.</li>
+    <li><strong>Corretora</strong>: intermediária obrigatória. Envia suas ordens, guarda suas garantias e pode zerar sua posição se faltar margem.</li>
+    <li><strong>CVM</strong>: regula o mercado e fiscaliza corretoras, analistas e ofertas.</li>
+    <li><strong>Receita Federal</strong>: recebe 20% do lucro mensal de day trade.</li>
+  </ul>
+
+  <h2>Os ativos mais usados no day trade</h2>
+  <div class="tabela">
+    <table>
+      <thead><tr><th>Ativo</th><th>Código</th><th class="num">1 ponto vale</th><th class="num">Variação mínima</th><th>Exposição de 1 unidade (exemplo)</th></tr></thead>
+      <tbody>
+        <tr><td>Mini-índice</td><td class="mono">WIN + mês + ano (ex.: WINZ26)</td><td class="num">R$ 0,20</td><td class="num">5 pts = R$ 1,00</td><td>140.000 pts × R$ 0,20 = R$ 28.000</td></tr>
+        <tr><td>Mini-dólar</td><td class="mono">WDO + mês + ano (ex.: WDOX26)</td><td class="num">R$ 10,00</td><td class="num">0,5 pt = R$ 5,00</td><td>5.400 pts × R$ 10 = R$ 54.000 (US$ 10 mil)</td></tr>
+        <tr><td>Ações</td><td class="mono">PETR4, VALE3, ITUB4…</td><td class="num">R$ 1 por ação</td><td class="num">R$ 0,01</td><td>100 ações × R$ 32 = R$ 3.200</td></tr>
+      </tbody>
+      <caption>Preços de exemplo. Letras dos meses: F jan, G fev, H mar, J abr, K mai, M jun, N jul, Q ago, U set, V out, X nov, Z dez.</caption>
+    </table>
+  </div>
+  <p><strong>Vencimentos.</strong> O mini-índice vence nos meses pares, na quarta-feira mais próxima do dia 15. O mini-dólar vence todo mês, no primeiro dia útil. Perto do vencimento a liquidez migra para o contrato seguinte; opere sempre o mais negociado.</p>
+
+  <h2>Margem não é o quanto você pode perder</h2>
+  <p>Para operar um contrato de mini-índice no day trade, a corretora bloqueia uma margem de garantia. A B3 define mínimos (a partir de 02/02/2026, foram noticiados R$ 155 por WIN e R$ 140 por WDO), e cada corretora pode exigir mais. Compare com a exposição:</p>
+  <div class="formula">Exposição de 1 WIN ≈ 140.000 × 0,20 = R$ 28.000<br>Margem ≈ R$ 155<br>Alavancagem ≈ 28.000 ÷ 155 ≈ 180 vezes</div>
+  <p>Uma queda de 1% no índice (1.400 pontos) custa R$ 280 por contrato, quase o dobro da margem. Se o stop não executar por gap, leilão ou queda de conexão, a perda pode passar do seu saldo, e o saldo negativo vira dívida com a corretora.</p>
+  <div class="quadro perigo">
+    <p class="rotulo-quadro">Zeragem compulsória</p>
+    <p>Se a perda consumir sua garantia, ou se a posição de day trade continuar aberta perto do fechamento, a corretora zera tudo a mercado, no preço que houver. Isso costuma acontecer no pior momento.</p>
+  </div>
+
+  <h2>Horários, leilões e circuit breaker</h2>
+  <ul>
+    <li><strong>Horário.</strong> Em geral, as ações negociam das 10h às 17h, e os minicontratos das 9h até cerca das 18h. A B3 ajusta a grade quando os EUA entram ou saem do horário de verão. Confira a grade vigente no site da B3.</li>
+    <li><strong>Leilões.</strong> Na abertura, no fechamento e quando um ativo oscila demais, o pregão contínuo para e as ofertas se acumulam até um preço único. Durante o leilão, ordens stop podem não funcionar como você espera.</li>
+    <li><strong>Circuit breaker.</strong> Se o Ibovespa cair 10%, todo o mercado para por 30 minutos; com 15%, por 1 hora; com 20%, pelo prazo que a B3 definir. Você fica preso na posição enquanto isso.</li>
+  </ul>
+
+  <div class="fim-modulo"><button type="button" class="botao" data-concluir="fundamentos">Marcar como concluído</button><span class="espaco"></span><a href="#ordens">Próximo: Book, ordens e execução →</a></div>
+</section>
+
+<!-- ===================== MÓDULO 2 ===================== -->
+<section class="pagina leitura" data-pagina="ordens" hidden>
+  <p class="sobretitulo">Módulo 2 · 14 min</p>
+  <h1>Book, ordens e execução</h1>
+  <p class="lead">O preço que aparece no gráfico é só o último negócio. O que você consegue de verdade depende do book de ofertas, do tipo de ordem e de quem chega primeiro.</p>
+
+  <h2>Lendo o book de ofertas</h2>
+  <p>O book mostra as ordens limitadas esperando execução. À esquerda, quem quer comprar (bid); à direita, quem quer vender (ask). A diferença entre o melhor preço de venda e o melhor de compra é o spread.</p>
+  <div class="tabela book" style="max-width:520px">
+    <table>
+      <thead><tr><th class="num">Qtd. compra</th><th class="num">Compra (bid)</th><th class="num">Venda (ask)</th><th class="num">Qtd. venda</th></tr></thead>
+      <tbody>
+        <tr><td class="num">212</td><td class="num compra">140.010</td><td class="num venda">140.015</td><td class="num">185</td></tr>
+        <tr><td class="num">340</td><td class="num compra">140.005</td><td class="num venda">140.020</td><td class="num">290</td></tr>
+        <tr><td class="num">517</td><td class="num compra">140.000</td><td class="num venda">140.025</td><td class="num">1.140</td></tr>
+        <tr><td class="num">298</td><td class="num compra">139.995</td><td class="num venda">140.030</td><td class="num">402</td></tr>
+        <tr class="spread"><td colspan="4">Spread: 140.015 − 140.010 = 5 pontos (1 tick = R$ 1,00 por contrato)</td></tr>
+      </tbody>
+      <caption>Book ilustrativo de mini-índice.</caption>
+    </table>
+  </div>
+  <p>Se você comprar a mercado 400 contratos, consome os 185 a 140.015 e mais 215 a 140.020: o preço médio piora. Lotes grandes em ativos pouco líquidos andam o preço contra você.</p>
+  <p><strong>Cuidado com o que o book mostra.</strong> Ordens grandes podem ser canceladas em milissegundos. Colocar ordens só para enganar, sem intenção de executar (spoofing), é proibido, mas acontece, e o book que você vê pode não ser o book que existe um instante depois.</p>
+
+  <h2>Times &amp; trades</h2>
+  <p>É a lista de negócios fechados: horário, preço, quantidade, corretora compradora e vendedora e quem agrediu. Agredir é aceitar o preço do outro lado: o comprador que paga o ask agride a venda. Muita agressão compradora com o preço parado sugere um vendedor grande absorvendo, mas essa leitura é subjetiva e difícil de testar.</p>
+
+  <h2>Tipos de ordem</h2>
+  <div class="tabela">
+    <table>
+      <thead><tr><th>Ordem</th><th>O que faz</th><th>Risco principal</th></tr></thead>
+      <tbody>
+        <tr><td>A mercado</td><td>Executa já, no melhor preço disponível</td><td>Derrapagem: você não controla o preço</td></tr>
+        <tr><td>Limitada</td><td>Executa só no preço definido ou melhor</td><td>Não executar e perder o movimento</td></tr>
+        <tr><td>Stop (stop-loss a mercado)</td><td>Quando o preço toca o gatilho, vira ordem a mercado</td><td>Executar bem pior que o gatilho em movimento rápido</td></tr>
+        <tr><td>Stop-limite</td><td>Quando toca o gatilho, vira ordem limitada</td><td>Em um gap, pode não executar, e você continua posicionado perdendo</td></tr>
+        <tr><td>OCO (uma cancela a outra)</td><td>Envia stop e alvo juntos; quando um executa, o outro some</td><td>Configuração errada pode deixar ordem órfã</td></tr>
+        <tr><td>Trailing stop</td><td>O stop acompanha o preço a favor a uma distância fixa</td><td>Distância curta demais é acionada pelo ruído</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="quadro alerta">
+    <p class="rotulo-quadro">Regra prática</p>
+    <p>O stop vai para o book (ou para o servidor da corretora) no mesmo instante da entrada. Stop "mental" não é stop: na hora da perda, o cérebro inventa motivos para esperar.</p>
+  </div>
+
+  <h2>Derrapagem (slippage)</h2>
+  <p>É a diferença entre o preço que você queria e o preço que conseguiu. Em mini-índice, uma derrapagem de 1 tick por operação custa R$ 1 por contrato. Parece pouco, mas 3 contratos, 10 operações por dia e 21 pregões somam R$ 630 por mês só de derrapagem. Na divulgação de dados como o payroll americano ou a decisão do Copom, ela pode ser de dezenas de ticks.</p>
+
+  <h2>Plataforma e risco operacional</h2>
+  <ul>
+    <li>Plataformas comuns no Brasil: o home broker da corretora, Profit (Nelogica), MetaTrader 5 e TradingView para gráficos. Várias corretoras oferecem conta de simulação. Este site não recomenda nenhuma.</li>
+    <li>Confira a quantidade na boleta antes de enviar. Um zero a mais em 1 contrato vira 10.</li>
+    <li>Tenha anotado o telefone da mesa de operações da corretora. Se a internet cair com posição aberta, é por ali que você zera.</li>
+  </ul>
+
+  <div class="fim-modulo"><button type="button" class="botao" data-concluir="ordens">Marcar como concluído</button><span class="espaco"></span><a href="#grafico">Próximo: Leitura de gráfico →</a></div>
+</section>
+
+<!-- ===================== MÓDULO 3 ===================== -->
+<section class="pagina leitura" data-pagina="grafico" hidden>
+  <p class="sobretitulo">Módulo 3 · 18 min</p>
+  <h1>Leitura de gráfico</h1>
+  <p class="lead">A análise técnica organiza o preço em uma linguagem visual. Ela é útil para definir onde fica o stop e o alvo. Como ferramenta para prever o futuro, a evidência é fraca, e você vai ver os números no fim deste módulo.</p>
+
+  <h2>Anatomia do candle</h2>
+  <figure>
+    <div class="diagrama">
+      <svg viewBox="0 0 600 270" role="img" aria-labelledby="candle-t">
+        <title id="candle-t">Dois candles: um de alta e um de baixa, com abertura, fechamento, máxima, mínima, corpo e pavios indicados</title>
+        <line x1="170" y1="30" x2="170" y2="236" class="svg-stroke-alta" stroke-width="3"/>
+        <rect x="140" y="82" width="60" height="96" class="svg-alta"/>
+        <line x1="430" y1="40" x2="430" y2="226" class="svg-stroke-baixa" stroke-width="3"/>
+        <rect x="400" y="72" width="60" height="96" class="svg-baixa"/>
+        <g class="svg-linha" stroke-width="1" stroke-dasharray="3 3">
+          <line x1="96" y1="30" x2="164" y2="30"/>
+          <line x1="96" y1="82" x2="136" y2="82"/>
+          <line x1="96" y1="178" x2="136" y2="178"/>
+          <line x1="96" y1="236" x2="164" y2="236"/>
+          <line x1="436" y1="40" x2="504" y2="40"/>
+          <line x1="464" y1="72" x2="504" y2="72"/>
+          <line x1="464" y1="168" x2="504" y2="168"/>
+          <line x1="436" y1="226" x2="504" y2="226"/>
+        </g>
+        <g class="svg-tinta2" font-size="13" font-family="IBM Plex Mono, monospace">
+          <text x="90" y="34" text-anchor="end">Máxima</text>
+          <text x="90" y="86" text-anchor="end">Fechamento</text>
+          <text x="90" y="182" text-anchor="end">Abertura</text>
+          <text x="90" y="240" text-anchor="end">Mínima</text>
+          <text x="510" y="44">Máxima</text>
+          <text x="510" y="76">Abertura</text>
+          <text x="510" y="172">Fechamento</text>
+          <text x="510" y="230">Mínima</text>
+        </g>
+        <g class="svg-tinta" font-size="13" font-weight="700" font-family="Archivo, Arial, sans-serif">
+          <text x="170" y="262" text-anchor="middle">Candle de alta</text>
+          <text x="430" y="262" text-anchor="middle">Candle de baixa</text>
+          <text x="214" y="56">pavio</text>
+          <text x="214" y="134">corpo</text>
+          <text x="214" y="212">pavio</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>Cada candle resume um período (1 minuto, 5 minutos, um dia). Corpo: entre abertura e fechamento. Pavios: até a máxima e a mínima.</figcaption>
+  </figure>
+
+  <h2>Tempo gráfico</h2>
+  <p>O mesmo movimento parece outro em 1 minuto, 5 minutos ou 15 minutos. Day traders costumam decidir o contexto num tempo maior (15 ou 60 minutos) e a entrada num menor (1 a 5 minutos). Quanto menor o tempo gráfico, maior a fração de ruído e mais os custos pesam, porque o ganho médio por operação é menor.</p>
+
+  <h2>Tendência, suporte e resistência</h2>
+  <ul>
+    <li><strong>Tendência de alta</strong>: topos e fundos cada vez mais altos. De baixa: cada vez mais baixos. Lateral: preço preso numa faixa.</li>
+    <li><strong>Suporte</strong>: região onde o preço parou de cair antes. <strong>Resistência</strong>: onde parou de subir. Funcionam, quando funcionam, porque muita gente coloca ordens nos mesmos lugares, inclusive stops.</li>
+    <li><strong>Rompimento e falso rompimento</strong>: o preço passa do nível e segue, ou passa, aciona os stops de quem estava do outro lado e volta. Os dois parecem iguais no primeiro minuto.</li>
+  </ul>
+
+  <h2>Indicadores mais usados</h2>
+  <div class="tabela">
+    <table>
+      <thead><tr><th>Indicador</th><th>O que mede</th><th>Uso comum</th><th>Limitação</th></tr></thead>
+      <tbody>
+        <tr><td>Volume</td><td>Quantos contratos ou ações foram negociados</td><td>Confirmar rompimentos</td><td>No futuro, volume alto também vem de robôs girando posição</td></tr>
+        <tr><td>VWAP</td><td>Preço médio ponderado pelo volume desde a abertura: Σ(preço × volume) ÷ Σ volume</td><td>Referência de preço justo do dia, usada por instituições</td><td>Perde utilidade em dias de tendência forte</td></tr>
+        <tr><td>Médias móveis (9, 20, 200)</td><td>Média dos últimos N fechamentos</td><td>Definir tendência e pontos de recuo</td><td>Atrasadas por construção; cruzamentos geram muitos sinais falsos em mercado lateral</td></tr>
+        <tr><td>IFR (RSI) de 14 períodos</td><td>Força relativa de altas vs. baixas, de 0 a 100</td><td>Sobrecompra acima de 70, sobrevenda abaixo de 30</td><td>Em tendência, fica "sobrecomprado" por horas enquanto o preço sobe</td></tr>
+        <tr><td>Bandas de Bollinger</td><td>Média de 20 períodos ± 2 desvios-padrão</td><td>Medir esticamento e volatilidade</td><td>Fechamento fora da banda não é sinal de reversão por si só</td></tr>
+        <tr><td>ATR</td><td>Amplitude média dos candles</td><td>Dimensionar stop de acordo com a volatilidade</td><td>Muda rápido em dia de notícia</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Padrões de candle como martelo, engolfo e doji são populares. Isolados, sem contexto e sem teste estatístico com os seus custos, não justificam uma entrada.</p>
+
+  <h2>O que a evidência diz</h2>
+  <ul>
+    <li>Brock, Lakonishok e LeBaron (1992) encontraram valor preditivo em regras de médias móveis no índice Dow Jones de 1897 a 1986. Sullivan, Timmermann e White (1999) mostraram que, corrigindo o viés de testar muitas regras (data snooping), a melhor regra deixou de funcionar no período seguinte.</li>
+    <li>A revisão de Park e Irwin (2007) concluiu que muitos estudos favoráveis à análise técnica têm problemas de data snooping, escolha da regra depois de ver o resultado e custos de transação subestimados.</li>
+    <li>Mesmo quando há um efeito, ele costuma ser pequeno. No intraday, os custos por operação são grandes em relação ao movimento médio, e efeito pequeno some nos custos.</li>
+  </ul>
+  <div class="quadro dado">
+    <p class="rotulo-quadro">Teste você mesmo</p>
+    <p>O gráfico do <a href="#simulador">simulador</a> é gerado por um passeio aleatório, sem nenhum padrão real. Mesmo assim, você vai ver suportes, resistências, topos duplos e tendências. É isso que o ruído faz.</p>
+  </div>
+
+  <div class="fim-modulo"><button type="button" class="botao" data-concluir="grafico">Marcar como concluído</button><span class="espaco"></span><a href="#setups">Próximo: Setups e como testá-los →</a></div>
+</section>
+
+<!-- ===================== MÓDULO 4 ===================== -->
+<section class="pagina leitura" data-pagina="setups" hidden>
+  <p class="sobretitulo">Módulo 4 · 16 min</p>
+  <h1>Setups e como testá-los</h1>
+  <p class="lead">Um setup é uma receita escrita: contexto, gatilho de entrada, stop, alvo e o que invalida a ideia. Se duas pessoas lendo a sua regra não chegam à mesma operação, ainda não é um setup.</p>
+
+  <h2>Cinco setups populares, com as falhas de cada um</h2>
+  <p>Nenhum deles tem lucro comprovado para pessoa física depois dos custos. São estruturas para testar, não receitas para seguir.</p>
+  <div class="tabela">
+    <table>
+      <thead><tr><th>Setup</th><th>Regra típica</th><th>Onde falha</th></tr></thead>
+      <tbody>
+        <tr><td>Pullback em tendência</td><td>Preço acima da VWAP e da média de 20; recua até a média e forma um candle de retomada; stop abaixo do fundo do recuo</td><td>Quando a tendência acaba, o "recuo" é o começo da queda</td></tr>
+        <tr><td>Rompimento da faixa de abertura</td><td>Marca máxima e mínima dos primeiros 15 minutos; entra no rompimento; stop do outro lado da faixa</td><td>Falsos rompimentos frequentes e derrapagem alta no momento do rompimento</td></tr>
+        <tr><td>Retorno à VWAP</td><td>Preço muito longe da VWAP (ex.: 2 desvios); aposta na volta</td><td>Dias de tendência forte atropelam quem opera contra</td></tr>
+        <tr><td>Fluxo / tape reading</td><td>Agressão forte de um lado sendo absorvida por ordens grandes no book</td><td>Spoofing e robôs; quase impossível de registrar e testar com objetividade</td></tr>
+        <tr><td>Fechamento de gap</td><td>Abertura longe do fechamento anterior; aposta que o preço volta</td><td>Gaps causados por notícia relevante frequentemente não fecham</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Como testar sem se enganar</h2>
+  <ol>
+    <li><strong>Escreva as regras antes de olhar os resultados.</strong> Se você ajusta a regra depois de ver o gráfico, está ajustando ao passado.</li>
+    <li><strong>Inclua custos e derrapagem</strong> em cada operação do teste. Use os valores da sua nota de corretagem.</li>
+    <li><strong>Separe os dados.</strong> Desenvolva a regra num período e teste em outro que você não olhou (fora da amostra).</li>
+    <li><strong>Desconfie de otimização.</strong> Se a estratégia só funciona com média de 17 e não com 15 ou 20, ela foi moldada ao ruído (overfitting).</li>
+    <li><strong>Teste no simulador ao vivo</strong> (forward test) antes de dinheiro real. Depois, 1 contrato na conta real por pelo menos 100 operações.</li>
+  </ol>
+
+  <h2>Quantos trades você precisa para saber alguma coisa</h2>
+  <p>Com poucos trades, a taxa de acerto que você mede é quase só sorte. O intervalo de confiança de 95% de uma taxa de acerto perto de 50% é, aproximadamente, ±1,96 × √(p × (1 − p) ÷ n):</p>
+  <div class="tabela" style="max-width:560px">
+    <table>
+      <thead><tr><th class="num">Nº de trades</th><th class="num">Margem de erro (95%)</th><th>Se você mediu 55% de acerto, o real pode estar entre</th></tr></thead>
+      <tbody>
+        <tr><td class="num">30</td><td class="num">±17,9 p.p.</td><td>37% e 73%</td></tr>
+        <tr><td class="num">100</td><td class="num">±9,8 p.p.</td><td>45% e 65%</td></tr>
+        <tr><td class="num">400</td><td class="num">±4,9 p.p.</td><td>50% e 60%</td></tr>
+        <tr><td class="num">1.000</td><td class="num">±3,1 p.p.</td><td>52% e 58%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="ferramenta" style="max-width:640px">
+    <h2>Calcule com os seus números</h2>
+    <div class="campos">
+      <label class="campo"><span>Taxa de acerto medida (%)</span><input id="amostra-p" type="number" min="1" max="99" step="0.1" value="55"></label>
+      <label class="campo"><span>Nº de trades</span><input id="amostra-n" type="number" min="1" step="1" value="60"></label>
+    </div>
+    <p class="leitura-res" id="amostra-res" aria-live="polite"></p>
+  </div>
+
+  <div class="fim-modulo"><button type="button" class="botao" data-concluir="setups">Marcar como concluído</button><span class="espaco"></span><a href="#risco">Próximo: Gestão de risco →</a></div>
+</section>
+
+<!-- ===================== MÓDULO 5 ===================== -->
+<section class="pagina leitura" data-pagina="risco" hidden>
+  <p class="sobretitulo">Módulo 5 · 20 min · o mais importante</p>
+  <h1>Gestão de risco</h1>
+  <p class="lead">Você não controla se o próximo trade ganha. Controla quanto perde quando erra. Toda a sobrevivência no day trade vem daqui.</p>
+
+  <h2>O "R": quanto você aceita perder por trade</h2>
+  <p>R é o valor em reais que você perde se o stop for atingido. Regra usada por profissionais: entre 0,5% e 1% do capital da conta de trade. Com R$ 10.000, isso dá de R$ 50 a R$ 100 por operação.</p>
+
+  <h2>Tamanho da posição</h2>
+  <div class="formula">Quantidade = Risco em R$ ÷ (distância do stop em pontos × valor do ponto + custos por unidade)</div>
+  <p>Exemplo no mini-índice: capital de R$ 10.000, risco de 1% (R$ 100), stop de 150 pontos.</p>
+  <div class="formula">Perda por contrato no stop = 150 × R$ 0,20 = R$ 30,00<br>Custos estimados (taxas R$ 0,50 + 1 tick de derrapagem R$ 1,00) = R$ 1,50<br>Risco por contrato = R$ 31,50<br>Quantidade = 100 ÷ 31,50 = 3,17 → <strong>3 contratos</strong> (risco real R$ 94,50)</div>
+  <p>A ordem é essa: primeiro o stop, definido pelo gráfico; depois a quantidade, definida pelo risco. Nunca o contrário. Se o stop correto não cabe nem com 1 contrato, o trade não é para o seu capital.</p>
+
+  <h2>Expectativa matemática</h2>
+  <div class="formula">Expectativa por trade = (taxa de acerto × ganho médio) − (taxa de erro × perda média) − custos</div>
+  <p>Uma estratégia só vale a pena se a expectativa for positiva depois dos custos, medida numa amostra grande. A taxa de acerto sozinha não diz nada: 70% de acerto com perdas três vezes maiores que os ganhos quebra a conta.</p>
+  <div class="tabela" style="max-width:620px">
+    <table>
+      <thead><tr><th class="num">Ganho/risco</th><th class="num">Acerto mínimo sem custos</th><th class="num">Com custo de 0,1 R por trade</th></tr></thead>
+      <tbody>
+        <tr><td class="num">0,5 : 1</td><td class="num">66,7%</td><td class="num">73,3%</td></tr>
+        <tr><td class="num">1 : 1</td><td class="num">50,0%</td><td class="num">55,0%</td></tr>
+        <tr><td class="num">1,5 : 1</td><td class="num">40,0%</td><td class="num">44,0%</td></tr>
+        <tr><td class="num">2 : 1</td><td class="num">33,3%</td><td class="num">36,7%</td></tr>
+        <tr><td class="num">3 : 1</td><td class="num">25,0%</td><td class="num">27,5%</td></tr>
+      </tbody>
+      <caption>Acerto mínimo = (1 + custo em R) ÷ (ganho/risco + 1).</caption>
+    </table>
+  </div>
+
+  <h2>A matemática da recuperação</h2>
+  <div class="tabela" style="max-width:520px">
+    <table>
+      <thead><tr><th class="num">Se a conta perde</th><th class="num">Para voltar, precisa ganhar</th></tr></thead>
+      <tbody>
+        <tr><td class="num">10%</td><td class="num">11,1%</td></tr>
+        <tr><td class="num">20%</td><td class="num">25,0%</td></tr>
+        <tr><td class="num">30%</td><td class="num">42,9%</td></tr>
+        <tr><td class="num">50%</td><td class="num negativo">100,0%</td></tr>
+        <tr><td class="num">70%</td><td class="num negativo">233,3%</td></tr>
+        <tr><td class="num">90%</td><td class="num negativo">900,0%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Sequências de perdas são normais</h2>
+  <p>Numa estratégia com 50% de acerto, em 250 trades (cerca de um ano com um trade por dia), a chance de passar por pelo menos uma sequência de 6 perdas seguidas é de 87%; de 8 perdas seguidas, 38%. Com 40% de acerto, a chance de 8 perdas seguidas sobe para 83%. Veja o que 8 perdas seguidas fazem com a conta, de acordo com o risco por trade:</p>
+  <div class="tabela" style="max-width:520px">
+    <table>
+      <thead><tr><th class="num">Risco por trade</th><th class="num">Conta depois de 8 perdas seguidas</th></tr></thead>
+      <tbody>
+        <tr><td class="num">0,5%</td><td class="num">−3,9%</td></tr>
+        <tr><td class="num">1%</td><td class="num">−7,7%</td></tr>
+        <tr><td class="num">2%</td><td class="num">−14,9%</td></tr>
+        <tr><td class="num">5%</td><td class="num negativo">−33,7%</td></tr>
+        <tr><td class="num">10%</td><td class="num negativo">−57,0%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Limites que travam o dia</h2>
+  <ul>
+    <li><strong>Stop diário</strong>: perda máxima do dia, por exemplo 3% do capital. Bateu, acabou.</li>
+    <li><strong>Limite de trades</strong>: excesso de operações (overtrading) multiplica custos e decisões ruins.</li>
+    <li><strong>Pausa depois de perdas seguidas</strong>: duas perdas em sequência pedem 20 minutos longe da tela.</li>
+    <li><strong>Stops semanal e mensal</strong>: perder 6% na semana ou 10% no mês pede revisão do plano antes de voltar.</li>
+    <li><strong>Correlação</strong>: comprar mini-índice e ações grandes do Ibovespa ao mesmo tempo é a mesma aposta repetida. Some os riscos.</li>
+  </ul>
+  <p>O <a href="#copiloto">copiloto de risco</a> aplica todos esses limites automaticamente e trava quando um deles é atingido.</p>
+
+  <div class="fim-modulo"><button type="button" class="botao" data-concluir="risco">Marcar como concluído</button><span class="espaco"></span><a href="#mente">Próximo: Psicologia e vieses →</a></div>
+</section>
+
+<!-- ===================== MÓDULO 6 ===================== -->
+<section class="pagina leitura" data-pagina="mente" hidden>
+  <p class="sobretitulo">Módulo 6 · 14 min</p>
+  <h1>Psicologia e vieses</h1>
+  <p class="lead">A maior parte das perdas evitáveis não vem de falta de técnica. Vem de saber a regra e quebrá-la no momento em que ela mais importa.</p>
+
+  <h2>Os vieses que mais custam dinheiro</h2>
+  <div class="tabela">
+    <table>
+      <thead><tr><th>Viés</th><th>Como aparece no trade</th><th>Evidência</th></tr></thead>
+      <tbody>
+        <tr><td>Aversão à perda</td><td>Perder R$ 100 dói mais do que ganhar R$ 100 alegra, então você afasta o stop para não realizar</td><td>Tversky e Kahneman (1992) estimaram que perdas pesam cerca de 2,25 vezes mais que ganhos</td></tr>
+        <tr><td>Efeito disposição</td><td>Realiza o ganho rápido e segura o perdedor "até voltar"</td><td>Odean (1998): investidores vendem ganhadores com mais facilidade que perdedores</td></tr>
+        <tr><td>Excesso de confiança</td><td>Opera demais depois de alguns acertos</td><td>Barber e Odean (2000): as famílias que mais giravam a carteira tiveram 11,4% ao ano, contra 17,9% do mercado</td></tr>
+        <tr><td>Revanche (revenge trading)</td><td>Depois de uma perda, aumenta a mão para recuperar no mesmo dia</td><td>É o caminho mais rápido para o stop diário virar perda do mês</td></tr>
+        <tr><td>Medo de ficar de fora (FOMO)</td><td>Entra atrasado, sem setup, porque "o preço está indo"</td><td>Entradas fora do plano têm stop longe e alvo curto</td></tr>
+        <tr><td>Viés de resultado</td><td>Julga a decisão pelo resultado: um trade fora do plano que deu lucro parece certo</td><td>Uma decisão ruim que deu certo ensina a repetir o erro</td></tr>
+        <tr><td>Viés de sobrevivência</td><td>Toma os poucos vencedores visíveis como regra</td><td>Os 97% que perderam não fazem live</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Ferramentas contra você mesmo</h2>
+  <ul>
+    <li><strong>Regras automáticas.</strong> Decida os limites com a cabeça fria, de manhã, e deixe uma ferramenta aplicar. O <a href="#copiloto">copiloto</a> faz isso.</li>
+    <li><strong>Checklist antes de cada entrada.</strong> Se um item fica em branco, não entra.</li>
+    <li><strong>Diário com emoção.</strong> Anote como você estava. Depois de 50 trades, compare o resultado dos dias "tensos" com os "calmos".</li>
+    <li><strong>Sono, alimentação, horário.</strong> Cansaço piora decisão. Defina hora para encerrar.</li>
+    <li><strong>Só capital de risco.</strong> Dinheiro do aluguel, da reserva de emergência ou de empréstimo transforma cada trade em ameaça, e ameaça piora decisão.</li>
+  </ul>
+
+  <h2>Quando o day trade vira jogo</h2>
+  <p>Day trade com alavancagem tem a mesma estrutura de recompensa intermitente das apostas. Sinais de alerta:</p>
+  <ul>
+    <li>Esconder perdas de quem mora com você.</li>
+    <li>Aumentar a mão para recuperar perdas.</li>
+    <li>Usar crédito, cheque especial ou empréstimo para operar.</li>
+    <li>Pensar em trade o tempo todo, perder sono, irritar-se fora do pregão.</li>
+  </ul>
+  <div class="quadro perigo">
+    <p class="rotulo-quadro">Se isso é você</p>
+    <p>Pare de operar e converse com alguém. O CVV atende de graça, 24 horas, pelo telefone 188. Grupos como Jogadores Anônimos também acolhem quem perdeu o controle com mercado financeiro.</p>
+  </div>
+
+  <div class="fim-modulo"><button type="button" class="botao" data-concluir="mente">Marcar como concluído</button><span class="espaco"></span><a href="#custos">Próximo: Custos e impostos →</a></div>
+</section>
+
+<!-- ===================== MÓDULO 7 ===================== -->
+<section class="pagina leitura" data-pagina="custos" hidden>
+  <p class="sobretitulo">Módulo 7 · 16 min</p>
+  <h1>Custos e impostos</h1>
+  <p class="lead">Corretagem zero não é custo zero. A B3 cobra em toda operação, a derrapagem cobra em quase toda, e a Receita fica com 20% do lucro.</p>
+
+  <h2>Custos por operação</h2>
+  <div class="tabela">
+    <table>
+      <thead><tr><th>Custo</th><th>Quem cobra</th><th>Valor de referência</th></tr></thead>
+      <tbody>
+        <tr><td>Emolumentos e taxa de registro</td><td>B3</td><td>WIN ≈ R$ 0,25 por contrato por lado; WDO ≈ R$ 1,20 por lado (varia com o dólar); ações ≈ 0,03% do volume</td></tr>
+        <tr><td>Corretagem</td><td>Corretora</td><td>Muitas cobram zero em minicontratos; outras de R$ 1 a R$ 5 por ordem</td></tr>
+        <tr><td>ISS</td><td>Município, sobre a corretagem</td><td>Só existe se houver corretagem</td></tr>
+        <tr><td>Derrapagem</td><td>O mercado</td><td>Em geral 1 tick por operação; muito mais em notícias</td></tr>
+        <tr><td>Plataforma e dados</td><td>Fornecedor</td><td>Planos mensais para gráficos e book avançados</td></tr>
+      </tbody>
+      <caption>Valores aproximados em out/2026. A B3 revisa tarifas por faixa de volume; confira sempre a sua nota de corretagem.</caption>
+    </table>
+  </div>
+  <h3>Quanto isso pesa num mês</h3>
+  <div class="formula">10 trades por dia × 3 contratos de WIN × (R$ 0,50 de taxas + R$ 1,00 de derrapagem)<br>= R$ 45 por dia × 21 pregões = <strong>R$ 945 por mês</strong></div>
+  <p>Com uma conta de R$ 10.000, são 9,45% do capital por mês só para empatar. O CDI paga cerca de 1,07% ao mês para o mesmo dinheiro, sem tela.</p>
+
+  <h2>Imposto de renda no day trade</h2>
+  <ul>
+    <li><strong>Alíquota de 20%</strong> sobre o lucro líquido do mês (resultado das operações menos custos).</li>
+    <li><strong>Sem isenção.</strong> A isenção para vendas de até R$ 20 mil por mês vale só para operações comuns com ações, nunca para day trade.</li>
+    <li><strong>IRRF de 1%</strong> (o "dedo-duro"): a corretora retém 1% do resultado positivo de day trade. Esse valor é descontado do DARF.</li>
+    <li><strong>Prejuízo compensa lucro</strong>, mas prejuízo de day trade só abate lucro de day trade, em qualquer mês futuro, sem prazo, desde que declarado.</li>
+    <li><strong>DARF código 6015</strong>, pago até o último dia útil do mês seguinte ao lucro. Se o valor for menor que R$ 10, acumula para o mês seguinte.</li>
+    <li><strong>Atraso</strong>: multa de 0,33% ao dia, limitada a 20%, mais juros pela Selic.</li>
+    <li><strong>Declaração anual</strong>: ficha Renda Variável, mês a mês, mesmo nos meses de prejuízo.</li>
+  </ul>
+  <div class="quadro dado">
+    <p class="rotulo-quadro">Exemplo</p>
+    <p>Em março, você teve R$ 2.000 de ganho bruto em day trade e R$ 300 de custos: resultado líquido de R$ 1.700. Tinha R$ 500 de prejuízo de day trade de meses anteriores. Base de cálculo: R$ 1.200. Imposto: 20% = R$ 240. A corretora reteve R$ 17 de IRRF. <strong>DARF 6015 de R$ 223, até o último dia útil de abril.</strong></p>
+  </div>
+  <p>Use a <a href="#calculadoras">calculadora de IR</a> para o seu mês. Regras vigentes em outubro de 2026: a MP 1.303/2025, que propunha alíquota única de 17,5%, perdeu a validade em outubro de 2025 sem ser votada. Confira a Receita Federal antes de pagar, porque a legislação muda.</p>
+
+  <div class="fim-modulo"><button type="button" class="botao" data-concluir="custos">Marcar como concluído</button><span class="espaco"></span><a href="#plano">Próximo: Plano, testes e quando parar →</a></div>
+</section>
+
+<!-- ===================== MÓDULO 8 ===================== -->
+<section class="pagina leitura" data-pagina="plano" hidden>
+  <p class="sobretitulo">Módulo 8 · 20 min · com formulário</p>
+  <h1>Plano, testes e quando parar</h1>
+  <p class="lead">Um plano de trading é um contrato com você mesmo, escrito antes do pregão. Ele define o que operar, quanto arriscar, quando parar no dia e, o mais difícil, quando parar de vez.</p>
+
+  <h2>As fases, nesta ordem</h2>
+  <ol>
+    <li><strong>Estudo</strong>: os módulos 0 a 7 e o teste de conhecimento.</li>
+    <li><strong>Simulador</strong>: pelo menos 100 trades com o plano escrito, registrados no diário com custos.</li>
+    <li><strong>Conta real mínima</strong>: 1 contrato (ou lote mínimo), capital que você pode perder inteiro, por pelo menos 100 trades.</li>
+    <li><strong>Aumento de mão</strong>: só com expectativa positiva depois de custos e IR em 200+ trades, e sem quebras de plano frequentes.</li>
+  </ol>
+
+  <h2>Critérios para parar de vez</h2>
+  <p>Escreva hoje, enquanto não há dinheiro em jogo. Sugestões:</p>
+  <ul>
+    <li>Depois de 200 trades, a expectativa líquida continua negativa.</li>
+    <li>A conta de trade perdeu 30% do capital inicial.</li>
+    <li>Você quebrou o plano mais de 3 vezes no mês por 2 meses seguidos.</li>
+    <li>O trade começou a afetar sono, trabalho, relacionamento ou finanças da casa.</li>
+  </ul>
+
+  <h2>Escreva seu plano</h2>
+  <p>O texto fica salvo só neste navegador. Use o botão para copiar e guardar onde quiser.</p>
+  <form class="plano-form" id="form-plano-escrito" novalidate>
+    <label class="campo"><span>Por que estou fazendo isso, e o que é sucesso em 6 meses?</span><textarea id="pl-porque" rows="3" placeholder="Ex.: testar se tenho vantagem com custo controlado. Sucesso: 200 trades registrados com expectativa líquida positiva, sem quebrar o stop diário."></textarea></label>
+    <label class="campo"><span>Capital de risco (dinheiro que posso perder inteiro sem afetar minha vida)</span><textarea id="pl-capital" rows="2" placeholder="Ex.: R$ 5.000, separados da reserva de emergência."></textarea></label>
+    <label class="campo"><span>Mercado e horário</span><textarea id="pl-mercado" rows="2" placeholder="Ex.: só WIN, das 9h15 às 11h30. Nada nos 10 minutos antes e depois de dados de alto impacto."></textarea></label>
+    <label class="campo"><span>Setups (regras objetivas de entrada, stop, alvo e invalidação)</span><textarea id="pl-setups" rows="5" placeholder="Ex.: Pullback na VWAP. Contexto: preço acima da VWAP e da média de 20 no gráfico de 5 min..."></textarea></label>
+    <label class="campo"><span>Limites de risco</span><textarea id="pl-risco" rows="3" placeholder="Ex.: 1% por trade, stop diário de 3%, máximo de 4 trades, pausa de 20 min após 2 perdas, stop semanal de 6%."></textarea></label>
+    <label class="campo"><span>Rotina antes, durante e depois do pregão</span><textarea id="pl-rotina" rows="3" placeholder="Ex.: 8h45 agenda econômica e níveis do dia; durante, checklist a cada entrada; 12h registrar e revisar."></textarea></label>
+    <label class="campo"><span>Critérios para parar de vez</span><textarea id="pl-parar" rows="3" placeholder="Ex.: após 200 trades com expectativa líquida negativa, ou perda de 30% do capital de risco."></textarea></label>
+    <div class="linha-botoes">
+      <button type="button" class="botao" id="pl-copiar">Copiar plano</button>
+      <button type="button" class="botao botao-sec" id="pl-limpar">Limpar formulário</button>
+      <span class="feedback" id="pl-feedback" aria-live="polite"></span>
+    </div>
+  </form>
+
+  <h2>Rotina de um dia de pregão</h2>
+  <div class="duas-col">
+    <div class="quadro"><h3>Antes</h3><ul><li>Agenda econômica do dia</li><li>Níveis relevantes marcados</li><li>Copiloto aberto com o plano</li><li>Nota emocional honesta</li></ul></div>
+    <div class="quadro"><h3>Depois</h3><ul><li>Todos os trades no diário, com custos</li><li>O que seguiu e o que quebrou o plano</li><li>Uma coisa para melhorar amanhã</li><li>Plataforma fechada</li></ul></div>
+  </div>
+
+  <div class="fim-modulo"><button type="button" class="botao" data-concluir="plano">Marcar como concluído</button><span class="espaco"></span><a href="#alternativas">Próximo: Day trade vs. alternativas →</a></div>
+</section>
+
+<!-- ===================== MÓDULO 9 ===================== -->
+<section class="pagina leitura" data-pagina="alternativas" hidden>
+  <p class="sobretitulo">Módulo 9 · 12 min · com calculadora</p>
+  <h1>Day trade vs. alternativas</h1>
+  <p class="lead">Toda hora na frente do gráfico e todo real na conta de margem têm um uso alternativo. Com a Selic em 13,75% ao ano, esse custo de oportunidade é alto.</p>
+
+  <h2>Comparação lado a lado</h2>
+  <div class="tabela">
+    <table>
+      <thead><tr><th>Alternativa</th><th>Risco principal</th><th>Retorno esperado</th><th>IR</th><th>Tempo exigido</th></tr></thead>
+      <tbody>
+        <tr><td>Tesouro Selic</td><td>Risco soberano; oscilação pequena</td><td>≈ Selic (13,75% a.a. em out/2026)</td><td>Regressivo: 22,5% até 180 dias, até 15% após 720 dias</td><td>Minutos por ano</td></tr>
+        <tr><td>CDB 100% do CDI</td><td>Banco emissor; FGC cobre até R$ 250 mil por CPF por instituição</td><td>≈ CDI (≈13,65% a.a.)</td><td>Regressivo, igual ao Tesouro</td><td>Minutos por ano</td></tr>
+        <tr><td>LCI / LCA</td><td>Banco emissor; FGC; carência mínima</td><td>Em geral 85% a 95% do CDI</td><td>Isentas para pessoa física (out/2026)</td><td>Minutos por ano</td></tr>
+        <tr><td>ETF de Ibovespa</td><td>Bolsa pode cair 30% ou mais e levar anos para voltar</td><td>Incerto; historicamente volátil</td><td>15% sobre o ganho, sem isenção de R$ 20 mil</td><td>Minutos por mês</td></tr>
+        <tr><td>Day trade</td><td>Perda total do capital de risco, alavancagem</td><td class="negativo">Negativo para a grande maioria (FGV: 97% perderam)</td><td>20%, sem isenção</td><td>Horas por dia</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Calcule o seu custo de oportunidade</h2>
+  <div class="ferramenta" id="ferr-oportunidade">
+    <p>Quanto o day trade precisa render por mês para empatar com deixar o dinheiro no CDI e usar as mesmas horas em trabalho ou estudo.</p>
+    <div class="campos">
+      <label class="campo"><span>Capital (R$)</span><input id="op-capital" type="number" min="0" step="100" value="10000"></label>
+      <label class="campo"><span>CDI (% a.a.)</span><input id="op-cdi" type="number" min="0" step="0.05" value="13.65"></label>
+      <label class="campo"><span>IR da renda fixa (%)</span><select id="op-ir"><option value="22.5">22,5% (até 180 dias)</option><option value="20">20% (181 a 360 dias)</option><option value="17.5" selected>17,5% (361 a 720 dias)</option><option value="15">15% (acima de 720 dias)</option><option value="0">0% (LCI/LCA)</option></select></label>
+      <label class="campo"><span>Horas por dia na tela</span><input id="op-horas" type="number" min="0" step="0.5" value="3"></label>
+      <label class="campo"><span>Pregões por mês</span><input id="op-dias" type="number" min="0" step="1" value="21"></label>
+      <label class="campo"><span>Valor da sua hora (R$)</span><input id="op-hora" type="number" min="0" step="1" value="25"></label>
+    </div>
+    <div class="saida" id="op-saida"></div>
+    <p class="leitura-res" id="op-texto" aria-live="polite"></p>
+  </div>
+
+  <div class="quadro">
+    <p class="rotulo-quadro">Para pensar</p>
+    <p>Se o objetivo é ganhar mais dinheiro, compare também com investir as mesmas horas em aumentar sua renda principal: uma certificação, um trabalho extra, um negócio. Esse retorno não depende de alguém do outro lado perder.</p>
+  </div>
+
+  <div class="fim-modulo"><button type="button" class="botao" data-concluir="alternativas">Marcar como concluído</button><span class="espaco"></span><a href="#quiz">Faça o teste de conhecimento →</a></div>
+</section>
+
+<!-- ===================== COPILOTO ===================== -->
+<section class="pagina" data-pagina="copiloto" hidden>
+  <p class="sobretitulo">Ferramenta · use ao lado da corretora</p>
+  <h1>Copiloto de risco</h1>
+  <p class="lead">Um painel compacto que fica aberto enquanto você usa a plataforma da corretora. Ele não diz quando entrar. Ele calcula quanto você pode arriscar, confere o checklist, registra o resultado e trava quando o plano manda parar.</p>
+  <div class="copiloto-area">
+    <div id="copiloto-slot">
+      <div id="copiloto-raiz"></div>
+      <div class="copiloto-ausente" id="copiloto-ausente" hidden>
+        <strong>O copiloto está aberto na janela flutuante.</strong>
+        <span>Feche a janela flutuante para trazê-lo de volta para esta página.</span>
+      </div>
+    </div>
+    <div class="modos">
+      <div class="modo">
+        <h3>1. Janela flutuante (recomendado no computador)</h3>
+        <p>Abre o copiloto numa janelinha que fica por cima de todas as outras, inclusive da plataforma da corretora. Funciona no Chrome e no Edge para computador, versão 116 ou mais nova. Mantenha esta aba aberta.</p>
+        <div class="linha-botoes"><button type="button" class="botao" id="abrir-flutuante">Abrir janela flutuante</button><span class="feedback" id="flutuante-feedback" aria-live="polite"></span></div>
+      </div>
+      <div class="modo">
+        <h3>2. Janela separada</h3>
+        <p>Abre o copiloto numa janela comum do navegador. Coloque-a ao lado da corretora (no Windows, arraste até a borda da tela).</p>
+        <div class="linha-botoes"><a class="botao botao-sec" href="assistente/index.html" target="dt-copiloto" id="abrir-janela">Abrir em janela</a></div>
+      </div>
+      <div class="modo">
+        <h3>3. Extensão do Chrome (painel lateral)</h3>
+        <p>O copiloto vira um painel lateral que acompanha qualquer site, inclusive o home broker da corretora.</p>
+        <ol>
+          <li>Baixe a pasta <span class="mono">assistente</span> deste projeto (ou o repositório inteiro em .zip, e descompacte).</li>
+          <li>No Chrome, abra <span class="mono">chrome://extensions</span> e ative o <strong>Modo do desenvolvedor</strong>.</li>
+          <li>Clique em <strong>Carregar sem compactação</strong> e escolha a pasta <span class="mono">assistente</span>.</li>
+          <li>Fixe o ícone na barra e clique nele para abrir o painel.</li>
+        </ol>
+        <p class="pequeno">A extensão guarda o diário no próprio navegador, separado deste site. Use exportar/importar CSV no <a href="#diario">diário</a> para juntar os dados.</p>
+      </div>
+      <div class="modo">
+        <h3>No celular</h3>
+        <p>No Android, use tela dividida: corretora em cima, este site embaixo. No iPhone, o mais prático é deixar o copiloto num segundo aparelho ou no computador.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CALCULADORAS ===================== -->
+<section class="pagina" data-pagina="calculadoras" hidden>
+  <p class="sobretitulo">Ferramentas</p>
+  <h1>Calculadoras</h1>
+  <p class="lead">Todas usam os mesmos custos configurados no seu plano do copiloto. Os valores iniciais são exemplos.</p>
+  <div class="ferramentas">
+
+    <div class="ferramenta" id="ferr-posicao">
+      <h2>Tamanho da posição</h2>
+      <p>Quantas unidades cabem no seu risco, com custos e derrapagem.</p>
+      <div class="campos">
+        <label class="campo"><span>Ativo</span><select id="cp-tipo"><option value="win">Mini-índice (WIN)</option><option value="wdo">Mini-dólar (WDO)</option><option value="acao">Ação (à vista)</option><option value="outro">Outro</option></select></label>
+        <label class="campo" id="cp-vp-campo" hidden><span>Valor do ponto (R$)</span><input id="cp-vp" type="number" step="any" value="1"></label>
+        <label class="campo"><span>Capital (R$)</span><input id="cp-capital" type="number" min="0" step="100" value="10000"></label>
+        <label class="campo"><span>Risco por trade (%)</span><input id="cp-risco" type="number" min="0" step="0.1" value="1"></label>
+        <label class="campo"><span>Entrada</span><input id="cp-entrada" type="number" step="any" value="140000"></label>
+        <label class="campo"><span>Stop</span><input id="cp-stop" type="number" step="any" value="139850"></label>
+        <label class="campo"><span>Alvo</span><input id="cp-alvo" type="number" step="any" value="140300"></label>
+      </div>
+      <div class="saida" id="cp-saida"></div>
+      <ul class="lista-avisos" id="cp-avisos"></ul>
+    </div>
+
+    <div class="ferramenta" id="ferr-expectativa">
+      <h2>Expectativa da estratégia</h2>
+      <p>Quanto sua estratégia ganha ou perde, em média, por trade e por mês, depois de custos e IR.</p>
+      <div class="campos">
+        <label class="campo"><span>Taxa de acerto (%)</span><input id="ex-acerto" type="number" min="0" max="100" step="0.5" value="52"></label>
+        <label class="campo"><span>Ganho médio (R$)</span><input id="ex-ganho" type="number" min="0" step="1" value="60"></label>
+        <label class="campo"><span>Perda média (R$)</span><input id="ex-perda" type="number" min="0" step="1" value="55"></label>
+        <label class="campo"><span>Custo por trade (R$)</span><input id="ex-custo" type="number" min="0" step="0.5" value="4.5"></label>
+        <label class="campo"><span>Trades por mês</span><input id="ex-n" type="number" min="0" step="1" value="80"></label>
+      </div>
+      <div class="saida" id="ex-saida"></div>
+      <p class="leitura-res" id="ex-texto" aria-live="polite"></p>
+    </div>
+
+    <div class="ferramenta" id="ferr-ir">
+      <h2>IR do mês (DARF 6015)</h2>
+      <p>Imposto de day trade de um mês, com compensação de prejuízo e desconto do IRRF.</p>
+      <div class="campos">
+        <label class="campo"><span>Resultado líquido do mês (R$)</span><input id="ir-res" type="number" step="0.01" value="1700"></label>
+        <label class="campo"><span>Prejuízo acumulado de DT (R$)</span><input id="ir-prej" type="number" min="0" step="0.01" value="500"></label>
+        <label class="campo"><span>IRRF retido no mês (R$)</span><input id="ir-irrf" type="number" min="0" step="0.01" value="17"></label>
+        <label class="campo"><span>DARF abaixo de R$ 10 acumulado (R$)</span><input id="ir-acum" type="number" min="0" step="0.01" value="0"></label>
+      </div>
+      <div class="saida" id="ir-saida"></div>
+      <p class="leitura-res" id="ir-texto" aria-live="polite"></p>
+    </div>
+
+    <div class="ferramenta" id="ferr-custos">
+      <h2>Custo mensal da operação</h2>
+      <p>Quanto você paga por mês em taxas e derrapagem, antes de ganhar qualquer coisa.</p>
+      <div class="campos">
+        <label class="campo"><span>Ativo</span><select id="cm-tipo"><option value="win">Mini-índice (WIN)</option><option value="wdo">Mini-dólar (WDO)</option></select></label>
+        <label class="campo"><span>Trades por dia</span><input id="cm-trades" type="number" min="0" step="1" value="10"></label>
+        <label class="campo"><span>Contratos por trade</span><input id="cm-contratos" type="number" min="0" step="1" value="3"></label>
+        <label class="campo"><span>Pregões por mês</span><input id="cm-dias" type="number" min="0" step="1" value="21"></label>
+        <label class="campo"><span>Capital (R$)</span><input id="cm-capital" type="number" min="0" step="100" value="10000"></label>
+      </div>
+      <div class="saida" id="cm-saida"></div>
+    </div>
+
+    <div class="ferramenta" id="ferr-drawdown">
+      <h2>Recuperação de perda</h2>
+      <p>Quanto você precisa ganhar para voltar ao zero depois de uma perda.</p>
+      <div class="campos">
+        <label class="campo"><span>Perda da conta (%)</span><input id="dd-perda" type="number" min="0" max="99.9" step="1" value="35"></label>
+        <label class="campo"><span>Ganho médio por mês que você espera (%)</span><input id="dd-mes" type="number" min="0" step="0.5" value="3"></label>
+      </div>
+      <div class="saida" id="dd-saida"></div>
+    </div>
+
+    <div class="ferramenta" id="ferr-amostra">
+      <h2>Sua taxa de acerto é real?</h2>
+      <p>Intervalo de confiança de 95% para a taxa de acerto medida.</p>
+      <div class="campos">
+        <label class="campo"><span>Trades vencedores</span><input id="am-g" type="number" min="0" step="1" value="33"></label>
+        <label class="campo"><span>Total de trades</span><input id="am-n" type="number" min="1" step="1" value="60"></label>
+        <label class="campo"><span>Acerto que você precisa (%)</span><input id="am-min" type="number" min="0" max="100" step="0.5" value="50"></label>
+      </div>
+      <div class="saida" id="am-saida"></div>
+      <p class="leitura-res" id="am-texto" aria-live="polite"></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== MONTE CARLO ===================== -->
+<section class="pagina" data-pagina="montecarlo" hidden>
+  <p class="sobretitulo">Ferramenta</p>
+  <h1>Simulação Monte Carlo</h1>
+  <p class="lead">A mesma estratégia, com os mesmos números, produz contas muito diferentes só por causa da ordem dos ganhos e perdas. Aqui você vê 1.000 versões possíveis do seu próximo ano.</p>
+  <div class="ferramenta ferramenta-larga">
+    <div class="campos">
+      <label class="campo"><span>Taxa de acerto (%)</span><input id="mc-acerto" type="number" min="1" max="99" step="0.5" value="50"></label>
+      <label class="campo"><span>Ganho/risco (em R)</span><input id="mc-rr" type="number" min="0.1" step="0.1" value="1.3"></label>
+      <label class="campo"><span>Custo por trade (em R)</span><input id="mc-custo" type="number" min="0" step="0.01" value="0.08"></label>
+      <label class="campo"><span>Risco por trade (% da conta)</span><input id="mc-risco" type="number" min="0.1" max="50" step="0.1" value="1"></label>
+      <label class="campo"><span>Trades por dia</span><input id="mc-dia" type="number" min="1" step="1" value="3"></label>
+      <label class="campo"><span>Pregões</span><input id="mc-dias" type="number" min="1" step="1" value="250"></label>
+      <label class="campo"><span>Capital inicial (R$)</span><input id="mc-capital" type="number" min="100" step="100" value="10000"></label>
+      <label class="campo"><span>Ruína se a conta cair (%)</span><input id="mc-ruina" type="number" min="1" max="99" step="1" value="50"></label>
+    </div>
+    <div class="linha-botoes"><button type="button" class="botao" id="mc-rodar">Rodar 1.000 simulações</button><span class="pequeno" id="mc-info"></span></div>
+    <div class="saida" id="mc-saida"></div>
+    <div class="grafico" style="height:340px"><canvas id="mc-canvas" aria-label="Gráfico com faixas de percentis da evolução do capital nas simulações" role="img"></canvas></div>
+    <div class="legenda"><span><i style="background:var(--cobalto)"></i>Mediana</span><span><i style="background:var(--cobalto);opacity:.35;height:10px"></i>Metade central (25% a 75%)</span><span><i style="background:var(--cobalto);opacity:.15;height:10px"></i>90% das contas (5% a 95%)</span><span><i style="background:var(--tinta-3)"></i>Algumas contas individuais</span><span><i style="background:var(--baixa)"></i>Capital inicial</span></div>
+    <p class="leitura-res" id="mc-texto" aria-live="polite"></p>
+  </div>
+</section>
+
+<!-- ===================== SIMULADOR ===================== -->
+<section class="pagina" data-pagina="simulador" hidden>
+  <p class="sobretitulo">Treino · sem dinheiro real</p>
+  <h1>Simulador de tela</h1>
+  <p class="lead">Um gráfico de 1 minuto no estilo do mini-índice, com custos e derrapagem reais. Opere como faria na corretora. No final, leia a revelação.</p>
+  <div class="sim">
+    <div class="grafico sim-grafico"><canvas id="sim-canvas" role="img" aria-label="Gráfico de candles simulado"></canvas></div>
+    <div class="sim-painel ferramenta">
+      <div class="sim-cotacao"><span class="pequeno">WIN simulado</span><b id="sim-preco">—</b></div>
+      <div class="campos">
+        <label class="campo"><span>Contratos</span><input id="sim-qtd" type="number" min="1" max="50" step="1" value="1"></label>
+        <label class="campo"><span>Stop (pts)</span><input id="sim-stop" type="number" min="0" step="5" value="150"></label>
+        <label class="campo"><span>Alvo (pts)</span><input id="sim-alvo" type="number" min="0" step="5" value="200"></label>
+        <label class="campo"><span>Velocidade</span><select id="sim-vel"><option value="1">1×</option><option value="3" selected>3×</option><option value="8">8×</option><option value="20">20×</option></select></label>
+      </div>
+      <div class="sim-botoes">
+        <button type="button" class="botao botao-compra" id="sim-comprar">Comprar</button>
+        <button type="button" class="botao botao-venda" id="sim-vender">Vender</button>
+      </div>
+      <div class="linha-botoes">
+        <button type="button" class="botao botao-sec" id="sim-zerar">Zerar</button>
+        <button type="button" class="botao botao-sec" id="sim-pausar">Pausar</button>
+        <button type="button" class="botao botao-sec" id="sim-novo">Novo pregão</button>
+      </div>
+      <div class="saida" id="sim-saida"></div>
+      <p class="pequeno">Custos: R$ 0,50 por contrato ida+volta e 1 tick de derrapagem em ordens a mercado e stops.</p>
+    </div>
+  </div>
+  <div class="quadro dado sim-revelacao" id="sim-revelacao">
+    <p class="rotulo-quadro">A revelação</p>
+    <p id="sim-revelacao-texto"></p>
+  </div>
+  <div class="tabela">
+    <table>
+      <thead><tr><th>#</th><th>Lado</th><th class="num">Qtd.</th><th class="num">Entrada</th><th class="num">Saída</th><th class="num">Pontos</th><th class="num">Líquido</th><th>Saída por</th></tr></thead>
+      <tbody id="sim-trades"><tr><td colspan="8" class="pequeno">Nenhum trade ainda. Clique em Comprar ou Vender.</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== DIÁRIO ===================== -->
+<section class="pagina" data-pagina="diario" hidden>
+  <p class="sobretitulo">Ferramenta · fica só no seu navegador</p>
+  <h1>Diário de trades</h1>
+  <p class="lead">O diário é o que separa um experimento de uma aposta. Registre todos os trades, com custos, e deixe os números dizerem se existe vantagem.</p>
+  <div class="faixa-exemplo" id="dr-exemplo" hidden>
+    <span><strong>Dados de exemplo, fictícios.</strong> 40 trades de WIN com 50% de acerto e resultado bruto quase zero. Os custos viram isso em prejuízo, e os 5 trades fora do plano fazem o resto. Registre seu primeiro trade para substituí-los.</span>
+  </div>
+  <div class="saida" id="dr-resumo"></div>
+  <div class="grafico" style="height:240px"><canvas id="dr-canvas" role="img" aria-label="Curva de capital acumulado do diário"></canvas></div>
+  <p class="leitura-res" id="dr-leitura" aria-live="polite"></p>
+
+  <div class="ferramentas">
+    <div class="ferramenta">
+      <h2>Registrar trade</h2>
+      <form class="campos" id="dr-form" novalidate>
+        <label class="campo"><span>Data</span><input id="dr-data" type="date"></label>
+        <label class="campo"><span>Hora</span><input id="dr-hora" type="time"></label>
+        <label class="campo"><span>Ativo</span><select id="dr-tipo"><option value="win">Mini-índice (WIN)</option><option value="wdo">Mini-dólar (WDO)</option><option value="acao">Ação</option><option value="outro">Outro</option></select></label>
+        <label class="campo"><span>Código</span><input id="dr-ativo" type="text" placeholder="WINZ26" autocomplete="off"></label>
+        <label class="campo"><span>Lado</span><select id="dr-lado"><option value="compra">Compra</option><option value="venda">Venda</option></select></label>
+        <label class="campo"><span>Quantidade</span><input id="dr-qtd" type="number" min="0" step="1" value="1"></label>
+        <label class="campo"><span>Entrada</span><input id="dr-entrada" type="number" step="any"></label>
+        <label class="campo"><span>Saída</span><input id="dr-saida" type="number" step="any"></label>
+        <label class="campo"><span>Bruto (R$)</span><input id="dr-bruto" type="number" step="any" placeholder="calculado"></label>
+        <label class="campo"><span>Custos (R$)</span><input id="dr-custos" type="number" step="any" placeholder="calculado"></label>
+        <label class="campo"><span>Setup</span><input id="dr-setup" type="text" autocomplete="off"></label>
+        <label class="campo"><span>Seguiu o plano?</span><select id="dr-plano"><option value="sim">Sim</option><option value="nao">Não</option></select></label>
+        <label class="campo"><span>Emoção (1 a 5)</span><select id="dr-emocao"><option value="">—</option><option value="1">1 · tenso</option><option value="2">2 · ansioso</option><option value="3">3 · neutro</option><option value="4">4 · calmo</option><option value="5">5 · focado</option></select></label>
+        <label class="campo"><span>Simulado?</span><select id="dr-simulado"><option value="nao">Não, conta real</option><option value="sim">Sim, simulador</option></select></label>
+        <label class="campo" style="grid-column:1/-1"><span>Nota</span><textarea id="dr-nota" rows="2"></textarea></label>
+        <div class="linha-botoes" style="grid-column:1/-1"><button type="submit" class="botao">Registrar</button><span class="feedback" id="dr-feedback" aria-live="polite"></span></div>
+      </form>
+    </div>
+    <div class="ferramenta">
+      <h2>Por setup e por disciplina</h2>
+      <div class="tabela"><table><thead><tr><th>Setup</th><th class="num">Trades</th><th class="num">Acerto</th><th class="num">Líquido</th></tr></thead><tbody id="dr-setups"></tbody></table></div>
+      <div class="tabela"><table><thead><tr><th>Disciplina</th><th class="num">Trades</th><th class="num">Líquido</th><th class="num">Por trade</th></tr></thead><tbody id="dr-disciplina"></tbody></table></div>
+      <h2>Backup</h2>
+      <p>Exporte para guardar ou levar os dados entre o site e a extensão.</p>
+      <div class="linha-botoes">
+        <button type="button" class="botao botao-sec" id="dr-baixar">Baixar CSV</button>
+        <button type="button" class="botao botao-sec" id="dr-copiar">Copiar CSV</button>
+        <label class="botao botao-sec" for="dr-arquivo">Importar CSV</label>
+        <input id="dr-arquivo" type="file" accept=".csv,text/csv" hidden>
+      </div>
+      <div class="linha-botoes">
+        <button type="button" class="botao botao-perigo" id="dr-apagar">Apagar todos</button>
+        <span id="dr-confirmar" hidden><button type="button" class="botao botao-venda" id="dr-apagar-sim">Confirmar: apagar tudo</button> <button type="button" class="botao botao-sec" id="dr-apagar-nao">Cancelar</button></span>
+      </div>
+      <p class="feedback" id="dr-backup-feedback" aria-live="polite"></p>
+      <textarea id="dr-csv-texto" rows="4" hidden aria-label="CSV para copiar" style="width:100%;font-family:var(--f-dado);font-size:12px"></textarea>
+    </div>
+  </div>
+
+  <div class="linha-botoes">
+    <label class="campo" style="max-width:220px"><span>Mostrar</span><select id="dr-filtro"><option value="todos">Todos os trades</option><option value="reais">Só conta real</option><option value="simulados">Só simulados</option><option value="mes">Só este mês</option></select></label>
+  </div>
+  <div class="tabela diario-tabela">
+    <table>
+      <thead><tr><th>Data</th><th>Hora</th><th>Ativo</th><th>Lado</th><th class="num">Qtd.</th><th class="num">Entrada</th><th class="num">Saída</th><th class="num">Bruto</th><th class="num">Custos</th><th class="num">Líquido</th><th>Setup</th><th>Plano</th><th>Nota</th><th></th></tr></thead>
+      <tbody id="dr-tabela"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== QUIZ ===================== -->
+<section class="pagina" data-pagina="quiz" hidden>
+  <p class="sobretitulo">Referência</p>
+  <h1>Teste de conhecimento</h1>
+  <p class="lead">Dezesseis perguntas sobre os pontos que mais custam dinheiro quando você erra. Cada resposta mostra a explicação.</p>
+  <p class="leitura-res" id="quiz-placar" aria-live="polite"></p>
+  <form class="quiz" id="quiz" novalidate></form>
+  <div class="linha-botoes"><button type="button" class="botao botao-sec" id="quiz-reiniciar">Recomeçar teste</button></div>
+</section>
+
+<!-- ===================== GLOSSÁRIO ===================== -->
+<section class="pagina" data-pagina="glossario" hidden>
+  <p class="sobretitulo">Referência</p>
+  <h1>Glossário</h1>
+  <label class="campo busca"><span>Buscar termo</span><input id="glossario-busca" type="search" placeholder="ex.: VWAP, margem, DARF" autocomplete="off"></label>
+  <dl class="glossario" id="glossario-lista"></dl>
+  <p class="pequeno" id="glossario-vazio" hidden>Nenhum termo encontrado.</p>
+</section>
+
+<!-- ===================== FONTES ===================== -->
+<section class="pagina leitura" data-pagina="fontes" hidden>
+  <p class="sobretitulo">Referência</p>
+  <h1>Fontes e aviso legal</h1>
+  <h2>Estudos sobre day trade</h2>
+  <ul class="fontes">
+    <li>Chague, F.; De-Losso, R.; Giovannetti, B. <em>Day Trading for a Living?</em> SSRN, 2019. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3423101" target="_blank" rel="noopener">papers.ssrn.com</a></li>
+    <li>FGV EESP. <em>Viver de especulação diária é quase impossível, mas tem cada vez mais brasileiros fazendo isso.</em> <a href="https://eesp.fgv.br/noticia/viver-de-especulacao-diaria-e-quase-impossivel-mas-tem-cada-vez-mais-brasileiros-fazendo" target="_blank" rel="noopener">eesp.fgv.br</a></li>
+    <li>Estudo de day trade em ações para a CVM (2012–2017), resumo em <a href="https://www.suno.com.br/noticias/estudo-mostra-day-trade-prejuizo/" target="_blank" rel="noopener">suno.com.br</a></li>
+    <li>Chague, F.; Giovannetti, B. <em>As pandemias de COVID-19 e de day trade no Brasil.</em> Revista Brasileira de Finanças. <a href="https://periodicos.fgv.br/rbfin/article/view/94291" target="_blank" rel="noopener">periodicos.fgv.br</a></li>
+    <li>CVM. <em>Caderno CVM 15: Day Trade.</em> <a href="https://www.gov.br/investidor/pt-br/educacional/publicacoes-educacionais/cadernos/caderno-cvm-15-day_trade.pdf/@@display-file/file" target="_blank" rel="noopener">gov.br/investidor</a></li>
+    <li>Barber, B.; Lee, Y.; Liu, Y.; Odean, T. <em>The Cross-Section of Speculator Skill: Evidence from Day Trading.</em> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=529063" target="_blank" rel="noopener">papers.ssrn.com</a></li>
+  </ul>
+  <h2>Comportamento e análise técnica</h2>
+  <ul class="fontes">
+    <li>Barber, B.; Odean, T. <em>Trading Is Hazardous to Your Wealth.</em> Journal of Finance, 2000.</li>
+    <li>Odean, T. <em>Are Investors Reluctant to Realize Their Losses?</em> Journal of Finance, 1998.</li>
+    <li>Tversky, A.; Kahneman, D. <em>Advances in Prospect Theory.</em> Journal of Risk and Uncertainty, 1992.</li>
+    <li>Brock, W.; Lakonishok, J.; LeBaron, B. <em>Simple Technical Trading Rules and the Stochastic Properties of Stock Returns.</em> Journal of Finance, 1992.</li>
+    <li>Sullivan, R.; Timmermann, A.; White, H. <em>Data-Snooping, Technical Trading Rule Performance, and the Bootstrap.</em> Journal of Finance, 1999.</li>
+    <li>Park, C.; Irwin, S. <em>What Do We Know About the Profitability of Technical Analysis?</em> Journal of Economic Surveys, 2007.</li>
+  </ul>
+  <h2>Juros, custos e regras</h2>
+  <ul class="fontes">
+    <li>Copom reduz a Selic para 13,75% em 16/09/2026: <a href="https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/ata-do-copom-atribui-corte-da-selic-desaceleracao-da-economia" target="_blank" rel="noopener">Agência Brasil</a>. Taxa vigente: <a href="https://www.bcb.gov.br/controleinflacao/taxaselic" target="_blank" rel="noopener">Banco Central</a>.</li>
+    <li>B3, características dos produtos de day trade: <a href="https://borainvestir.b3.com.br/tipos-de-investimentos/renda-variavel/day-trade/conheca-as-caracteristicas-dos-principais-produtos-de-day-trade/" target="_blank" rel="noopener">borainvestir.b3.com.br</a></li>
+    <li>B3, tarifas de futuro de Ibovespa: <a href="https://www.b3.com.br/pt_br/produtos-e-servicos/tarifas/listados-a-vista-e-derivativos/renda-variavel/tarifas-de-ibovespa-e-indice-brasil-50/futuros-e-estruturadas/" target="_blank" rel="noopener">b3.com.br</a></li>
+    <li>Margens mínimas de day trade a partir de 02/02/2026: <a href="https://www.infomoney.com.br/mercados/b3-revisa-margens-minimas-redefine-capital-exigido-no-day-trade/" target="_blank" rel="noopener">InfoMoney</a></li>
+    <li>Imposto de renda em renda variável: <a href="https://www.gov.br/receitafederal/pt-br" target="_blank" rel="noopener">Receita Federal</a></li>
+  </ul>
+  <h2>Aviso legal</h2>
+  <p>Este site tem finalidade exclusivamente educacional. Nada aqui é recomendação de investimento, oferta, ou indicação de compra ou venda de qualquer ativo. O autor não tem registro na CVM como analista ou consultor. Operações de day trade com alavancagem podem gerar perdas maiores que o capital investido. Taxas, margens, horários e regras tributárias mudam; confira as fontes oficiais antes de agir. As ferramentas fazem contas com os números que você informa e podem conter erros: confira na sua nota de corretagem.</p>
+</section>
+
+  </main>
+</div>
+
+<footer class="rodape">
+  <p>Conteúdo educacional, sem recomendação de investimento. Dados de mercado conferidos em 6 de outubro de 2026. Seus registros ficam apenas neste navegador.</p>
+</footer>
+
+<script src="assistente/nucleo.js"></script>
+<script src="assistente/assistente.js"></script>
+<script src="js/conteudo.js"></script>
+<script src="js/app.js"></script>
+<script src="js/ferramentas.js"></script>
+<script src="js/simulador.js"></script>
+<script src="js/diario.js"></script>
+</body>
+</html>

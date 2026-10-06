@@ -1,0 +1,4 @@
+/* Página do assistente quando aberto sozinho: janela pop-up ou painel lateral da extensão. */
+html, body { margin: 0; background: var(--papel); color: var(--tinta); }
+.janela { padding: 10px; display: flex; justify-content: center; }
+.janela .dta { width: 100%; }
