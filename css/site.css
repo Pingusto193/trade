@@ -426,6 +426,39 @@ body.pip-corpo .dta { max-width: none; }
 .glossario dd { margin: 4px 0 0; font-family: var(--f-texto); font-size: 15.5px; line-height: 1.5; color: var(--tinta-2); }
 .fontes li { font-size: 15px; }
 
+/* ---------- Guia direto ---------- */
+.cola { background: var(--folha); border: 2px solid var(--tinta); border-radius: var(--raio); padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; max-width: 72ch; }
+.cola > * { margin: 0; }
+.cola h3 { font: 800 15px/1.2 var(--f-ui); letter-spacing: .06em; text-transform: uppercase; }
+.cola ol { counter-reset: cola; list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.cola li { counter-increment: cola; display: grid; grid-template-columns: 30px 1fr; gap: 8px; font-size: 15.5px; line-height: 1.45; }
+.cola li::before { content: counter(cola); font: 700 14px/1 var(--f-dado); color: var(--cobalto-tinta); background: var(--cobalto); border-radius: 50%; width: 24px; height: 24px; display: grid; place-items: center; }
+.resumo-trade { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border-top: 2px solid var(--tinta); max-width: 72ch; }
+.resumo-trade > div { padding: 10px 12px 10px 0; display: flex; flex-direction: column; gap: 2px; }
+.resumo-trade span { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--tinta-3); }
+.resumo-trade b { font: 600 18px/1.2 var(--f-dado); }
+
+/* ---------- Treino ---------- */
+.exercicios { display: flex; flex-direction: column; gap: 28px; max-width: 72ch; }
+.exercicio { background: var(--folha); border: 1px solid var(--linha); border-radius: var(--raio); padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.exercicio > * { margin: 0; }
+.exercicio h3 { font: 700 18px/1.3 var(--f-ui); }
+.exercicio .figura .diagrama { background: var(--papel); }
+.ex-num { font: 600 12px/1.2 var(--f-dado); letter-spacing: .06em; text-transform: uppercase; color: var(--cobalto); }
+.ex-opcoes { display: grid; gap: 8px; }
+.ex-opcao { display: grid; grid-template-columns: 26px 1fr; gap: 8px; align-items: start; text-align: left; font: 600 15px/1.35 var(--f-ui); padding: 11px 12px; border: 1px solid var(--linha); border-radius: 4px; background: var(--papel); color: var(--tinta); cursor: pointer; }
+.ex-opcao::before { content: attr(data-op); text-transform: uppercase; font: 700 13px/1.4 var(--f-dado); color: var(--tinta-3); }
+.ex-opcao:hover:not([disabled]) { border-color: var(--cobalto); }
+.ex-opcao[disabled] { cursor: default; }
+.ex-opcao.certa { border-color: var(--alta); background: var(--alta-fundo); }
+.ex-opcao.certa::before { content: "✓"; color: var(--alta); }
+.ex-opcao.errada { border-color: var(--baixa); background: var(--baixa-fundo); }
+.ex-opcao.errada::before { content: "✗"; color: var(--baixa); }
+.ex-explica { font-family: var(--f-texto); font-size: 16px; line-height: 1.55; padding: 10px 12px; border-left: 3px solid var(--cobalto); background: var(--realce); border-radius: 4px; }
+.ex-veredito { display: block; font: 800 14px/1.3 var(--f-ui); margin-bottom: 4px; }
+.ex-veredito.acertou { color: var(--alta); }
+.ex-veredito.errou { color: var(--baixa); }
+
 /* ---------- Plano ---------- */
 .plano-form { display: flex; flex-direction: column; gap: 12px; max-width: 72ch; }
 

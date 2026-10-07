@@ -43,6 +43,8 @@
     <h2>Comece aqui</h2>
     <ul>
       <li><a href="#inicio"><span class="n">→</span><span>Início</span><span></span></a></li>
+      <li><a href="#guia"><span class="n">★</span><span>Guia direto (15 min)</span><span></span></a></li>
+      <li><a href="#treino"><span class="n">✓</span><span>Treino de gráfico</span><span class="ok" data-ok-treino></span></a></li>
     </ul>
     <h2>Trilha</h2>
     <ol>
@@ -90,8 +92,8 @@
 
   <h2>Como usar este site</h2>
   <div class="passos">
-    <a href="#realidade"><span class="num">Passo 1</span><strong>Faça a trilha</strong><span>Dez módulos, do mercado ao imposto. Comece pelo módulo 0, que mostra o que os estudos encontraram.</span></a>
-    <a href="#simulador"><span class="num">Passo 2</span><strong>Treine sem dinheiro</strong><span>Opere no simulador e rode a simulação Monte Carlo com os números da sua estratégia.</span></a>
+    <a href="#guia"><span class="num">Passo 1</span><strong>Leia o guia direto</strong><span>Em 15 minutos: como ler o gráfico, onde entrar, onde sair e de onde vem o dinheiro, com um trade de exemplo do começo ao fim.</span></a>
+    <a href="#treino"><span class="num">Passo 2</span><strong>Treine o olho</strong><span>Dez exercícios com gráficos de verdade. Depois, opere no simulador sem dinheiro. A trilha completa fica para quando quiser se aprofundar.</span></a>
     <a href="#copiloto"><span class="num">Passo 3</span><strong>Opere com copiloto</strong><span>Abra o copiloto ao lado da plataforma da corretora. Ele calcula a posição e trava quando o plano manda parar.</span></a>
   </div>
 
@@ -105,6 +107,25 @@
     <p class="rotulo-quadro">Pergunta para qualquer vendedor de curso</p>
     <p>Se alguém promete renda diária com day trade, peça o extrato completo e auditado de pelo menos um ano, com perdas, custos e impostos. Depois pergunte qual parte da renda dessa pessoa vem do trade e qual vem de alunos.</p>
   </div>
+</section>
+
+<!-- ===================== GUIA DIRETO ===================== -->
+<section class="pagina leitura" data-pagina="guia" hidden>
+<!-- conteudo:guia -->
+<!-- /conteudo:guia -->
+</section>
+
+<!-- ===================== TREINO ===================== -->
+<section class="pagina leitura" data-pagina="treino" hidden>
+  <p class="sobretitulo">Treino · 10 exercícios · sem dinheiro</p>
+  <h1>Treino de leitura de gráfico</h1>
+  <p class="lead">Olhe o gráfico, escolha uma resposta e veja a explicação. É assim que o olho aprende: muitas repetições, com correção na hora.</p>
+  <p class="leitura-res" id="treino-placar" aria-live="polite"></p>
+  <div class="exercicios" id="exercicios">
+<!-- conteudo:treino -->
+<!-- /conteudo:treino -->
+  </div>
+  <div class="fim-modulo"><button type="button" class="botao botao-sec" id="treino-reiniciar">Recomeçar o treino</button><span class="espaco"></span><a href="#simulador">Agora pratique no simulador →</a></div>
 </section>
 
 <!-- ===================== MÓDULO 0 ===================== -->

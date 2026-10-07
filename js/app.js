@@ -272,7 +272,64 @@
     fb.textContent = 'Formulário limpo.';
   });
 
+  /* ---------- Treino de gráfico ---------- */
+  var CHAVE_TREINO = 'dt.treino.v1';
+  function respostasTreino() { return DT.store.ler(CHAVE_TREINO, {}) || {}; }
+  function renderTreino() {
+    var r = respostasTreino();
+    var exercicios = $$('.exercicio');
+    var feitos = 0, certos = 0;
+    exercicios.forEach(function (ex) {
+      var id = ex.dataset.exercicio, certa = ex.dataset.certa, escolha = r[id];
+      $$('.ex-opcao', ex).forEach(function (b) {
+        b.classList.remove('certa', 'errada');
+        b.disabled = !!escolha;
+        if (escolha && b.dataset.op === certa) b.classList.add('certa');
+        else if (escolha && b.dataset.op === escolha) b.classList.add('errada');
+      });
+      var explica = $('.ex-explica', ex);
+      if (!explica) return;
+      var veredito = $('.ex-veredito', explica);
+      if (!veredito) {
+        veredito = doc.createElement('span');
+        veredito.className = 'ex-veredito';
+        explica.insertBefore(veredito, explica.firstChild);
+      }
+      explica.hidden = !escolha;
+      if (escolha) {
+        feitos++;
+        if (escolha === certa) certos++;
+        veredito.textContent = escolha === certa ? 'Acertou.' : 'Não foi dessa vez.';
+        veredito.className = 'ex-veredito ' + (escolha === certa ? 'acertou' : 'errou');
+      }
+    });
+    var placar = $('#treino-placar');
+    if (placar) {
+      placar.textContent = feitos
+        ? 'Você fez ' + feitos + ' de ' + exercicios.length + ' e acertou ' + certos + '.' + (feitos === exercicios.length ? (certos >= 8 ? ' Ótimo olho. Agora treine no simulador.' : ' Releia o guia direto e tente de novo amanhã.') : '')
+        : 'Nenhum exercício feito ainda.';
+    }
+    var ok = $('[data-ok-treino]');
+    if (ok) ok.textContent = feitos === exercicios.length && exercicios.length ? '✓' : '';
+  }
+  doc.addEventListener('click', function (e) {
+    var b = e.target.closest('.ex-opcao');
+    if (!b || b.disabled) return;
+    var ex = b.closest('.exercicio');
+    var r = respostasTreino();
+    r[ex.dataset.exercicio] = b.dataset.op;
+    DT.store.gravar(CHAVE_TREINO, r);
+    renderTreino();
+  });
+  var reiniciarTreino = $('#treino-reiniciar');
+  if (reiniciarTreino) reiniciarTreino.addEventListener('click', function () {
+    DT.store.gravar(CHAVE_TREINO, {});
+    renderTreino();
+    global.scrollTo(0, 0);
+  });
+
   /* ---------- Início ---------- */
+  renderTreino();
   renderProgresso();
   renderQuiz();
   mostrar(false);
