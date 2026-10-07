@@ -511,7 +511,7 @@ body.pip-corpo .dta { max-width: none; }
 /* No celular, as figuras são mais largas que a tela e rolam de lado dentro da caixa. */
 @media (max-width: 580px) {
   figure.figura::before {
-    content: "Arraste a figura para o lado ou gire o celular →";
+    content: "Toque na figura para ampliar · ou arraste para o lado →";
     display: block;
     margin-bottom: 6px;
     font: 600 12.5px/1.3 var(--f-ui);
@@ -519,6 +519,20 @@ body.pip-corpo .dta { max-width: none; }
     text-align: right;
   }
 }
+/* Figura ampliada em tela cheia (celular). Na vertical, gira para usar o lado maior da tela. */
+.diagrama { cursor: zoom-in; }
+@media (min-width: 581px) { .diagrama { cursor: auto; } }
+.ampliado { position: fixed; inset: 0; z-index: 70; background: var(--folha); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.ampliado .giro { flex: none; width: 100vw; height: 100vh; padding: 52px 10px 10px; display: flex; align-items: center; justify-content: center; }
+.ampliado .giro svg { width: 100%; height: 100%; }
+.ampliado svg text { font-family: var(--f-ui); }
+.ampliado svg .t-dado { font-family: var(--f-dado); }
+@media (orientation: portrait) {
+  .ampliado .giro { width: 100vh; height: 100vw; padding: 8px 8px 8px 8px; transform: rotate(90deg); }
+}
+.dica-giro { display: none; position: absolute; top: calc(env(safe-area-inset-top, 0px) + 16px); left: 12px; margin: 0; font: 600 13px/1.2 var(--f-ui); color: var(--tinta-2); }
+@media (orientation: portrait) { .dica-giro { display: block; } }
+.fechar-ampliado { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 8px); right: 8px; z-index: 2; padding: 8px 12px; }
 @media (prefers-reduced-motion: reduce) {
   .trilha { transition: none; }
   .barra span { transition: none; }

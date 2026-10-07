@@ -328,6 +328,63 @@
     global.scrollTo(0, 0);
   });
 
+  /* ---------- Figuras no celular: ampliar e mostrar o fim do gráfico ---------- */
+  var celular = global.matchMedia ? global.matchMedia('(max-width: 580px)') : { matches: false };
+
+  function ampliar(diagrama) {
+    var svg = diagrama.querySelector('svg');
+    if (!svg) return;
+    var origem = doc.activeElement;
+    var ov = doc.createElement('div');
+    ov.className = 'ampliado';
+    ov.setAttribute('role', 'dialog');
+    ov.setAttribute('aria-modal', 'true');
+    ov.setAttribute('aria-label', svg.getAttribute('aria-label') || 'Figura ampliada');
+    var giro = doc.createElement('div');
+    giro.className = 'giro';
+    var copia = svg.cloneNode(true);
+    /* sem ids repetidos: as setas continuam usando os marcadores da figura original */
+    Array.prototype.forEach.call(copia.querySelectorAll('[id]'), function (el) { el.removeAttribute('id'); });
+    giro.appendChild(copia);
+    var fechar = doc.createElement('button');
+    fechar.type = 'button';
+    fechar.className = 'botao fechar-ampliado';
+    fechar.textContent = 'Fechar';
+    var dica = doc.createElement('p');
+    dica.className = 'dica-giro';
+    dica.textContent = 'Gire o celular para ler';
+    ov.appendChild(giro);
+    ov.appendChild(dica);
+    ov.appendChild(fechar);
+    doc.body.appendChild(ov);
+    doc.body.style.overflow = 'hidden';
+    function sair() {
+      ov.remove();
+      doc.body.style.overflow = '';
+      doc.removeEventListener('keydown', teclado);
+      if (origem && origem.focus) origem.focus({ preventScroll: true });
+    }
+    function teclado(e) { if (e.key === 'Escape') sair(); }
+    fechar.addEventListener('click', sair);
+    ov.addEventListener('click', function (e) { if (e.target !== fechar) sair(); });
+    doc.addEventListener('keydown', teclado);
+    fechar.focus();
+  }
+  doc.addEventListener('click', function (e) {
+    if (!celular.matches || e.target.closest('.ampliado')) return;
+    var d = e.target.closest('.diagrama');
+    if (d) ampliar(d);
+  });
+
+  /* nos exercícios, o que decide a resposta está nos candles mais recentes, à direita */
+  function mostrarFimDosGraficos() {
+    if (!celular.matches) return;
+    global.requestAnimationFrame(function () {
+      $$('[data-pagina="treino"] .exercicio .diagrama').forEach(function (d) { d.scrollLeft = d.scrollWidth; });
+    });
+  }
+  global.addEventListener('dt:pagina', function (e) { if (e.detail === 'treino') mostrarFimDosGraficos(); });
+
   /* ---------- Início ---------- */
   renderTreino();
   renderProgresso();

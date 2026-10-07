@@ -93,7 +93,7 @@
   <h2>Como usar este site</h2>
   <div class="passos">
     <a href="#guia"><span class="num">Passo 1</span><strong>Leia o guia direto</strong><span>Em 15 minutos: como ler o gráfico, onde entrar, onde sair e de onde vem o dinheiro, com um trade de exemplo do começo ao fim.</span></a>
-    <a href="#treino"><span class="num">Passo 2</span><strong>Treine o olho</strong><span>Dez exercícios com gráficos de verdade. Depois, opere no simulador sem dinheiro. A trilha completa fica para quando quiser se aprofundar.</span></a>
+    <a href="#treino"><span class="num">Passo 2</span><strong>Treine o olho</strong><span>Dez exercícios com correção na hora. Depois, treine a execução de ordens no simulador, que é sorteado de propósito. A trilha completa fica para quando quiser se aprofundar.</span></a>
     <a href="#copiloto"><span class="num">Passo 3</span><strong>Opere com copiloto</strong><span>Abra o copiloto ao lado da plataforma da corretora. Ele calcula a posição e trava quando o plano manda parar.</span></a>
   </div>
 
@@ -112,6 +112,714 @@
 <!-- ===================== GUIA DIRETO ===================== -->
 <section class="pagina leitura" data-pagina="guia" hidden>
 <!-- conteudo:guia -->
+  <p class="sobretitulo">Guia direto · 15 min</p>
+  <h1>Como ler o gráfico e de onde vem o dinheiro</h1>
+  <p class="lead">Um pregão, um trade, do primeiro candle ao resultado em reais: como ler o gráfico, onde entrar, onde sair, com quantos contratos e a conta que explica como alguém pode errar mais do que acertar e ainda terminar no lucro.</p>
+
+  <div class="quadro">
+    <p class="rotulo-quadro">A real, em três linhas</p>
+    <p><strong>A maioria perde.</strong> 97% de quem fez day trade de mini-índice por mais de 300 pregões perdeu dinheiro (FGV).</p>
+    <p><strong>Ninguém acerta sempre.</strong> Nem os melhores. Perder trades faz parte do trabalho.</p>
+    <p><strong>O que importa é o tamanho.</strong> Quem tenta ganhar perde pouco quando erra e ganha mais quando acerta, com disciplina. É isso que este guia ensina.</p>
+  </div>
+  <p>Aviso dado, uma vez só. Agora, ao gráfico.</p>
+
+  <h2>O pregão de exemplo</h2>
+  <p>Vamos operar o mini-índice (WIN), um contrato que sobe e desce junto com o Ibovespa e é o preferido de quem faz day trade no Brasil. Cada ponto que ele anda vale R$ 0,20 por contrato, e o preço anda de 5 em 5 pontos. Esse passo mínimo se chama <strong>tick</strong> e vale R$ 1 por contrato.</p>
+  <p>O dia é inventado, mas o desenho é clássico. Ontem o WIN fez máxima de 140.520, mínima de 139.700 e fechou em 139.950. Hoje ele abre às 9h00 em 140.000. O gráfico é de 5 minutos: cada <strong>candle</strong> (a "velinha") resume 5 minutos de negócios. O corpo vai do preço de abertura ao de fechamento, e os pavios marcam a máxima e a mínima. Verde quando fechou acima de onde abriu, vermelho quando fechou abaixo.</p>
+
+  <h2>Ler o gráfico em 4 perguntas</h2>
+  <p>Abriu o gráfico? Faça estas quatro perguntas, sempre nesta ordem. Se alguma resposta for "não sei", não tem trade.</p>
+
+  <h3>1. Pra onde o preço vai?</h3>
+  <p>Olhe os topos (os picos) e os fundos (os vales). Topos e fundos cada vez mais altos: tendência de alta. Cada vez mais baixos: tendência de baixa. Tudo embolado no mesmo lugar: mercado lateral, e o melhor é ficar de fora.</p>
+  <p>Depois olhe a <strong>VWAP</strong>, a linha do preço médio do dia, em que os preços com mais negócios pesam mais. Com o preço acima dela, quem comprou hoje está, na média, ganhando, e os compradores estão no controle. Abaixo dela, mandam os vendedores.</p>
+  <p>No nosso dia, das 9h00 às 10h05, o WIN sobe de 140.000 a 140.460 fazendo três topos e três fundos, cada um mais alto que o anterior, sempre acima da VWAP. Resposta: pra cima. Então hoje só interessa comprar. Num dia de baixa seria o contrário: só venda (no mercado futuro dá para vender primeiro e recomprar depois).</p>
+<figure class="figura">
+  <div class="diagrama">
+    <svg viewBox="0 0 680 362" role="img" aria-label="Candles de 5 minutos das 9h00 às 10h05 com a VWAP: os topos T1, T2 e T3 e os fundos F1, F2 e F3 ficam cada vez mais altos, e o preço passa a manhã toda acima da VWAP, até o topo de 140.460"><defs><marker id="fig-g-1-seta" viewBox="0 0 10 10" refX="8.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path class="f-alta" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<line x1="66" y1="294" x2="664" y2="294" class="s-linha" stroke-width="1"/>
+<text x="60" y="298" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="66" y1="239.7" x2="664" y2="239.7" class="s-linha" stroke-width="1"/>
+<text x="60" y="243.7" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="66" y1="185.4" x2="664" y2="185.4" class="s-linha" stroke-width="1"/>
+<text x="60" y="189.4" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="66" y1="131.1" x2="664" y2="131.1" class="s-linha" stroke-width="1"/>
+<text x="60" y="135.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="66" y1="76.9" x2="664" y2="76.9" class="s-linha" stroke-width="1"/>
+<text x="60" y="80.9" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.400</text>
+<text x="84" y="352" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<text x="246" y="352" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<text x="408" y="352" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<text x="664" y="352" class="f-tinta3" font-size="12" text-anchor="end">candles de <tspan class="t-dado">5</tspan> min</text>
+<path d="M84,292.2 L111,284 L138,277.6 L165,274.7 L192,273 L219,270.5 L246,267.3 L273,264.3 L300,262.5 L327,261.1 L354,257.5 L381,251.1 L408,242.6 L435,233.1" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="7 4"/>
+<path d="M84,315.7 L138,239.7 L192,261.4 L273,207.1 L327,237 L435,44.3" class="f-nenhum s-cobalto" stroke-width="2" stroke-opacity="0.55"/>
+<line x1="84" y1="277.7" x2="84" y2="315.7" class="s-alta" stroke-width="1.5"/>
+<rect x="76.5" y="283.1" width="15" height="10.9" class="f-alta"/>
+<line x1="111" y1="256" x2="111" y2="285.9" class="s-alta" stroke-width="1.5"/>
+<rect x="103.5" y="261.4" width="15" height="21.7" class="f-alta"/>
+<line x1="138" y1="239.7" x2="138" y2="266.9" class="s-alta" stroke-width="1.5"/>
+<rect x="130.5" y="245.1" width="15" height="16.3" class="f-alta"/>
+<line x1="165" y1="242.4" x2="165" y2="258.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="157.5" y="245.1" width="15" height="10.9" class="f-baixa"/>
+<line x1="192" y1="247.9" x2="192" y2="261.4" class="s-alta" stroke-width="1.5"/>
+<rect x="184.5" y="253.3" width="15" height="2.7" class="f-alta"/>
+<line x1="219" y1="231.6" x2="219" y2="256" class="s-alta" stroke-width="1.5"/>
+<rect x="211.5" y="237" width="15" height="16.3" class="f-alta"/>
+<line x1="246" y1="215.3" x2="246" y2="239.7" class="s-alta" stroke-width="1.5"/>
+<rect x="238.5" y="220.7" width="15" height="16.3" class="f-alta"/>
+<line x1="273" y1="207.1" x2="273" y2="226.1" class="s-alta" stroke-width="1.5"/>
+<rect x="265.5" y="218" width="15" height="2.7" class="f-alta"/>
+<line x1="300" y1="215.3" x2="300" y2="231.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="292.5" y="218" width="15" height="10.9" class="f-baixa"/>
+<line x1="327" y1="220.7" x2="327" y2="237" class="s-alta" stroke-width="1.5"/>
+<rect x="319.5" y="226.1" width="15" height="2.7" class="f-alta"/>
+<line x1="354" y1="188.1" x2="354" y2="228.9" class="s-alta" stroke-width="1.5"/>
+<rect x="346.5" y="193.6" width="15" height="32.6" class="f-alta"/>
+<line x1="381" y1="150.1" x2="381" y2="199" class="s-alta" stroke-width="1.5"/>
+<rect x="373.5" y="158.3" width="15" height="35.3" class="f-alta"/>
+<line x1="408" y1="112.1" x2="408" y2="163.7" class="s-alta" stroke-width="1.5"/>
+<rect x="400.5" y="123" width="15" height="35.3" class="f-alta"/>
+<line x1="435" y1="44.3" x2="435" y2="128.4" class="s-alta" stroke-width="1.5"/>
+<rect x="427.5" y="114.9" width="15" height="8.1" class="f-alta"/>
+<circle cx="84" cy="315.7" r="4" class="f-cobalto"/>
+<text x="84" y="335.7" class="f-cobalto s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700" text-anchor="middle">F1</text>
+<circle cx="138" cy="239.7" r="4" class="f-cobalto"/>
+<text x="138" y="229.7" class="f-cobalto s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700" text-anchor="middle">T1</text>
+<circle cx="192" cy="261.4" r="4" class="f-cobalto"/>
+<text x="192" y="281.4" class="f-cobalto s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700" text-anchor="middle">F2</text>
+<circle cx="273" cy="207.1" r="4" class="f-cobalto"/>
+<text x="273" y="197.1" class="f-cobalto s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700" text-anchor="middle">T2</text>
+<circle cx="327" cy="237" r="4" class="f-cobalto"/>
+<text x="327" y="257" class="f-cobalto s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700" text-anchor="middle">F3</text>
+<circle cx="435" cy="44.3" r="4" class="f-cobalto"/>
+<text x="435" y="34.3" class="f-cobalto s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700" text-anchor="middle">T3</text>
+<text x="76" y="50" class="f-tinta" font-size="15" font-weight="700">Topos e fundos cada vez mais altos</text>
+<text x="76" y="70" class="f-tinta2" font-size="14">é assim que se reconhece uma tendência de alta</text>
+<text x="447" y="255.1" class="f-tinta2" font-size="14" font-weight="700">VWAP</text>
+<text x="447" y="271.1" class="f-tinta2" font-size="12">(preço médio do dia)</text>
+<text x="477" y="147.4" class="f-alta" font-size="14" font-weight="700">acima da VWAP:</text>
+<text x="477" y="165.4" class="f-alta" font-size="14" font-weight="700">compradores no controle</text>
+<line x1="435" y1="233.1" x2="467" y2="233.1" class="s-tinta2" stroke-width="2" stroke-dasharray="7 4" stroke-opacity="0.5"/>
+<line x1="461" y1="114.9" x2="461" y2="230.1" class="s-alta" stroke-width="1.5" marker-start="url(#fig-g-1-seta)" marker-end="url(#fig-g-1-seta)"/>
+<line x1="444" y1="114.9" x2="465" y2="114.9" class="s-alta" stroke-width="1"/>
+    </svg>
+  </div>
+  <figcaption><strong>Figura 1 · Pra onde o preço vai?</strong> Ligue os topos (T) e os fundos (F): cada um fica mais alto que o anterior, como uma escada subindo. E o preço passou a manhã inteira acima da VWAP, a linha tracejada do preço médio do dia. As duas pistas dizem a mesma coisa: hoje quem manda são os compradores.</figcaption>
+</figure>
+
+  <h3>2. Onde estão os pisos e os tetos?</h3>
+  <p>Piso é um preço onde o mercado já parou de cair; teto, onde já parou de subir. Nos livros eles se chamam suporte e resistência. Eles importam porque muita gente deixa ordens nesses preços. No nosso dia, quatro linhas importam:</p>
+  <ul>
+    <li><strong>140.520, máxima de ontem (teto).</strong> Foi até onde os compradores conseguiram chegar ontem.</li>
+    <li><strong>140.460, topo da manhã (teto).</strong> O teto mais próximo. É logo abaixo dele que vamos colocar o alvo.</li>
+    <li><strong>139.950, fechamento de ontem (piso).</strong> Se o preço voltar para baixo dele, a alta do dia perde força.</li>
+    <li><strong>VWAP (piso que anda).</strong> Ela se move ao longo do dia, e em dia de alta os recuos costumam parar perto dela.</li>
+  </ul>
+  <p>Trate cada linha como uma faixa de alguns ticks: o preço raramente respeita o número exato. E use as linhas para medir quanto espaço o preço tem até a próxima parede: é esse espaço que vai dizer se o alvo cabe.</p>
+<figure class="figura">
+  <div class="diagrama">
+    <svg viewBox="0 0 680 370" role="img" aria-label="O mesmo gráfico das 9h00 às 10h05 com quatro linhas: máxima de ontem em 140.520 e topo da manhã em 140.460 como tetos; fechamento de ontem em 139.950 como piso; e a VWAP como piso que anda">
+<line x1="66" y1="340" x2="452" y2="340" class="s-linha" stroke-width="1"/>
+<text x="60" y="344" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.900</text>
+<line x1="66" y1="291.2" x2="452" y2="291.2" class="s-linha" stroke-width="1"/>
+<text x="60" y="295.2" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="66" y1="242.4" x2="452" y2="242.4" class="s-linha" stroke-width="1"/>
+<text x="60" y="246.4" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="66" y1="193.6" x2="452" y2="193.6" class="s-linha" stroke-width="1"/>
+<text x="60" y="197.6" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="66" y1="144.8" x2="452" y2="144.8" class="s-linha" stroke-width="1"/>
+<text x="60" y="148.8" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="66" y1="96.1" x2="452" y2="96.1" class="s-linha" stroke-width="1"/>
+<text x="60" y="100.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.400</text>
+<line x1="66" y1="47.3" x2="452" y2="47.3" class="s-linha" stroke-width="1"/>
+<text x="60" y="51.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.500</text>
+<text x="82" y="360" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<text x="226" y="360" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<text x="370" y="360" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<line x1="66" y1="37.5" x2="452" y2="37.5" class="s-baixa" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="384" y1="66.8" x2="452" y2="66.8" class="s-baixa" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="66" y1="315.6" x2="452" y2="315.6" class="s-alta" stroke-width="2" stroke-dasharray="7 5"/>
+<path d="M82,289.6 L106,282.3 L130,276.4 L154,273.9 L178,272.3 L202,270.1 L226,267.2 L250,264.5 L274,262.9 L298,261.7 L322,258.4 L346,252.7 L370,245 L394,236.5" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="7 4"/>
+<line x1="82" y1="276.6" x2="82" y2="310.7" class="s-alta" stroke-width="1.5"/>
+<rect x="75.5" y="281.5" width="13" height="9.8" class="f-alta"/>
+<line x1="106" y1="257.1" x2="106" y2="283.9" class="s-alta" stroke-width="1.5"/>
+<rect x="99.5" y="261.9" width="13" height="19.5" class="f-alta"/>
+<line x1="130" y1="242.4" x2="130" y2="266.8" class="s-alta" stroke-width="1.5"/>
+<rect x="123.5" y="247.3" width="13" height="14.6" class="f-alta"/>
+<line x1="154" y1="244.9" x2="154" y2="259.5" class="s-baixa" stroke-width="1.5"/>
+<rect x="147.5" y="247.3" width="13" height="9.8" class="f-baixa"/>
+<line x1="178" y1="249.7" x2="178" y2="261.9" class="s-alta" stroke-width="1.5"/>
+<rect x="171.5" y="254.6" width="13" height="2.4" class="f-alta"/>
+<line x1="202" y1="235.1" x2="202" y2="257.1" class="s-alta" stroke-width="1.5"/>
+<rect x="195.5" y="240" width="13" height="14.6" class="f-alta"/>
+<line x1="226" y1="220.5" x2="226" y2="242.4" class="s-alta" stroke-width="1.5"/>
+<rect x="219.5" y="225.3" width="13" height="14.6" class="f-alta"/>
+<line x1="250" y1="213.2" x2="250" y2="230.2" class="s-alta" stroke-width="1.5"/>
+<rect x="243.5" y="222.9" width="13" height="2.4" class="f-alta"/>
+<line x1="274" y1="220.5" x2="274" y2="235.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="267.5" y="222.9" width="13" height="9.8" class="f-baixa"/>
+<line x1="298" y1="225.3" x2="298" y2="240" class="s-alta" stroke-width="1.5"/>
+<rect x="291.5" y="230.2" width="13" height="2.4" class="f-alta"/>
+<line x1="322" y1="196.1" x2="322" y2="232.7" class="s-alta" stroke-width="1.5"/>
+<rect x="315.5" y="201" width="13" height="29.3" class="f-alta"/>
+<line x1="346" y1="161.9" x2="346" y2="205.8" class="s-alta" stroke-width="1.5"/>
+<rect x="339.5" y="169.2" width="13" height="31.7" class="f-alta"/>
+<line x1="370" y1="127.8" x2="370" y2="174.1" class="s-alta" stroke-width="1.5"/>
+<rect x="363.5" y="137.5" width="13" height="31.7" class="f-alta"/>
+<line x1="394" y1="66.8" x2="394" y2="142.4" class="s-alta" stroke-width="1.5"/>
+<rect x="387.5" y="130.2" width="13" height="7.3" class="f-alta"/>
+<text x="462" y="15.5" class="f-baixa" font-size="14" font-weight="700">teto · máxima de ontem</text>
+<text x="462" y="32.5" class="f-tinta2" font-size="12"><tspan class="t-dado">140.520</tspan> · ontem parou aqui</text>
+<line x1="452" y1="37.5" x2="458" y2="37.5" class="s-baixa" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="462" y="82.8" class="f-baixa" font-size="14" font-weight="700">teto · topo da manhã</text>
+<text x="462" y="99.8" class="f-tinta2" font-size="12"><tspan class="t-dado">140.460</tspan> · hoje parou aqui</text>
+<line x1="452" y1="66.8" x2="458" y2="66.8" class="s-baixa" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="462" y="331.6" class="f-alta" font-size="14" font-weight="700">piso · fechamento de ontem</text>
+<text x="462" y="348.6" class="f-tinta2" font-size="12"><tspan class="t-dado">139.950</tspan> · último preço de ontem</text>
+<line x1="452" y1="315.6" x2="458" y2="315.6" class="s-alta" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="398" y1="236.5" x2="458" y2="236.5" class="s-tinta2" stroke-width="2" stroke-dasharray="7 4" stroke-opacity="0.5"/>
+<text x="462" y="231.5" class="f-tinta" font-size="14" font-weight="700">piso que anda · VWAP</text>
+<text x="462" y="248.5" class="f-tinta2" font-size="12">sobe junto com o preço do dia</text>
+<text x="94" y="308.6" class="f-alta" font-size="12" font-weight="600">o piso segurou</text>
+<text x="76" y="116.5" class="f-tinta2 s-folha" font-size="13" stroke-width="4" stroke-linejoin="round" paint-order="stroke">o preço tende a travar nos tetos</text>
+<text x="76" y="133.5" class="f-tinta2 s-folha" font-size="13" stroke-width="4" stroke-linejoin="round" paint-order="stroke">e a segurar nos pisos</text>
+    </svg>
+  </div>
+  <figcaption><strong>Figura 2 · Pisos e tetos.</strong> Tetos (em vermelho) são preços onde a subida já travou; pisos (em verde), onde a queda já segurou. A VWAP é um piso que anda: sobe junto com o dia. Repare que o topo da manhã parou um pouco abaixo da máxima de ontem.</figcaption>
+</figure>
+
+  <h3>3. O preço está esticado ou no ponto?</h3>
+  <p>Aqui mora um dos erros mais caros de quem está começando: ver o preço disparar e comprar lá em cima, com medo de ficar de fora.</p>
+  <p>Às 10h05 o WIN chegou a 140.460, mais de 300 pontos acima da VWAP e da <strong>MME 20</strong> (média móvel exponencial de 20 candles: uma linha que acompanha o preço de forma suavizada e dá mais peso aos candles recentes). Preço longe das médias está esticado, como um elástico puxado, e é comum ele voltar um pouco antes de seguir. Quem comprou lá em cima viu o preço cair 370 pontos nos 35 minutos seguintes: R$ 74 de prejuízo por contrato.</p>
+  <p>Quem teve paciência pegou um preço muito melhor. Das 10h05 às 10h40 o preço recuou até 140.090 e encostou na região da VWAP e da MME 20. Agora sim, no ponto. Em tendência de alta, não persiga o preço: espere ele voltar até as médias.</p>
+<figure class="figura">
+  <div class="diagrama">
+    <svg viewBox="0 0 680 356" role="img" aria-label="Gráfico das 9h00 às 10h40 com a VWAP e a MME 20: às 10h05 o topo de 140.460 fica mais de 300 pontos acima das médias, esticado; às 10h40 o preço recua até 140.090, encostado nas médias, no ponto de esperar a compra"><defs><marker id="fig-g-3-seta" viewBox="0 0 10 10" refX="8.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path class="f-cobalto" d="M0,0 L10,5 L0,10 z"/></marker><marker id="fig-g-3-seta-alerta" viewBox="0 0 10 10" refX="8.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path class="f-alerta" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<line x1="66" y1="285.2" x2="664" y2="285.2" class="s-linha" stroke-width="1"/>
+<text x="60" y="289.2" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="66" y1="234.1" x2="664" y2="234.1" class="s-linha" stroke-width="1"/>
+<text x="60" y="238.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="66" y1="183.1" x2="664" y2="183.1" class="s-linha" stroke-width="1"/>
+<text x="60" y="187.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="66" y1="132.1" x2="664" y2="132.1" class="s-linha" stroke-width="1"/>
+<text x="60" y="136.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="66" y1="81" x2="664" y2="81" class="s-linha" stroke-width="1"/>
+<text x="60" y="85" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.400</text>
+<line x1="66" y1="30" x2="664" y2="30" class="s-linha" stroke-width="1"/>
+<text x="60" y="34" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.500</text>
+<text x="82" y="346" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<text x="202" y="346" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<text x="322" y="346" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<text x="442" y="346" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<text x="664" y="346" class="f-tinta3" font-size="12" text-anchor="end">candles de <tspan class="t-dado">5</tspan> min</text>
+<rect x="332" y="50.4" width="20" height="172.3" class="f-alerta-fundo s-alerta" stroke-width="1.5" stroke-dasharray="4 3" rx="3"/>
+<path d="M82,283.5 L102,275.8 L122,269.7 L142,267.1 L162,265.4 L182,263.1 L202,260.1 L222,257.2 L242,255.6 L262,254.3 L282,250.8 L302,244.9 L322,236.9 L342,227.9 L362,225.3 L382,224.5 L402,224.2 L422,224 L442,223.9 L462,223.8 L482,223.9" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="7 4"/>
+<path d="M82,307.3 L102,302.3 L122,296.3 L142,291.8 L162,287.5 L182,282.2 L202,275.9 L222,270 L242,265.6 L262,261.4 L282,254.7 L302,245.4 L322,233.9 L342,222.7 L362,217.5 L382,216.7 L402,216.6 L422,216.1 L442,216.9 L462,217 L482,218.2" class="f-nenhum s-alerta" stroke-width="2.5"/>
+<line x1="82" y1="269.9" x2="82" y2="305.6" class="s-alta" stroke-width="1.5"/>
+<rect x="76" y="275" width="12" height="10.2" class="f-alta"/>
+<line x1="102" y1="249.4" x2="102" y2="277.5" class="s-alta" stroke-width="1.5"/>
+<rect x="96" y="254.6" width="12" height="20.4" class="f-alta"/>
+<line x1="122" y1="234.1" x2="122" y2="259.7" class="s-alta" stroke-width="1.5"/>
+<rect x="116" y="239.2" width="12" height="15.3" class="f-alta"/>
+<line x1="142" y1="236.7" x2="142" y2="252" class="s-baixa" stroke-width="1.5"/>
+<rect x="136" y="239.2" width="12" height="10.2" class="f-baixa"/>
+<line x1="162" y1="241.8" x2="162" y2="254.6" class="s-alta" stroke-width="1.5"/>
+<rect x="156" y="246.9" width="12" height="2.6" class="f-alta"/>
+<line x1="182" y1="226.5" x2="182" y2="249.4" class="s-alta" stroke-width="1.5"/>
+<rect x="176" y="231.6" width="12" height="15.3" class="f-alta"/>
+<line x1="202" y1="211.2" x2="202" y2="234.1" class="s-alta" stroke-width="1.5"/>
+<rect x="196" y="216.3" width="12" height="15.3" class="f-alta"/>
+<line x1="222" y1="203.5" x2="222" y2="221.4" class="s-alta" stroke-width="1.5"/>
+<rect x="216" y="213.7" width="12" height="2.6" class="f-alta"/>
+<line x1="242" y1="211.2" x2="242" y2="226.5" class="s-baixa" stroke-width="1.5"/>
+<rect x="236" y="213.7" width="12" height="10.2" class="f-baixa"/>
+<line x1="262" y1="216.3" x2="262" y2="231.6" class="s-alta" stroke-width="1.5"/>
+<rect x="256" y="221.4" width="12" height="2.6" class="f-alta"/>
+<line x1="282" y1="185.7" x2="282" y2="223.9" class="s-alta" stroke-width="1.5"/>
+<rect x="276" y="190.8" width="12" height="30.6" class="f-alta"/>
+<line x1="302" y1="149.9" x2="302" y2="195.9" class="s-alta" stroke-width="1.5"/>
+<rect x="296" y="157.6" width="12" height="33.2" class="f-alta"/>
+<line x1="322" y1="114.2" x2="322" y2="162.7" class="s-alta" stroke-width="1.5"/>
+<rect x="316" y="124.4" width="12" height="33.2" class="f-alta"/>
+<line x1="342" y1="50.4" x2="342" y2="129.5" class="s-alta" stroke-width="1.5"/>
+<rect x="336" y="116.8" width="12" height="7.7" class="f-alta"/>
+<line x1="362" y1="111.7" x2="362" y2="172.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="356" y="116.8" width="12" height="51" class="f-baixa"/>
+<line x1="382" y1="162.7" x2="382" y2="213.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="376" y="167.8" width="12" height="40.8" class="f-baixa"/>
+<line x1="402" y1="198.4" x2="402" y2="221.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="396" y="208.6" width="12" height="7.7" class="f-baixa"/>
+<line x1="422" y1="206.1" x2="422" y2="221.4" class="s-alta" stroke-width="1.5"/>
+<rect x="416" y="211.2" width="12" height="5.1" class="f-alta"/>
+<line x1="442" y1="206.1" x2="442" y2="229" class="s-baixa" stroke-width="1.5"/>
+<rect x="436" y="211.2" width="12" height="12.8" class="f-baixa"/>
+<line x1="462" y1="213.7" x2="462" y2="229" class="s-alta" stroke-width="1.5"/>
+<rect x="456" y="218.8" width="12" height="5.1" class="f-alta"/>
+<line x1="482" y1="216.3" x2="482" y2="239.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="476" y="218.8" width="12" height="10.2" class="f-baixa"/>
+<ellipse cx="482" cy="228.7" rx="17" ry="19.5" class="f-nenhum s-cobalto" stroke-width="2.5"/>
+<line x1="492" y1="43" x2="518" y2="43" class="s-alerta" stroke-width="2.5"/>
+<text x="524" y="48" class="f-tinta2" font-size="13" font-weight="600">MME 20</text>
+<line x1="588" y1="43" x2="614" y2="43" class="s-tinta2" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="620" y="48" class="f-tinta2" font-size="13" font-weight="600">VWAP</text>
+<text x="312" y="52.4" class="f-tinta2 t-dado s-folha" font-size="12" stroke-width="4" stroke-linejoin="round" paint-order="stroke" text-anchor="end">10h05</text>
+<text x="312" y="70.4" class="f-alerta s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700" text-anchor="end">esticado:</text>
+<text x="312" y="88.4" class="f-alerta s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700" text-anchor="end">não compre aqui</text>
+<text x="312" y="106.4" class="f-tinta2 s-folha" font-size="12" stroke-width="4" stroke-linejoin="round" paint-order="stroke" text-anchor="end">mais de <tspan class="t-dado">300</tspan> pontos</text>
+<text x="312" y="121.4" class="f-tinta2 s-folha" font-size="12" stroke-width="4" stroke-linejoin="round" paint-order="stroke" text-anchor="end">acima das médias</text>
+<path d="M316,65.4 L330,65.4" class="f-nenhum s-alerta" stroke-width="1.5" marker-end="url(#fig-g-3-seta-alerta)"/>
+<path d="M508,230.7 L502,230.7" class="f-nenhum s-cobalto" stroke-width="1.5" marker-end="url(#fig-g-3-seta)"/>
+<text x="512" y="198.7" class="f-tinta2 t-dado s-folha" font-size="12" stroke-width="4" stroke-linejoin="round" paint-order="stroke">10h40</text>
+<text x="512" y="216.7" class="f-cobalto s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700">no ponto:</text>
+<text x="512" y="234.7" class="f-cobalto s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700">é aqui que se espera</text>
+<text x="512" y="253.7" class="f-tinta2 s-folha" font-size="12" stroke-width="4" stroke-linejoin="round" paint-order="stroke">o preço voltou para</text>
+<text x="512" y="268.7" class="f-tinta2 s-folha" font-size="12" stroke-width="4" stroke-linejoin="round" paint-order="stroke">perto das médias</text>
+    </svg>
+  </div>
+  <figcaption><strong>Figura 3 · Esticado × no ponto.</strong> Às 10h05 o preço estava longe demais das médias (a faixa amarela): comprar ali é pagar caro, bem na hora em que muita gente embolsa o lucro. Às 10h40 ele voltou para perto da VWAP e da MME 20 (a linha contínua). A tendência continua de alta, e agora o preço está num lugar bom para esperar o sinal.</figcaption>
+</figure>
+
+  <h3>4. Apareceu o sinal?</h3>
+  <p>Preço no ponto ainda não basta, porque o recuo pode virar queda. Você espera uma prova de que os compradores voltaram: um <strong>candle de retomada</strong>, verde, que fecha perto da máxima logo depois do recuo.</p>
+  <p>No nosso dia ele aparece às 10h45: abriu em 140.110, chegou a cair até 140.095, subiu até 140.200 e fechou em 140.190, quase na máxima. Os compradores ganharam a briga desses cinco minutos.</p>
+  <p>A entrada fica 1 tick acima da máxima desse candle: 140.200 + 5 = <strong>140.205</strong>. Você deixa uma ordem de compra programada nesse preço. Se o preço subir até ela, a compra é executada; se não subir, você fica de fora sem gastar nada. Às 10h50 o candle seguinte passa da máxima e você está comprado.</p>
+<figure class="figura">
+  <div class="diagrama">
+    <svg viewBox="0 0 680 360" role="img" aria-label="Zoom nos candles das 10h20 às 10h50: o recuo faz fundo em 140.090 às 10h40; o candle verde das 10h45 abre em 140.110, vai até 140.200, desce até 140.095 e fecha em 140.190; a compra fica em 140.205, 1 tick acima da máxima, e é executada às 10h50">
+<line x1="66" y1="276.4" x2="410" y2="276.4" class="s-linha" stroke-width="1"/>
+<text x="60" y="280.4" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="66" y1="209.5" x2="410" y2="209.5" class="s-linha" stroke-width="1"/>
+<text x="60" y="213.5" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.150</text>
+<line x1="66" y1="142.5" x2="410" y2="142.5" class="s-linha" stroke-width="1"/>
+<text x="60" y="146.5" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="66" y1="75.6" x2="410" y2="75.6" class="s-linha" stroke-width="1"/>
+<text x="60" y="79.6" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.250</text>
+<text x="96" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h20</text>
+<text x="188" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<text x="280" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h40</text>
+<text x="372" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h50</text>
+<path d="M96,250.3 L142,249.7 L188,249.5 L234,249.4 L280,249.6 L326,248 L372,243.5" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="7 4" stroke-opacity="0.7"/>
+<path d="M96,230.5 L142,229.1 L188,231.1 L234,231.6 L280,234.6 L326,227.1 L372,214.6" class="f-nenhum s-alerta" stroke-width="2.5" stroke-opacity="0.7"/>
+<rect x="309" y="121.8" width="34" height="171.3" class="f-realce s-cobalto" rx="5" stroke-width="2"/>
+<line x1="264" y1="289.8" x2="410" y2="289.8" class="s-tinta3" stroke-width="1.5"/>
+<text x="258" y="294.8" class="f-tinta2" font-size="13" text-anchor="end">fundo do recuo <tspan class="t-dado">140.090</tspan></text>
+<line x1="78" y1="37" x2="104" y2="37" class="s-alerta" stroke-width="2.5"/>
+<text x="110" y="42" class="f-tinta2" font-size="13" font-weight="600">MME 20</text>
+<line x1="174" y1="37" x2="200" y2="37" class="s-tinta2" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="206" y="42" class="f-tinta2" font-size="13" font-weight="600">VWAP</text>
+<line x1="96" y1="182.7" x2="96" y2="243" class="s-baixa" stroke-width="1.5"/>
+<rect x="86" y="209.5" width="20" height="20.1" class="f-baixa"/>
+<line x1="142" y1="202.8" x2="142" y2="243" class="s-alta" stroke-width="1.5"/>
+<rect x="132" y="216.2" width="20" height="13.4" class="f-alta"/>
+<line x1="188" y1="202.8" x2="188" y2="263" class="s-baixa" stroke-width="1.5"/>
+<rect x="178" y="216.2" width="20" height="33.5" class="f-baixa"/>
+<line x1="234" y1="222.9" x2="234" y2="263" class="s-alta" stroke-width="1.5"/>
+<rect x="224" y="236.3" width="20" height="13.4" class="f-alta"/>
+<line x1="280" y1="229.6" x2="280" y2="289.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="270" y="236.3" width="20" height="26.8" class="f-baixa"/>
+<line x1="326" y1="142.5" x2="326" y2="283.1" class="s-alta" stroke-width="1.5"/>
+<rect x="316" y="155.9" width="20" height="107.1" class="f-alta"/>
+<line x1="372" y1="82.3" x2="372" y2="169.3" class="s-alta" stroke-width="1.5"/>
+<rect x="362" y="95.7" width="20" height="60.3" class="f-alta"/>
+<line x1="306" y1="135.8" x2="410" y2="135.8" class="s-cobalto" stroke-width="2.5"/>
+<text x="300" y="131.8" class="f-cobalto s-folha" font-size="14" stroke-width="4" stroke-linejoin="round" paint-order="stroke" font-weight="700" text-anchor="end">entrada <tspan class="t-dado">140.205</tspan></text>
+<text x="300" y="149.8" class="f-cobalto s-folha" font-size="13" stroke-width="4" stroke-linejoin="round" paint-order="stroke" text-anchor="end"><tspan class="t-dado">1</tspan> tick acima da máxima</text>
+<circle cx="372" cy="135.8" r="5" class="f-cobalto s-folha" stroke-width="2"/>
+<text x="372" y="70.3" class="f-cobalto" font-size="13" font-weight="700" text-anchor="middle"><tspan class="t-dado">10h50</tspan>: comprou</text>
+<text x="326" y="313.1" class="f-cobalto" font-size="13" font-weight="700" text-anchor="middle">retomada</text>
+<rect x="430" y="22" width="246" height="330" class="f-papel s-linha" rx="6" stroke-width="1.5"/>
+<text x="444" y="46" class="f-tinta" font-size="14" font-weight="700">Raio-x do candle das <tspan class="t-dado">10h45</tspan></text>
+<line x1="470" y1="80" x2="470" y2="272" class="s-alta" stroke-width="2.5"/>
+<rect x="454" y="98.3" width="32" height="146.3" class="f-alta"/>
+<line x1="474" y1="80" x2="498" y2="80" class="s-tinta3" stroke-width="1"/>
+<text x="504" y="85" class="f-tinta2" font-size="13">máxima</text>
+<text x="662" y="85" class="f-tinta t-dado" font-size="14" text-anchor="end">140.200</text>
+<line x1="488" y1="98.3" x2="498" y2="98.3" class="s-tinta3" stroke-width="1"/>
+<text x="504" y="103.3" class="f-tinta2" font-size="13">fechamento</text>
+<text x="662" y="103.3" class="f-tinta t-dado" font-size="14" text-anchor="end">140.190</text>
+<line x1="488" y1="244.6" x2="498" y2="244.6" class="s-tinta3" stroke-width="1"/>
+<text x="504" y="249.6" class="f-tinta2" font-size="13">abertura</text>
+<text x="662" y="249.6" class="f-tinta t-dado" font-size="14" text-anchor="end">140.110</text>
+<line x1="474" y1="272" x2="498" y2="272" class="s-tinta3" stroke-width="1"/>
+<text x="504" y="277" class="f-tinta2" font-size="13">mínima</text>
+<text x="662" y="277" class="f-tinta t-dado" font-size="14" text-anchor="end">140.095</text>
+<text x="504" y="176.4" class="f-alta" font-size="12" font-weight="600">corpo verde e grande</text>
+<line x1="442" y1="292" x2="664" y2="292" class="s-linha" stroke-width="1"/>
+<text x="444" y="314" class="f-cobalto" font-size="13" font-weight="700">entrada = máxima + <tspan class="t-dado">1</tspan> tick</text>
+<text x="444" y="335" class="f-cobalto" font-size="13"><tspan class="t-dado">140.200</tspan> + <tspan class="t-dado">5</tspan> = <tspan class="t-dado">140.205</tspan></text>
+    </svg>
+  </div>
+  <figcaption><strong>Figura 4 · O sinal de entrada.</strong> Depois de encostar nas médias, aparece um candle verde forte que fecha lá em cima: é o candle de retomada, sinal de que os compradores voltaram. A ordem de compra fica 1 tick (5 pontos) acima da máxima dele, em 140.205. Se o preço não passar dali, você não entra; às 10h50 ele passou.</figcaption>
+</figure>
+
+  <h2>O trade completo, passo a passo</h2>
+  <p>Antes de entrar, você decide três coisas: onde sai se der errado, onde sai se der certo e com quantos contratos. Sempre antes, porque depois de entrar quem decide é a emoção.</p>
+  <ol>
+    <li><strong>Stop em 140.085.</strong> O stop é a ordem automática que tira você do trade se o preço for contra. Ele fica 1 tick abaixo do fundo do recuo (140.090): se o preço perder esse fundo, a ideia estava errada. Distância até a entrada: 140.205 − 140.085 = 120 pontos. Esse é o seu risco, que se chama 1R.</li>
+    <li><strong>Alvo em 140.445.</strong> O alvo é o preço onde você embolsa o lucro. A regra é mirar pelo menos o dobro do risco, o 2R: 140.205 + 2 × 120 = 140.445. Ele cabe logo abaixo do teto de 140.460, porque vale mais sair um pouco antes da parede do que torcer para o preço atravessá-la. Se o teto estivesse mais perto do que 2R, não teria trade.</li>
+    <li><strong>Quantidade: 3 contratos.</strong> Com R$ 10.000 na conta e a regra de arriscar no máximo 1% por trade, você aceita perder até R$ 100 aqui. Entram também os custos por contrato, somando entrada e saída: R$ 0,50 de taxas e R$ 1,00 de <strong>derrapagem</strong> (1 tick), a diferença entre o preço que você pediu e o que conseguiu de fato.</li>
+  </ol>
+  <div class="formula">Perda: 120 pts × R$ 0,20 = R$ 24,00<br>Custos: R$ 0,50 + R$ 1,00 = R$ 1,50<br>Risco por contrato = R$ 25,50<br>100 ÷ 25,50 = 3,9 → <strong>3 contratos</strong><br>Risco real: 3 × R$ 25,50 = R$ 76,50</div>
+  <p>Arredonde sempre para baixo: com 4 contratos o risco seria R$ 102 e passaria do limite.</p>
+  <p>Ordem enviada, stop e alvo registrados na plataforma, mão longe do mouse. O preço sobe, devolve um pouco, volta a subir e toca 140.445 às 11h35, sem chegar perto do stop.</p>
+<figure class="figura">
+  <div class="diagrama">
+    <svg viewBox="0 0 680 412" role="img" aria-label="O dia inteiro das 9h00 às 11h40: compra às 10h50 em 140.205, stop em 140.085 e alvo em 140.445; às 11h35 o preço chega ao alvo sem ter tocado o stop. Com 3 contratos e risco de R$ 76,50, o resultado é +240 pontos, ou +R$ 139,50">
+<line x1="66" y1="296.6" x2="548" y2="296.6" class="s-linha" stroke-width="1"/>
+<text x="60" y="300.6" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="66" y1="240.9" x2="548" y2="240.9" class="s-linha" stroke-width="1"/>
+<text x="60" y="244.9" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="66" y1="185.1" x2="548" y2="185.1" class="s-linha" stroke-width="1"/>
+<text x="60" y="189.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="66" y1="129.4" x2="548" y2="129.4" class="s-linha" stroke-width="1"/>
+<text x="60" y="133.4" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="66" y1="73.7" x2="548" y2="73.7" class="s-linha" stroke-width="1"/>
+<text x="60" y="77.7" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.400</text>
+<line x1="66" y1="18" x2="548" y2="18" class="s-linha" stroke-width="1"/>
+<text x="60" y="22" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.500</text>
+<text x="75" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<text x="249" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<text x="423" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">11h00</text>
+<text x="539" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">11h40</text>
+<path d="M75,294.7 L89.5,286.4 L104,279.7 L118.5,276.8 L133,275 L147.5,272.5 L162,269.2 L176.5,266.1 L191,264.3 L205.5,262.8 L220,259.1 L234.5,252.6 L249,243.8 L263.5,234.1 L278,231.2 L292.5,230.3 L307,230 L321.5,229.8 L336,229.7 L350.5,229.6 L365,229.7 L379.5,229 L394,227.1 L408.5,225 L423,223.1 L437.5,221.5 L452,218.8 L466.5,216.5 L481,214.4 L495.5,211.6 L510,208.2 L524.5,204.2 L539,201.5" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="7 4" stroke-opacity="0.55"/>
+<path d="M75,320.7 L89.5,315.2 L104,308.7 L118.5,303.8 L133,299.1 L147.5,293.3 L162,286.5 L176.5,280 L191,275.2 L205.5,270.6 L220,263.3 L234.5,253.2 L249,240.6 L263.5,228.4 L278,222.7 L292.5,221.8 L307,221.7 L321.5,221.2 L336,222 L350.5,222.2 L365,223.4 L379.5,220.3 L394,215.1 L408.5,208.5 L423,203.4 L437.5,197.7 L452,189.9 L466.5,183.3 L481,176 L495.5,167.6 L510,158.4 L524.5,148.8 L539,140.8" class="f-nenhum s-alerta" stroke-width="2.5" stroke-opacity="0.55"/>
+<rect x="387" y="48.6" width="161" height="133.7" class="f-alta-fundo" opacity="0.7"/>
+<rect x="387" y="182.4" width="161" height="66.9" class="f-baixa-fundo" opacity="0.7"/>
+<line x1="75" y1="279.9" x2="75" y2="318.9" class="s-alta" stroke-width="1.5"/>
+<rect x="70.5" y="285.4" width="9" height="11.1" class="f-alta"/>
+<line x1="89.5" y1="257.6" x2="89.5" y2="288.2" class="s-alta" stroke-width="1.5"/>
+<rect x="85" y="263.1" width="9" height="22.3" class="f-alta"/>
+<line x1="104" y1="240.9" x2="104" y2="268.7" class="s-alta" stroke-width="1.5"/>
+<rect x="99.5" y="246.4" width="9" height="16.7" class="f-alta"/>
+<line x1="118.5" y1="243.6" x2="118.5" y2="260.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="114" y="246.4" width="9" height="11.1" class="f-baixa"/>
+<line x1="133" y1="249.2" x2="133" y2="263.1" class="s-alta" stroke-width="1.5"/>
+<rect x="128.5" y="254.8" width="9" height="2.8" class="f-alta"/>
+<line x1="147.5" y1="232.5" x2="147.5" y2="257.6" class="s-alta" stroke-width="1.5"/>
+<rect x="143" y="238.1" width="9" height="16.7" class="f-alta"/>
+<line x1="162" y1="215.8" x2="162" y2="240.9" class="s-alta" stroke-width="1.5"/>
+<rect x="157.5" y="221.4" width="9" height="16.7" class="f-alta"/>
+<line x1="176.5" y1="207.4" x2="176.5" y2="226.9" class="s-alta" stroke-width="1.5"/>
+<rect x="172" y="218.6" width="9" height="2.8" class="f-alta"/>
+<line x1="191" y1="215.8" x2="191" y2="232.5" class="s-baixa" stroke-width="1.5"/>
+<rect x="186.5" y="218.6" width="9" height="11.1" class="f-baixa"/>
+<line x1="205.5" y1="221.4" x2="205.5" y2="238.1" class="s-alta" stroke-width="1.5"/>
+<rect x="201" y="226.9" width="9" height="2.8" class="f-alta"/>
+<line x1="220" y1="187.9" x2="220" y2="229.7" class="s-alta" stroke-width="1.5"/>
+<rect x="215.5" y="193.5" width="9" height="33.4" class="f-alta"/>
+<line x1="234.5" y1="148.9" x2="234.5" y2="199.1" class="s-alta" stroke-width="1.5"/>
+<rect x="230" y="157.3" width="9" height="36.2" class="f-alta"/>
+<line x1="249" y1="109.9" x2="249" y2="162.9" class="s-alta" stroke-width="1.5"/>
+<rect x="244.5" y="121.1" width="9" height="36.2" class="f-alta"/>
+<line x1="263.5" y1="40.3" x2="263.5" y2="126.6" class="s-alta" stroke-width="1.5"/>
+<rect x="259" y="112.7" width="9" height="8.4" class="f-alta"/>
+<line x1="278" y1="107.1" x2="278" y2="174" class="s-baixa" stroke-width="1.5"/>
+<rect x="273.5" y="112.7" width="9" height="55.7" class="f-baixa"/>
+<line x1="292.5" y1="162.9" x2="292.5" y2="218.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="288" y="168.4" width="9" height="44.6" class="f-baixa"/>
+<line x1="307" y1="201.9" x2="307" y2="226.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="302.5" y="213" width="9" height="8.4" class="f-baixa"/>
+<line x1="321.5" y1="210.2" x2="321.5" y2="226.9" class="s-alta" stroke-width="1.5"/>
+<rect x="317" y="215.8" width="9" height="5.6" class="f-alta"/>
+<line x1="336" y1="210.2" x2="336" y2="235.3" class="s-baixa" stroke-width="1.5"/>
+<rect x="331.5" y="215.8" width="9" height="13.9" class="f-baixa"/>
+<line x1="350.5" y1="218.6" x2="350.5" y2="235.3" class="s-alta" stroke-width="1.5"/>
+<rect x="346" y="224.1" width="9" height="5.6" class="f-alta"/>
+<line x1="365" y1="221.4" x2="365" y2="246.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="360.5" y="224.1" width="9" height="11.1" class="f-baixa"/>
+<line x1="379.5" y1="185.1" x2="379.5" y2="243.6" class="s-alta" stroke-width="1.5"/>
+<rect x="375" y="190.7" width="9" height="44.6" class="f-alta"/>
+<line x1="394" y1="160.1" x2="394" y2="196.3" class="s-alta" stroke-width="1.5"/>
+<rect x="389.5" y="165.6" width="9" height="25.1" class="f-alta"/>
+<line x1="408.5" y1="140.6" x2="408.5" y2="171.2" class="s-alta" stroke-width="1.5"/>
+<rect x="404" y="146.1" width="9" height="19.5" class="f-alta"/>
+<line x1="423" y1="132.2" x2="423" y2="160.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="418.5" y="146.1" width="9" height="8.4" class="f-baixa"/>
+<line x1="437.5" y1="137.8" x2="437.5" y2="165.6" class="s-alta" stroke-width="1.5"/>
+<rect x="433" y="143.4" width="9" height="11.1" class="f-alta"/>
+<line x1="452" y1="109.9" x2="452" y2="148.9" class="s-alta" stroke-width="1.5"/>
+<rect x="447.5" y="115.5" width="9" height="27.9" class="f-alta"/>
+<line x1="466.5" y1="98.8" x2="466.5" y2="126.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="462" y="115.5" width="9" height="5.6" class="f-baixa"/>
+<line x1="481" y1="104.4" x2="481" y2="132.2" class="s-alta" stroke-width="1.5"/>
+<rect x="476.5" y="107.1" width="9" height="13.9" class="f-alta"/>
+<line x1="495.5" y1="82.1" x2="495.5" y2="112.7" class="s-alta" stroke-width="1.5"/>
+<rect x="491" y="87.6" width="9" height="19.5" class="f-alta"/>
+<line x1="510" y1="62.6" x2="510" y2="96" class="s-alta" stroke-width="1.5"/>
+<rect x="505.5" y="70.9" width="9" height="16.7" class="f-alta"/>
+<line x1="524.5" y1="45.9" x2="524.5" y2="76.5" class="s-alta" stroke-width="1.5"/>
+<rect x="520" y="57" width="9" height="13.9" class="f-alta"/>
+<line x1="539" y1="51.4" x2="539" y2="73.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="534.5" y="57" width="9" height="8.4" class="f-baixa"/>
+<line x1="387" y1="48.6" x2="548" y2="48.6" class="s-alta" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="558" y="44.6" class="f-alta" font-size="14" font-weight="700">alvo (<tspan class="t-dado">2</tspan>R)</text>
+<text x="558" y="61.6" class="f-alta t-dado" font-size="13">140.445</text>
+<line x1="387" y1="182.4" x2="548" y2="182.4" class="s-cobalto" stroke-width="2"/>
+<text x="558" y="178.4" class="f-cobalto" font-size="14" font-weight="700">entrada</text>
+<text x="558" y="195.4" class="f-cobalto t-dado" font-size="13">140.205</text>
+<line x1="387" y1="249.2" x2="548" y2="249.2" class="s-baixa" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="558" y="245.2" class="f-baixa" font-size="14" font-weight="700">stop</text>
+<text x="558" y="262.2" class="f-baixa t-dado" font-size="13">140.085</text>
+<text x="393" y="86" class="f-alta" font-size="13" font-weight="700" text-anchor="start">+<tspan class="t-dado">240</tspan> pts</text>
+<text x="542" y="236.4" class="f-baixa" font-size="13" font-weight="700" text-anchor="end">−<tspan class="t-dado">120</tspan> pts</text>
+<circle cx="394" cy="182.4" r="5" class="f-cobalto s-folha" stroke-width="2"/>
+<text x="558" y="78.6" class="f-tinta2" font-size="12">logo abaixo do</text>
+<text x="558" y="93.6" class="f-tinta2" font-size="12">topo (<tspan class="t-dado">140.460</tspan>)</text>
+<text x="558" y="212.4" class="f-tinta2" font-size="12">às <tspan class="t-dado">10h50</tspan></text>
+<text x="558" y="279.2" class="f-tinta2" font-size="12">abaixo do fundo</text>
+<circle cx="524.5" cy="48.6" r="7" class="f-nenhum s-alta" stroke-width="2.5"/>
+<text x="514.5" y="34.6" class="f-alta" font-size="13" font-weight="700" text-anchor="end"><tspan class="t-dado">11h35</tspan>: alvo atingido</text>
+<rect x="8" y="364" width="668" height="40" class="f-alta-fundo s-alta" rx="6" stroke-width="1.5"/>
+<text x="22" y="390" class="f-tinta" font-size="14"><tspan class="t-dado">3</tspan> contratos · risco de <tspan class="t-dado">R$ 76,50</tspan> · resultado: <tspan class="f-alta" font-weight="700">+<tspan class="t-dado">240</tspan> pts = <tspan class="t-dado">+R$ 139,50</tspan></tspan></text>
+    </svg>
+  </div>
+  <figcaption><strong>Figura 5 · O trade completo.</strong> Tudo foi decidido antes de clicar: entrada em 140.205 (azul), stop em 140.085 (vermelho) e alvo em 140.445 (verde), 240 pontos acima da entrada: o dobro do risco. Às 11h35 o preço tocou o alvo e a ordem saiu sozinha: +R$ 139,50 já descontados os custos, com R$ 76,50 em risco.</figcaption>
+</figure>
+  <div class="resumo-trade">
+    <div><span>Entrada</span><b class="t-dado">140.205</b></div>
+    <div><span>Stop</span><b class="t-dado">140.085</b></div>
+    <div><span>Alvo</span><b class="t-dado">140.445</b></div>
+    <div><span>Contratos</span><b class="t-dado">3</b></div>
+    <div><span>Risco</span><b class="t-dado">R$ 76,50</b></div>
+    <div><span>Resultado</span><b class="t-dado positivo">+R$ 139,50</b></div>
+  </div>
+  <p>A conta do ganho: 240 pontos × R$ 0,20 × 3 contratos = R$ 144, menos R$ 4,50 de custos = <strong class="positivo">+R$ 139,50</strong> em 45 minutos. Você arriscou R$ 76,50 para buscar R$ 139,50.</p>
+
+  <h2>Quando dá errado</h2>
+  <p>Agora o mesmo setup (esse conjunto de sinais) em outro dia. Tudo igual: alta, recuo até as médias, candle de retomada, compra a 140.205 com stop em 140.085. Só que desta vez os compradores somem, o preço vira e bate o stop às 11h10.</p>
+  <p>A conta: 120 pontos × R$ 0,20 × 3 = R$ 72, mais R$ 4,50 de custos = <strong class="negativo">−R$ 76,50</strong>. Exatamente o valor que você tinha decidido arriscar antes de entrar. Sem surpresa e sem drama.</p>
+<figure class="figura">
+  <div class="diagrama">
+    <svg viewBox="0 0 680 412" role="img" aria-label="Outro dia com o mesmo desenho: alta, recuo até 140.090, retomada e compra às 10h50 em 140.205; depois o preço cai e bate o stop em 140.085 às 11h10. Resultado: −R$ 76,50, a perda pequena e planejada">
+<line x1="66" y1="296.6" x2="548" y2="296.6" class="s-linha" stroke-width="1"/>
+<text x="60" y="300.6" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="66" y1="240.9" x2="548" y2="240.9" class="s-linha" stroke-width="1"/>
+<text x="60" y="244.9" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="66" y1="185.1" x2="548" y2="185.1" class="s-linha" stroke-width="1"/>
+<text x="60" y="189.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="66" y1="129.4" x2="548" y2="129.4" class="s-linha" stroke-width="1"/>
+<text x="60" y="133.4" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="66" y1="73.7" x2="548" y2="73.7" class="s-linha" stroke-width="1"/>
+<text x="60" y="77.7" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.400</text>
+<line x1="66" y1="18" x2="548" y2="18" class="s-linha" stroke-width="1"/>
+<text x="60" y="22" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.500</text>
+<text x="75" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<text x="249" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<text x="423" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">11h00</text>
+<text x="539" y="350" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">11h40</text>
+<path d="M75,282.6 L89.5,276.3 L104,272.1 L118.5,270.9 L133,269.3 L147.5,266.5 L162,264.1 L176.5,262.7 L191,261.5 L205.5,259.7 L220,255.5 L234.5,249 L249,240.5 L263.5,231.7 L278,228.5 L292.5,227.3 L307,226.8 L321.5,226.5 L336,226.5 L350.5,226.5 L365,226.6 L379.5,226.1 L394,224.8 L408.5,223.7 L423,223.1 L437.5,223.2 L452,224.1 L466.5,225.3 L481,226.1 L495.5,227.4 L510,229 L524.5,230.1 L539,231.1" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="7 4" stroke-opacity="0.55"/>
+<path d="M75,319.4 L89.5,313.2 L104,307.4 L118.5,303.2 L133,297.5 L147.5,290.5 L162,284.5 L176.5,279.8 L191,275 L205.5,269.4 L220,261.1 L234.5,250.4 L249,237.3 L263.5,224.6 L278,218 L292.5,216.2 L307,215.9 L321.5,215.1 L336,216.2 L350.5,217.5 L365,218.9 L379.5,216.5 L394,212.4 L408.5,210.1 L423,210.4 L437.5,212.5 L452,216.8 L466.5,222 L481,225.9 L495.5,231.6 L510,237.8 L524.5,242.6 L539,248" class="f-nenhum s-alerta" stroke-width="2.5" stroke-opacity="0.55"/>
+<rect x="387" y="48.6" width="161" height="133.7" class="f-alta-fundo" opacity="0.7"/>
+<rect x="387" y="182.4" width="161" height="66.9" class="f-baixa-fundo" opacity="0.7"/>
+<line x1="75" y1="265.9" x2="75" y2="310.5" class="s-alta" stroke-width="1.5"/>
+<rect x="70.5" y="271.5" width="9" height="13.9" class="f-alta"/>
+<line x1="89.5" y1="249.2" x2="89.5" y2="277.1" class="s-alta" stroke-width="1.5"/>
+<rect x="85" y="254.8" width="9" height="16.7" class="f-alta"/>
+<line x1="104" y1="238.1" x2="104" y2="260.4" class="s-alta" stroke-width="1.5"/>
+<rect x="99.5" y="252" width="9" height="2.8" class="f-alta"/>
+<line x1="118.5" y1="249.2" x2="118.5" y2="268.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="114" y="252" width="9" height="11.1" class="f-baixa"/>
+<line x1="133" y1="240.9" x2="133" y2="265.9" class="s-alta" stroke-width="1.5"/>
+<rect x="128.5" y="243.6" width="9" height="19.5" class="f-alta"/>
+<line x1="147.5" y1="218.6" x2="147.5" y2="246.4" class="s-alta" stroke-width="1.5"/>
+<rect x="143" y="224.1" width="9" height="19.5" class="f-alta"/>
+<line x1="162" y1="210.2" x2="162" y2="229.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="157.5" y="224.1" width="9" height="2.8" class="f-baixa"/>
+<line x1="176.5" y1="224.1" x2="176.5" y2="240.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="172" y="226.9" width="9" height="8.4" class="f-baixa"/>
+<line x1="191" y1="226.9" x2="191" y2="238.1" class="s-alta" stroke-width="1.5"/>
+<rect x="186.5" y="229.7" width="9" height="5.6" class="f-alta"/>
+<line x1="205.5" y1="213" x2="205.5" y2="232.5" class="s-alta" stroke-width="1.5"/>
+<rect x="201" y="215.8" width="9" height="13.9" class="f-alta"/>
+<line x1="220" y1="176.8" x2="220" y2="218.6" class="s-alta" stroke-width="1.5"/>
+<rect x="215.5" y="182.4" width="9" height="33.4" class="f-alta"/>
+<line x1="234.5" y1="140.6" x2="234.5" y2="187.9" class="s-alta" stroke-width="1.5"/>
+<rect x="230" y="148.9" width="9" height="33.4" class="f-alta"/>
+<line x1="249" y1="101.6" x2="249" y2="154.5" class="s-alta" stroke-width="1.5"/>
+<rect x="244.5" y="112.7" width="9" height="36.2" class="f-alta"/>
+<line x1="263.5" y1="34.7" x2="263.5" y2="118.3" class="s-alta" stroke-width="1.5"/>
+<rect x="259" y="104.4" width="9" height="8.4" class="f-alta"/>
+<line x1="278" y1="98.8" x2="278" y2="160.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="273.5" y="104.4" width="9" height="50.1" class="f-baixa"/>
+<line x1="292.5" y1="148.9" x2="292.5" y2="204.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="288" y="154.5" width="9" height="44.6" class="f-baixa"/>
+<line x1="307" y1="190.7" x2="307" y2="218.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="302.5" y="199.1" width="9" height="13.9" class="f-baixa"/>
+<line x1="321.5" y1="201.9" x2="321.5" y2="221.4" class="s-alta" stroke-width="1.5"/>
+<rect x="317" y="207.4" width="9" height="5.6" class="f-alta"/>
+<line x1="336" y1="204.6" x2="336" y2="232.5" class="s-baixa" stroke-width="1.5"/>
+<rect x="331.5" y="207.4" width="9" height="19.5" class="f-baixa"/>
+<line x1="350.5" y1="218.6" x2="350.5" y2="238.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="346" y="226.9" width="9" height="2.8" class="f-baixa"/>
+<line x1="365" y1="224.1" x2="365" y2="246.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="360.5" y="229.7" width="9" height="2.8" class="f-baixa"/>
+<line x1="379.5" y1="185.1" x2="379.5" y2="240.9" class="s-alta" stroke-width="1.5"/>
+<rect x="375" y="193.5" width="9" height="39" class="f-alta"/>
+<line x1="394" y1="165.6" x2="394" y2="201.9" class="s-alta" stroke-width="1.5"/>
+<rect x="389.5" y="174" width="9" height="19.5" class="f-alta"/>
+<line x1="408.5" y1="162.9" x2="408.5" y2="190.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="404" y="174" width="9" height="13.9" class="f-baixa"/>
+<line x1="423" y1="182.4" x2="423" y2="218.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="418.5" y="187.9" width="9" height="25.1" class="f-baixa"/>
+<line x1="437.5" y1="204.6" x2="437.5" y2="238.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="433" y="213" width="9" height="19.5" class="f-baixa"/>
+<line x1="452" y1="226.9" x2="452" y2="263.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="447.5" y="232.5" width="9" height="25.1" class="f-baixa"/>
+<line x1="466.5" y1="252" x2="466.5" y2="279.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="462" y="257.6" width="9" height="13.9" class="f-baixa"/>
+<line x1="481" y1="254.8" x2="481" y2="277.1" class="s-alta" stroke-width="1.5"/>
+<rect x="476.5" y="263.1" width="9" height="8.4" class="f-alta"/>
+<line x1="495.5" y1="260.4" x2="495.5" y2="293.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="491" y="263.1" width="9" height="22.3" class="f-baixa"/>
+<line x1="510" y1="277.1" x2="510" y2="304.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="505.5" y="285.4" width="9" height="11.1" class="f-baixa"/>
+<line x1="524.5" y1="279.9" x2="524.5" y2="302.1" class="s-alta" stroke-width="1.5"/>
+<rect x="520" y="288.2" width="9" height="8.4" class="f-alta"/>
+<line x1="539" y1="282.6" x2="539" y2="304.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="534.5" y="288.2" width="9" height="11.1" class="f-baixa"/>
+<line x1="387" y1="48.6" x2="548" y2="48.6" class="s-alta" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="558" y="44.6" class="f-alta" font-size="14" font-weight="700">alvo (<tspan class="t-dado">2</tspan>R)</text>
+<text x="558" y="61.6" class="f-alta t-dado" font-size="13">140.445</text>
+<line x1="387" y1="182.4" x2="548" y2="182.4" class="s-cobalto" stroke-width="2"/>
+<text x="558" y="178.4" class="f-cobalto" font-size="14" font-weight="700">entrada</text>
+<text x="558" y="195.4" class="f-cobalto t-dado" font-size="13">140.205</text>
+<line x1="387" y1="249.2" x2="548" y2="249.2" class="s-baixa" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="558" y="245.2" class="f-baixa" font-size="14" font-weight="700">stop</text>
+<text x="558" y="262.2" class="f-baixa t-dado" font-size="13">140.085</text>
+<text x="542" y="118.3" class="f-alta" font-size="13" font-weight="700" text-anchor="end">+<tspan class="t-dado">240</tspan> pts</text>
+<text x="542" y="197.4" class="f-baixa" font-size="13" font-weight="700" text-anchor="end">−<tspan class="t-dado">120</tspan> pts</text>
+<circle cx="394" cy="182.4" r="5" class="f-cobalto s-folha" stroke-width="2"/>
+<text x="558" y="212.4" class="f-tinta2" font-size="12">às <tspan class="t-dado">10h50</tspan></text>
+<circle cx="452" cy="249.2" r="7" class="f-nenhum s-baixa" stroke-width="2.5"/>
+<text x="438" y="275.2" class="f-baixa" font-size="13" font-weight="700" text-anchor="end"><tspan class="t-dado">11h10</tspan>: stop</text>
+<text x="438" y="291.2" class="f-tinta2" font-size="12" text-anchor="end">a ordem saiu sozinha</text>
+<text x="543" y="324.9" class="f-tinta2" font-size="12" text-anchor="end">e o preço continuou caindo</text>
+<rect x="8" y="364" width="668" height="40" class="f-baixa-fundo s-baixa" rx="6" stroke-width="1.5"/>
+<text x="22" y="390" class="f-tinta" font-size="14"><tspan class="t-dado">3</tspan> contratos · −<tspan class="t-dado">120</tspan> pts = <tspan class="f-baixa" font-weight="700"><tspan class="t-dado">−R$ 76,50</tspan>: perda pequena e planejada</tspan></text>
+    </svg>
+  </div>
+  <figcaption><strong>Figura 6 · Quando dá errado.</strong> Outro dia, o mesmo desenho e os mesmos preços. Só que agora o preço virou e bateu no stop às 11h10: −R$ 76,50, exatamente o valor que já estava aceito antes de entrar. Repare que ele continuou caindo depois; o stop é o que impede um erro pequeno de virar um estrago.</figcaption>
+</figure>
+  <p>Você seguiu o plano e o mercado foi para o outro lado. Isso vai acontecer muitas vezes. O estrago de verdade começa quando alguém tira o stop "pra ver se volta". Na figura, o preço continuou caindo: às 11h40, quem tivesse tirado o stop já estaria perdendo R$ 130,50 em vez de R$ 76,50, e nada garantia que a queda pararia ali.</p>
+
+  <h2>De onde vem o dinheiro</h2>
+  <p>Junte os dois lados. Acertou: +R$ 139,50. Errou: −R$ 76,50. Agora imagine dez trades com essa mesma regra, nesta ordem: perde, ganha, perde, perde, ganha, perde, perde, ganha, perde, ganha.</p>
+  <div class="formula">4 acertos × R$ 139,50 = +R$ 558,00<br>6 erros × R$ 76,50 = −R$ 459,00<br>Saldo antes do imposto = +R$ 99,00<br>Imposto (IR), 20% = −R$ 19,80<br>Saldo final = <strong>+R$ 79,20</strong></div>
+  <p>Você errou 6 de 10 e terminou no lucro, porque cada acerto paga quase dois erros. Repare também no caminho: o saldo ficou no vermelho em 6 dos 10 momentos e chegou a −R$ 103,50 depois do sétimo trade. Quem perde a calma ali e muda a regra nunca chega ao fim da conta.</p>
+<figure class="figura">
+  <div class="diagrama">
+    <svg viewBox="0 0 680 402" role="img" aria-label="Barras dos 10 trades na ordem perda, ganho, perda, perda, ganho, perda, perda, ganho, perda, ganho: cada ganho vale +R$ 139,50 e cada perda −R$ 76,50. A linha do saldo acumulado fica abaixo de zero em 6 dos 10 momentos, chega a −R$ 103,50 e termina em +R$ 99,00. Com 6 erros em 10 ainda há lucro; o empate exige acertar 35,4% das vezes">
+<rect x="76" y="185.2" width="472" height="104.8" class="f-baixa-fundo" opacity="0.6"/>
+<line x1="76" y1="260.1" x2="548" y2="260.1" class="s-linha" stroke-width="1"/>
+<text x="68" y="264.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">−100</text>
+<line x1="76" y1="222.6" x2="548" y2="222.6" class="s-linha" stroke-width="1"/>
+<text x="68" y="226.6" class="f-tinta3 t-dado" font-size="12" text-anchor="end">−50</text>
+<line x1="76" y1="185.2" x2="548" y2="185.2" class="s-tinta2" stroke-width="1.5"/>
+<text x="68" y="189.2" class="f-tinta3 t-dado" font-size="12" text-anchor="end">0</text>
+<line x1="76" y1="147.8" x2="548" y2="147.8" class="s-linha" stroke-width="1"/>
+<text x="68" y="151.8" class="f-tinta3 t-dado" font-size="12" text-anchor="end">+50</text>
+<line x1="76" y1="110.4" x2="548" y2="110.4" class="s-linha" stroke-width="1"/>
+<text x="68" y="114.4" class="f-tinta3 t-dado" font-size="12" text-anchor="end">+100</text>
+<line x1="76" y1="73" x2="548" y2="73" class="s-linha" stroke-width="1"/>
+<text x="68" y="77" class="f-tinta3 t-dado" font-size="12" text-anchor="end">+150</text>
+<text x="68" y="48" class="f-tinta3" font-size="12" text-anchor="end">R$</text>
+<text x="84" y="282" class="f-baixa" font-size="12">abaixo de zero: no vermelho</text>
+<rect x="87.6" y="185.2" width="24" height="57.3" class="f-baixa" opacity="0.85"/>
+<text x="99.6" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">1</text>
+<rect x="134.8" y="80.8" width="24" height="104.4" class="f-alta" opacity="0.85"/>
+<text x="146.8" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">2</text>
+<rect x="182" y="185.2" width="24" height="57.3" class="f-baixa" opacity="0.85"/>
+<text x="194" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">3</text>
+<rect x="229.2" y="185.2" width="24" height="57.3" class="f-baixa" opacity="0.85"/>
+<text x="241.2" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">4</text>
+<rect x="276.4" y="80.8" width="24" height="104.4" class="f-alta" opacity="0.85"/>
+<text x="288.4" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">5</text>
+<rect x="323.6" y="185.2" width="24" height="57.3" class="f-baixa" opacity="0.85"/>
+<text x="335.6" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">6</text>
+<rect x="370.8" y="185.2" width="24" height="57.3" class="f-baixa" opacity="0.85"/>
+<text x="382.8" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">7</text>
+<rect x="418" y="80.8" width="24" height="104.4" class="f-alta" opacity="0.85"/>
+<text x="430" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">8</text>
+<rect x="465.2" y="185.2" width="24" height="57.3" class="f-baixa" opacity="0.85"/>
+<text x="477.2" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9</text>
+<rect x="512.4" y="80.8" width="24" height="104.4" class="f-alta" opacity="0.85"/>
+<text x="524.4" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10</text>
+<text x="312" y="328" class="f-tinta3" font-size="12" text-anchor="middle">trades, na ordem em que aconteceram</text>
+<path d="M76,185.2 L99.6,242.5 L146.8,138.1 L194,195.3 L241.2,252.6 L288.4,148.2 L335.6,205.4 L382.8,262.7 L430,158.3 L477.2,215.5 L524.4,111.1" class="f-nenhum s-cobalto" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="99.6" cy="242.5" r="4.5" class="f-baixa s-folha" stroke-width="1.5"/>
+<circle cx="146.8" cy="138.1" r="4.5" class="f-cobalto s-folha" stroke-width="1.5"/>
+<circle cx="194" cy="195.3" r="4.5" class="f-baixa s-folha" stroke-width="1.5"/>
+<circle cx="241.2" cy="252.6" r="4.5" class="f-baixa s-folha" stroke-width="1.5"/>
+<circle cx="288.4" cy="148.2" r="4.5" class="f-cobalto s-folha" stroke-width="1.5"/>
+<circle cx="335.6" cy="205.4" r="4.5" class="f-baixa s-folha" stroke-width="1.5"/>
+<circle cx="382.8" cy="262.7" r="4.5" class="f-baixa s-folha" stroke-width="1.5"/>
+<circle cx="430" cy="158.3" r="4.5" class="f-cobalto s-folha" stroke-width="1.5"/>
+<circle cx="477.2" cy="215.5" r="4.5" class="f-baixa s-folha" stroke-width="1.5"/>
+<circle cx="524.4" cy="111.1" r="4.5" class="f-cobalto s-folha" stroke-width="1.5"/>
+<text x="382.8" y="284.7" class="f-baixa" font-size="13" font-weight="700" text-anchor="middle"><tspan class="t-dado">−R$ 103,50</tspan></text>
+<text x="556" y="116.1" class="f-cobalto" font-size="16" font-weight="700"><tspan class="t-dado">+R$ 99,00</tspan></text>
+<text x="556" y="134.1" class="f-tinta2" font-size="12">saldo final</text>
+<text x="556" y="155.1" class="f-tinta2" font-size="12">depois do IR:</text>
+<text x="556" y="170.1" class="f-tinta2" font-size="12"><tspan class="t-dado">+R$ 79,20</tspan></text>
+<rect x="76" y="13" width="14" height="14" class="f-alta"/>
+<text x="96" y="25" class="f-tinta2" font-size="13">acerto <tspan class="t-dado">+R$ 139,50</tspan></text>
+<rect x="244" y="13" width="14" height="14" class="f-baixa"/>
+<text x="264" y="25" class="f-tinta2" font-size="13">erro <tspan class="t-dado">−R$ 76,50</tspan></text>
+<line x1="392" y1="20" x2="418" y2="20" class="s-cobalto" stroke-width="2.5"/>
+<text x="424" y="25" class="f-tinta2" font-size="13">saldo acumulado</text>
+<rect x="16" y="344" width="300" height="50" class="f-alta-fundo s-alta" rx="6" stroke-width="1.5"/>
+<text x="30" y="365" class="f-tinta" font-size="14" font-weight="700"><tspan class="t-dado">6</tspan> erros em <tspan class="t-dado">10</tspan> e ainda assim lucro</text>
+<text x="30" y="384" class="f-tinta2" font-size="12"><tspan class="t-dado">4</tspan> × <tspan class="t-dado">139,50</tspan> é mais que <tspan class="t-dado">6</tspan> × <tspan class="t-dado">76,50</tspan></text>
+<rect x="376" y="344" width="300" height="50" class="f-alerta-fundo s-alerta" rx="6" stroke-width="1.5"/>
+<text x="390" y="365" class="f-tinta" font-size="14" font-weight="700">precisa acertar mais de <tspan class="t-dado">35</tspan> em cada <tspan class="t-dado">100</tspan></text>
+<text x="390" y="384" class="f-tinta2" font-size="12">ponto de empate: <tspan class="t-dado">35,4%</tspan> de acertos</text>
+    </svg>
+  </div>
+  <figcaption><strong>Figura 7 · De onde vem o dinheiro.</strong> Dez trades com a mesma regra: cada acerto (verde) vale quase o dobro de cada erro (vermelho). O saldo (linha azul) ficou no vermelho em 6 dos 10 momentos e mesmo assim terminou em +R$ 99,00, porque cada erro foi pequeno. Mas a margem é fina: com 3 acertos em 10, o resultado seria −R$ 117,00.</figcaption>
+</figure>
+  <p>Qual o mínimo de acertos para não perder? Divida a perda pela soma do ganho com a perda:</p>
+  <div class="formula">perda ÷ (ganho + perda)<br>= 76,50 ÷ (139,50 + 76,50)<br>= 76,50 ÷ 216,00 = <strong>35,4%</strong></div>
+  <p>Acertando mais de 35 em cada 100, sobra dinheiro. Abaixo disso, falta: com 3 acertos em 10, a conta fica em 3 × 139,50 − 7 × 76,50 = <strong class="negativo">−R$ 117,00</strong>. Essa é a força do alvo de 2R. Com um alvo do mesmo tamanho do stop (120 pontos), os custos obrigariam você a acertar mais de 53 em cada 100 só para empatar.</p>
+  <p>Um cuidado: esses números são de exemplo. Ninguém sabe a sua taxa de acerto, nem você, ainda. Só centenas de trades seus, registrados com custos, mostram se existe vantagem. Dez trades não provam nada.</p>
+
+  <h2>Os 5 erros que mais tiram dinheiro</h2>
+  <ol>
+    <li><strong>Perseguir preço esticado.</strong> Comprar lá em cima deixa a entrada cara e o stop longe. Antes de cada entrada, passe pelo checklist do <a href="#copiloto">copiloto</a>.</li>
+    <li><strong>Mexer no stop.</strong> Afastar o stop quando o preço chega perto transforma uma perda planejada numa perda sem limite. Stop só se mexe para diminuir o risco, nunca para aumentar.</li>
+    <li><strong>Mão grande demais.</strong> Com 10 contratos neste mesmo trade, um stop custaria R$ 255, e três stops seguidos, coisa comum, levariam quase 8% da conta. Calcule sempre na <a href="#calculadoras">calculadora de posição</a>.</li>
+    <li><strong>Operar demais ou por revanche.</strong> Depois de um stop, a vontade é entrar de novo na hora para recuperar, quase sempre sem sinal. Defina limites para o dia: no máximo 4 trades, pausa de 20 minutos depois de 2 perdas seguidas e um <strong>stop diário</strong> (a perda máxima do dia) de 3% da conta, ou R$ 300. O <a href="#copiloto">copiloto</a> trava quando você chega neles.</li>
+    <li><strong>Não registrar.</strong> Sem anotar, a memória guarda os ganhos e apaga as perdas. O <a href="#diario">diário</a> mostra a sua taxa de acerto e o seu resultado de verdade, com custos.</li>
+  </ol>
+
+  <h2>Como ficar bom de verdade</h2>
+  <p>Ler gráfico é como dirigir: melhora com repetição e correção na hora. São três fases, cada uma com uma meta em número, e só avança quem bate a meta.</p>
+  <ol>
+    <li><strong>Treine o olho.</strong> Faça o <a href="#treino">treino de gráfico</a>: 10 gráficos com as decisões deste guia, da direção do preço ao número de contratos. Meta: 8 de 10 ou mais. Abaixo disso, releia o guia e refaça.</li>
+    <li><strong>Opere no simulado.</strong> No <a href="#simulador">simulador</a> do site, pegue o jeito de mandar ordem, stop e alvo (o gráfico dele é sorteado de propósito, então ali o resultado não conta). Depois, faça 100 trades no simulador da sua corretora, com o pregão de verdade, seguindo a cola de bolso e registrando tudo no <a href="#diario">diário</a>. Meta: resultado positivo depois dos custos. Ficou negativo? Siga no simulado e ache o vazamento no diário.</li>
+    <li><strong>Conta real com 1 contrato.</strong> Pelo menos mais 100 trades com a mão mínima, usando dinheiro que você pode perder sem afetar a sua vida. Só aumente a mão quando tiver 200 trades ou mais com saldo positivo, já descontados custos e imposto.</li>
+  </ol>
+  <div class="quadro alerta">
+    <p class="rotulo-quadro">Quando parar</p>
+    <p>Se depois de 200 trades registrados o resultado, já com custos, continuar negativo, pare de operar. Duzentos trades com perdas pequenas e controladas são uma resposta barata e honesta. O <a href="#plano">módulo 8</a> ajuda a pôr isso no seu plano.</p>
+  </div>
+
+  <p>Para fechar, o processo inteiro em sete passos. Deixe do lado da tela:</p>
+  <div class="cola">
+    <h3>Cola de bolso</h3>
+    <ol>
+      <li><div><strong>Direção.</strong> Topos e fundos subindo e preço acima da VWAP: só compra. Descendo e abaixo: só venda. Embolado: fique de fora.</div></li>
+      <li><div><strong>Pisos e tetos.</strong> Marque máxima, mínima e fechamento de ontem, o topo e o fundo de hoje e a VWAP.</div></li>
+      <li><div><strong>Espere voltar.</strong> Nada de entrar esticado. Aguarde o recuo até a VWAP ou a MME 20.</div></li>
+      <li><div><strong>Sinal.</strong> Candle de retomada. Entrada 1 tick acima da máxima dele.</div></li>
+      <li><div><strong>Stop e alvo antes de entrar.</strong> Stop 1 tick além do fundo do recuo. Alvo de pelo menos 2 vezes o risco, antes do próximo teto. Não coube? Não entre.</div></li>
+      <li><div><strong>Quantidade pela calculadora.</strong> No máximo 1% da conta em risco, sempre arredondando para baixo.</div></li>
+      <li><div><strong>Registre.</strong> Todo trade no diário, com custos, ganhando ou perdendo.</div></li>
+    </ol>
+  </div>
+
+  <div class="fim-modulo"><a href="#treino">Fazer o treino de gráfico →</a><span class="espaco"></span><a href="#simulador">Praticar no simulador →</a></div>
+
 <!-- /conteudo:guia -->
 </section>
 
@@ -123,9 +831,1018 @@
   <p class="leitura-res" id="treino-placar" aria-live="polite"></p>
   <div class="exercicios" id="exercicios">
 <!-- conteudo:treino -->
+<div class="exercicio" data-exercicio="t1" data-certa="a">
+  <p class="ex-num">Exercício 1 de 10</p>
+  <h3>Para onde o preço está indo?</h3>
+  <figure class="figura"><div class="diagrama"><svg viewBox="0 0 620 320" role="img" aria-label="Gráfico de candles de 5 minutos do mini-índice, de 9h00 a 11h25: o preço sai de 139.800 e chega a 140.300, em ondas, com a linha tracejada da VWAP abaixo dos candles">
+<line x1="62" y1="288" x2="604" y2="288" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="266.8" x2="604" y2="266.8" class="s-linha" stroke-width="1"/>
+<text x="56" y="270.8" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.800</text>
+<line x1="62" y1="245.7" x2="604" y2="245.7" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="224.5" x2="604" y2="224.5" class="s-linha" stroke-width="1"/>
+<text x="56" y="228.5" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.900</text>
+<line x1="62" y1="203.3" x2="604" y2="203.3" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="182.2" x2="604" y2="182.2" class="s-linha" stroke-width="1"/>
+<text x="56" y="186.2" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="62" y1="161" x2="604" y2="161" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="139.8" x2="604" y2="139.8" class="s-linha" stroke-width="1"/>
+<text x="56" y="143.8" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="62" y1="118.7" x2="604" y2="118.7" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="97.5" x2="604" y2="97.5" class="s-linha" stroke-width="1"/>
+<text x="56" y="101.5" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="62" y1="76.3" x2="604" y2="76.3" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="55.2" x2="604" y2="55.2" class="s-linha" stroke-width="1"/>
+<text x="56" y="59.2" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="62" y1="34" x2="604" y2="34" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="288" x2="604" y2="288" class="s-tinta3" stroke-width="1"/>
+<line x1="71" y1="288" x2="71" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="71" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<line x1="179.4" y1="288" x2="179.4" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="179.4" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<line x1="287.8" y1="288" x2="287.8" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="287.8" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<line x1="396.2" y1="288" x2="396.2" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="396.2" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<line x1="504.6" y1="288" x2="504.6" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="504.6" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">11h00</text>
+<line x1="62" y1="12" x2="88" y2="12" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="94" y="16" class="f-tinta2" font-size="13">VWAP</text>
+<path d="M71,258.4 L89.1,251.4 L107.2,244.7 L125.2,237.4 L143.3,233.9 L161.4,232.7 L179.4,230.7 L197.5,227.4 L215.6,223.6 L233.6,219.4 L251.7,216.4 L269.8,214.5 L287.8,213.3 L305.9,211.5 L324,208.9 L342,205.9 L360.1,202.5 L378.2,199.8 L396.2,197.8 L414.3,195.5 L432.4,192.8 L450.4,189.8 L468.5,186.3 L486.6,183.4 L504.6,181.1 L522.7,178.4 L540.8,175.5 L558.8,172.3 L576.9,169.5 L595,166.5" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="71" y1="249.9" x2="71" y2="271.1" class="s-alta" stroke-width="1.5"/>
+<rect x="66" y="254.1" width="10" height="12.7" class="f-alta"/>
+<line x1="89.1" y1="235.1" x2="89.1" y2="256.3" class="s-alta" stroke-width="1.5"/>
+<rect x="84.1" y="239.3" width="10" height="14.8" class="f-alta"/>
+<line x1="107.2" y1="220.3" x2="107.2" y2="243.6" class="s-alta" stroke-width="1.5"/>
+<rect x="102.2" y="224.5" width="10" height="14.8" class="f-alta"/>
+<line x1="125.2" y1="201.2" x2="125.2" y2="226.6" class="s-alta" stroke-width="1.5"/>
+<rect x="120.2" y="207.6" width="10" height="16.9" class="f-alta"/>
+<line x1="143.3" y1="205.5" x2="143.3" y2="222.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="138.3" y="207.6" width="10" height="10.6" class="f-baixa"/>
+<line x1="161.4" y1="216" x2="161.4" y2="233" class="s-baixa" stroke-width="1.5"/>
+<rect x="156.4" y="218.2" width="10" height="8.5" class="f-baixa"/>
+<line x1="179.4" y1="205.5" x2="179.4" y2="228.7" class="s-alta" stroke-width="1.5"/>
+<rect x="174.4" y="209.7" width="10" height="16.9" class="f-alta"/>
+<line x1="197.5" y1="188.5" x2="197.5" y2="213.9" class="s-alta" stroke-width="1.5"/>
+<rect x="192.5" y="192.8" width="10" height="16.9" class="f-alta"/>
+<line x1="215.6" y1="173.7" x2="215.6" y2="194.9" class="s-alta" stroke-width="1.5"/>
+<rect x="210.6" y="177.9" width="10" height="14.8" class="f-alta"/>
+<line x1="233.6" y1="158.9" x2="233.6" y2="182.2" class="s-alta" stroke-width="1.5"/>
+<rect x="228.6" y="165.2" width="10" height="12.7" class="f-alta"/>
+<line x1="251.7" y1="163.1" x2="251.7" y2="182.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="246.7" y="165.2" width="10" height="12.7" class="f-baixa"/>
+<line x1="269.8" y1="173.7" x2="269.8" y2="192.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="264.8" y="177.9" width="10" height="10.6" class="f-baixa"/>
+<line x1="287.8" y1="184.3" x2="287.8" y2="199.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="282.8" y="188.5" width="10" height="4.2" class="f-baixa"/>
+<line x1="305.9" y1="171.6" x2="305.9" y2="194.9" class="s-alta" stroke-width="1.5"/>
+<rect x="300.9" y="175.8" width="10" height="16.9" class="f-alta"/>
+<line x1="324" y1="152.5" x2="324" y2="180" class="s-alta" stroke-width="1.5"/>
+<rect x="319" y="156.8" width="10" height="19.1" class="f-alta"/>
+<line x1="342" y1="137.7" x2="342" y2="161" class="s-alta" stroke-width="1.5"/>
+<rect x="337" y="139.8" width="10" height="16.9" class="f-alta"/>
+<line x1="360.1" y1="120.8" x2="360.1" y2="144.1" class="s-alta" stroke-width="1.5"/>
+<rect x="355.1" y="127.1" width="10" height="12.7" class="f-alta"/>
+<line x1="378.2" y1="125" x2="378.2" y2="146.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="373.2" y="127.1" width="10" height="14.8" class="f-baixa"/>
+<line x1="396.2" y1="137.7" x2="396.2" y2="161" class="s-baixa" stroke-width="1.5"/>
+<rect x="391.2" y="142" width="10" height="10.6" class="f-baixa"/>
+<line x1="414.3" y1="131.4" x2="414.3" y2="154.6" class="s-alta" stroke-width="1.5"/>
+<rect x="409.3" y="135.6" width="10" height="16.9" class="f-alta"/>
+<line x1="432.4" y1="114.4" x2="432.4" y2="139.8" class="s-alta" stroke-width="1.5"/>
+<rect x="427.4" y="118.7" width="10" height="16.9" class="f-alta"/>
+<line x1="450.4" y1="99.6" x2="450.4" y2="120.8" class="s-alta" stroke-width="1.5"/>
+<rect x="445.4" y="101.7" width="10" height="16.9" class="f-alta"/>
+<line x1="468.5" y1="80.6" x2="468.5" y2="106" class="s-alta" stroke-width="1.5"/>
+<rect x="463.5" y="86.9" width="10" height="14.8" class="f-alta"/>
+<line x1="486.6" y1="84.8" x2="486.6" y2="103.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="481.6" y="86.9" width="10" height="12.7" class="f-baixa"/>
+<line x1="504.6" y1="95.4" x2="504.6" y2="114.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="499.6" y="99.6" width="10" height="8.5" class="f-baixa"/>
+<line x1="522.7" y1="86.9" x2="522.7" y2="110.2" class="s-alta" stroke-width="1.5"/>
+<rect x="517.7" y="91.2" width="10" height="16.9" class="f-alta"/>
+<line x1="540.8" y1="72.1" x2="540.8" y2="95.4" class="s-alta" stroke-width="1.5"/>
+<rect x="535.8" y="76.3" width="10" height="14.8" class="f-alta"/>
+<line x1="558.8" y1="57.3" x2="558.8" y2="78.4" class="s-alta" stroke-width="1.5"/>
+<rect x="553.8" y="61.5" width="10" height="14.8" class="f-alta"/>
+<line x1="576.9" y1="55.2" x2="576.9" y2="72.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="571.9" y="61.5" width="10" height="6.4" class="f-baixa"/>
+<line x1="595" y1="50.9" x2="595" y2="72.1" class="s-alta" stroke-width="1.5"/>
+<rect x="590" y="55.2" width="10" height="12.7" class="f-alta"/>
+    </svg></div><figcaption>Mini-índice, gráfico de 5 minutos.</figcaption></figure>
+  <div class="ex-opcoes">
+    <button type="button" class="ex-opcao" data-op="a">Para cima: tendência de alta</button>
+    <button type="button" class="ex-opcao" data-op="b">Para baixo: tendência de baixa</button>
+    <button type="button" class="ex-opcao" data-op="c">De lado: sem direção</button>
+  </div>
+  <p class="ex-explica" hidden><strong>Resposta certa: A.</strong> Olhe os fundos (os pontos mais baixos de cada recuo): 139.880, 139.960, 140.050 e 140.160. Cada um fica mais alto que o anterior, cada topo passa o de antes, e o preço fica a manhã inteira acima da VWAP, a linha tracejada. Quem vende aqui, ou trata isso como lateral e vende nos topos esperando uma volta, rema contra a maré: cada novo topo atropela o stop.</p>
+</div>
+<div class="exercicio" data-exercicio="t2" data-certa="c">
+  <p class="ex-num">Exercício 2 de 10</p>
+  <h3>Para onde o preço está indo?</h3>
+  <figure class="figura"><div class="diagrama"><svg viewBox="0 0 620 320" role="img" aria-label="Gráfico de candles de 5 minutos do mini-índice, de 9h00 a 11h25: o preço vai e volta entre perto de 139.900 e perto de 140.100 a manhã inteira, cruzando a linha tracejada da VWAP várias vezes">
+<line x1="62" y1="288" x2="604" y2="288" class="s-linha" stroke-width="1"/>
+<text x="56" y="292" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.700</text>
+<line x1="62" y1="266.8" x2="604" y2="266.8" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="245.7" x2="604" y2="245.7" class="s-linha" stroke-width="1"/>
+<text x="56" y="249.7" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.800</text>
+<line x1="62" y1="224.5" x2="604" y2="224.5" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="203.3" x2="604" y2="203.3" class="s-linha" stroke-width="1"/>
+<text x="56" y="207.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.900</text>
+<line x1="62" y1="182.2" x2="604" y2="182.2" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="161" x2="604" y2="161" class="s-linha" stroke-width="1"/>
+<text x="56" y="165" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="62" y1="139.8" x2="604" y2="139.8" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="118.7" x2="604" y2="118.7" class="s-linha" stroke-width="1"/>
+<text x="56" y="122.7" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="62" y1="97.5" x2="604" y2="97.5" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="76.3" x2="604" y2="76.3" class="s-linha" stroke-width="1"/>
+<text x="56" y="80.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="62" y1="55.2" x2="604" y2="55.2" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="34" x2="604" y2="34" class="s-linha" stroke-width="1"/>
+<text x="56" y="38" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="62" y1="288" x2="604" y2="288" class="s-tinta3" stroke-width="1"/>
+<line x1="71" y1="288" x2="71" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="71" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<line x1="179.4" y1="288" x2="179.4" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="179.4" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<line x1="287.8" y1="288" x2="287.8" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="287.8" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<line x1="396.2" y1="288" x2="396.2" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="396.2" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<line x1="504.6" y1="288" x2="504.6" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="504.6" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">11h00</text>
+<line x1="62" y1="12" x2="88" y2="12" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="94" y="16" class="f-tinta2" font-size="13">VWAP</text>
+<path d="M71,152.5 L89.1,146.2 L107.2,144.4 L125.2,141.3 L143.3,140.3 L161.4,141.9 L179.4,144.8 L197.5,147.1 L215.6,150.1 L233.6,153.2 L251.7,155.4 L269.8,156.1 L287.8,156.5 L305.9,156.1 L324,154.8 L342,153.9 L360.1,153.5 L378.2,153.4 L396.2,153.8 L414.3,154.7 L432.4,156.2 L450.4,157.2 L468.5,157.7 L486.6,157.6 L504.6,157.4 L522.7,156.7 L540.8,156.2 L558.8,156.2 L576.9,156.2 L595,156.4" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4"/>
+<line x1="71" y1="144.1" x2="71" y2="165.2" class="s-alta" stroke-width="1.5"/>
+<rect x="66" y="148.3" width="10" height="12.7" class="f-alta"/>
+<line x1="89.1" y1="131.4" x2="89.1" y2="150.4" class="s-alta" stroke-width="1.5"/>
+<rect x="84.1" y="135.6" width="10" height="12.7" class="f-alta"/>
+<line x1="107.2" y1="131.4" x2="107.2" y2="146.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="102.2" y="135.6" width="10" height="6.3" class="f-baixa"/>
+<line x1="125.2" y1="120.8" x2="125.2" y2="144.1" class="s-alta" stroke-width="1.5"/>
+<rect x="120.2" y="127.1" width="10" height="14.8" class="f-alta"/>
+<line x1="143.3" y1="122.9" x2="143.3" y2="142" class="s-baixa" stroke-width="1.5"/>
+<rect x="138.3" y="127.1" width="10" height="12.7" class="f-baixa"/>
+<line x1="161.4" y1="137.7" x2="161.4" y2="161" class="s-baixa" stroke-width="1.5"/>
+<rect x="156.4" y="139.8" width="10" height="16.9" class="f-baixa"/>
+<line x1="179.4" y1="152.5" x2="179.4" y2="175.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="174.4" y="156.8" width="10" height="16.9" class="f-baixa"/>
+<line x1="197.5" y1="163.1" x2="197.5" y2="177.9" class="s-alta" stroke-width="1.5"/>
+<rect x="192.5" y="167.4" width="10" height="6.4" class="f-alta"/>
+<line x1="215.6" y1="165.2" x2="215.6" y2="190.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="210.6" y="167.4" width="10" height="19.1" class="f-baixa"/>
+<line x1="233.6" y1="182.2" x2="233.6" y2="201.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="228.6" y="186.4" width="10" height="8.5" class="f-baixa"/>
+<line x1="251.7" y1="175.8" x2="251.7" y2="199.1" class="s-alta" stroke-width="1.5"/>
+<rect x="246.7" y="177.9" width="10" height="16.9" class="f-alta"/>
+<line x1="269.8" y1="156.8" x2="269.8" y2="180" class="s-alta" stroke-width="1.5"/>
+<rect x="264.8" y="161" width="10" height="16.9" class="f-alta"/>
+<line x1="287.8" y1="156.8" x2="287.8" y2="169.5" class="s-baixa" stroke-width="1.5"/>
+<rect x="282.8" y="161" width="10" height="4.2" class="f-baixa"/>
+<line x1="305.9" y1="139.8" x2="305.9" y2="167.4" class="s-alta" stroke-width="1.5"/>
+<rect x="300.9" y="144.1" width="10" height="21.2" class="f-alta"/>
+<line x1="324" y1="118.7" x2="324" y2="148.3" class="s-alta" stroke-width="1.5"/>
+<rect x="319" y="127.1" width="10" height="16.9" class="f-alta"/>
+<line x1="342" y1="125" x2="342" y2="139.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="337" y="127.1" width="10" height="8.5" class="f-baixa"/>
+<line x1="360.1" y1="131.4" x2="360.1" y2="154.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="355.1" y="135.6" width="10" height="16.9" class="f-baixa"/>
+<line x1="378.2" y1="144.1" x2="378.2" y2="156.8" class="s-alta" stroke-width="1.5"/>
+<rect x="373.2" y="148.3" width="10" height="4.2" class="f-alta"/>
+<line x1="396.2" y1="146.2" x2="396.2" y2="173.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="391.2" y="148.3" width="10" height="21.2" class="f-baixa"/>
+<line x1="414.3" y1="165.2" x2="414.3" y2="186.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="409.3" y="169.5" width="10" height="12.7" class="f-baixa"/>
+<line x1="432.4" y1="180" x2="432.4" y2="203.3" class="s-baixa" stroke-width="1.5"/>
+<rect x="427.4" y="182.2" width="10" height="12.7" class="f-baixa"/>
+<line x1="450.4" y1="177.9" x2="450.4" y2="197" class="s-alta" stroke-width="1.5"/>
+<rect x="445.4" y="182.2" width="10" height="12.7" class="f-alta"/>
+<line x1="468.5" y1="161" x2="468.5" y2="186.4" class="s-alta" stroke-width="1.5"/>
+<rect x="463.5" y="165.2" width="10" height="16.9" class="f-alta"/>
+<line x1="486.6" y1="146.2" x2="486.6" y2="169.5" class="s-alta" stroke-width="1.5"/>
+<rect x="481.6" y="148.3" width="10" height="16.9" class="f-alta"/>
+<line x1="504.6" y1="144.1" x2="504.6" y2="156.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="499.6" y="148.3" width="10" height="4.2" class="f-baixa"/>
+<line x1="522.7" y1="122.9" x2="522.7" y2="154.6" class="s-alta" stroke-width="1.5"/>
+<rect x="517.7" y="133.5" width="10" height="19" class="f-alta"/>
+<line x1="540.8" y1="131.4" x2="540.8" y2="148.3" class="s-baixa" stroke-width="1.5"/>
+<rect x="535.8" y="133.5" width="10" height="10.6" class="f-baixa"/>
+<line x1="558.8" y1="139.8" x2="558.8" y2="163.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="553.8" y="144.1" width="10" height="16.9" class="f-baixa"/>
+<line x1="576.9" y1="150.4" x2="576.9" y2="165.2" class="s-alta" stroke-width="1.5"/>
+<rect x="571.9" y="154.6" width="10" height="6.4" class="f-alta"/>
+<line x1="595" y1="150.4" x2="595" y2="173.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="590" y="154.6" width="10" height="14.8" class="f-baixa"/>
+    </svg></div><figcaption>Mini-índice, gráfico de 5 minutos.</figcaption></figure>
+  <div class="ex-opcoes">
+    <button type="button" class="ex-opcao" data-op="a">Para cima: tendência de alta</button>
+    <button type="button" class="ex-opcao" data-op="b">Para baixo: tendência de baixa</button>
+    <button type="button" class="ex-opcao" data-op="c">De lado: sem direção</button>
+  </div>
+  <p class="ex-explica" hidden><strong>Resposta certa: C.</strong> O preço bate perto de 140.100 três vezes e desce até perto de 139.900 duas vezes: é um vaivém dentro de uma faixa, cruzando a VWAP para cima e para baixo o tempo todo. Os topos e fundos não sobem nem descem. Quem compra cada subida achando que é alta, ou vende cada queda achando que é baixa, toma stop atrás de stop. No lateral, os setups de tendência falham muito, e muita gente experiente simplesmente não opera.</p>
+</div>
+<div class="exercicio" data-exercicio="t3" data-certa="b">
+  <p class="ex-num">Exercício 3 de 10</p>
+  <h3>Qual linha é a resistência mais importante?</h3>
+  <figure class="figura"><div class="diagrama"><svg viewBox="0 0 620 320" role="img" aria-label="Gráfico de candles de 5 minutos do mini-índice com três linhas horizontais: A em 139.950, abaixo de todos os candles; B em 140.300, onde três candles chegam e voltam com pavio em cima; C em 140.150, no meio da faixa, atravessada pelo preço">
+<line x1="62" y1="288" x2="516" y2="288" class="s-linha" stroke-width="1"/>
+<text x="56" y="292" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.900</text>
+<line x1="62" y1="259.8" x2="516" y2="259.8" class="s-linha" stroke-width="1"/>
+<text x="56" y="263.8" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.950</text>
+<line x1="62" y1="231.6" x2="516" y2="231.6" class="s-linha" stroke-width="1"/>
+<text x="56" y="235.6" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="62" y1="203.3" x2="516" y2="203.3" class="s-linha" stroke-width="1"/>
+<text x="56" y="207.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.050</text>
+<line x1="62" y1="175.1" x2="516" y2="175.1" class="s-linha" stroke-width="1"/>
+<text x="56" y="179.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="62" y1="146.9" x2="516" y2="146.9" class="s-linha" stroke-width="1"/>
+<text x="56" y="150.9" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.150</text>
+<line x1="62" y1="118.7" x2="516" y2="118.7" class="s-linha" stroke-width="1"/>
+<text x="56" y="122.7" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="62" y1="90.4" x2="516" y2="90.4" class="s-linha" stroke-width="1"/>
+<text x="56" y="94.4" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.250</text>
+<line x1="62" y1="62.2" x2="516" y2="62.2" class="s-linha" stroke-width="1"/>
+<text x="56" y="66.2" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="62" y1="34" x2="516" y2="34" class="s-linha" stroke-width="1"/>
+<text x="56" y="38" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.350</text>
+<line x1="62" y1="288" x2="516" y2="288" class="s-tinta3" stroke-width="1"/>
+<line x1="99.8" y1="288" x2="99.8" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="99.8" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<line x1="190.6" y1="288" x2="190.6" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="190.6" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<line x1="281.4" y1="288" x2="281.4" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="281.4" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<line x1="372.2" y1="288" x2="372.2" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="372.2" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<line x1="463" y1="288" x2="463" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="463" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">11h00</text>
+<line x1="99.8" y1="194.9" x2="99.8" y2="228.7" class="s-alta" stroke-width="1.5"/>
+<rect x="94.8" y="200.5" width="10" height="19.8" class="f-alta"/>
+<line x1="115" y1="169.5" x2="115" y2="203.3" class="s-alta" stroke-width="1.5"/>
+<rect x="110" y="175.1" width="10" height="25.4" class="f-alta"/>
+<line x1="130.1" y1="169.5" x2="130.1" y2="186.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="125.1" y="175.1" width="10" height="5.6" class="f-baixa"/>
+<line x1="145.2" y1="141.2" x2="145.2" y2="183.6" class="s-alta" stroke-width="1.5"/>
+<rect x="140.2" y="152.5" width="10" height="28.2" class="f-alta"/>
+<line x1="160.4" y1="115.8" x2="160.4" y2="155.4" class="s-alta" stroke-width="1.5"/>
+<rect x="155.4" y="121.5" width="10" height="31" class="f-alta"/>
+<line x1="175.5" y1="82" x2="175.5" y2="127.1" class="s-alta" stroke-width="1.5"/>
+<rect x="170.5" y="90.4" width="10" height="31" class="f-alta"/>
+<line x1="190.6" y1="62.2" x2="190.6" y2="101.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="185.6" y="90.4" width="10" height="5.6" class="f-baixa"/>
+<line x1="205.8" y1="90.4" x2="205.8" y2="127.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="200.8" y="96.1" width="10" height="25.4" class="f-baixa"/>
+<line x1="220.9" y1="118.7" x2="220.9" y2="152.5" class="s-baixa" stroke-width="1.5"/>
+<rect x="215.9" y="121.5" width="10" height="19.8" class="f-baixa"/>
+<line x1="236" y1="135.6" x2="236" y2="175.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="231" y="141.2" width="10" height="28.2" class="f-baixa"/>
+<line x1="251.2" y1="166.6" x2="251.2" y2="203.3" class="s-baixa" stroke-width="1.5"/>
+<rect x="246.2" y="169.5" width="10" height="22.6" class="f-baixa"/>
+<line x1="266.3" y1="163.8" x2="266.3" y2="197.7" class="s-alta" stroke-width="1.5"/>
+<rect x="261.3" y="166.6" width="10" height="25.4" class="f-alta"/>
+<line x1="281.4" y1="132.8" x2="281.4" y2="169.5" class="s-alta" stroke-width="1.5"/>
+<rect x="276.4" y="138.4" width="10" height="28.2" class="f-alta"/>
+<line x1="296.6" y1="104.6" x2="296.6" y2="141.2" class="s-alta" stroke-width="1.5"/>
+<rect x="291.6" y="110.2" width="10" height="28.2" class="f-alta"/>
+<line x1="311.7" y1="79.2" x2="311.7" y2="113" class="s-alta" stroke-width="1.5"/>
+<rect x="306.7" y="84.8" width="10" height="25.4" class="f-alta"/>
+<line x1="326.8" y1="59.4" x2="326.8" y2="104.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="321.8" y="84.8" width="10" height="14.1" class="f-baixa"/>
+<line x1="342" y1="93.3" x2="342" y2="127.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="337" y="98.9" width="10" height="25.4" class="f-baixa"/>
+<line x1="357.1" y1="121.5" x2="357.1" y2="161" class="s-baixa" stroke-width="1.5"/>
+<rect x="352.1" y="124.3" width="10" height="31" class="f-baixa"/>
+<line x1="372.2" y1="152.5" x2="372.2" y2="180.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="367.2" y="155.4" width="10" height="19.8" class="f-baixa"/>
+<line x1="387.4" y1="172.3" x2="387.4" y2="209" class="s-baixa" stroke-width="1.5"/>
+<rect x="382.4" y="175.1" width="10" height="19.8" class="f-baixa"/>
+<line x1="402.5" y1="169.5" x2="402.5" y2="197.7" class="s-alta" stroke-width="1.5"/>
+<rect x="397.5" y="172.3" width="10" height="22.6" class="f-alta"/>
+<line x1="417.6" y1="138.4" x2="417.6" y2="177.9" class="s-alta" stroke-width="1.5"/>
+<rect x="412.6" y="144.1" width="10" height="28.2" class="f-alta"/>
+<line x1="432.8" y1="113" x2="432.8" y2="152.5" class="s-alta" stroke-width="1.5"/>
+<rect x="427.8" y="118.7" width="10" height="25.4" class="f-alta"/>
+<line x1="447.9" y1="79.2" x2="447.9" y2="124.3" class="s-alta" stroke-width="1.5"/>
+<rect x="442.9" y="87.6" width="10" height="31" class="f-alta"/>
+<line x1="463" y1="62.2" x2="463" y2="98.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="458" y="87.6" width="10" height="5.6" class="f-baixa"/>
+<line x1="478.2" y1="90.4" x2="478.2" y2="121.5" class="s-baixa" stroke-width="1.5"/>
+<rect x="473.2" y="93.3" width="10" height="22.6" class="f-baixa"/>
+<line x1="493.3" y1="110.2" x2="493.3" y2="158.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="488.3" y="115.8" width="10" height="36.7" class="f-baixa"/>
+<line x1="508.4" y1="152.5" x2="508.4" y2="180.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="503.4" y="152.5" width="10" height="22.6" class="f-baixa"/>
+<line x1="62" y1="259.8" x2="524" y2="259.8" class="f-nenhum s-cobalto" stroke-width="2" stroke-dasharray="8 5"/>
+<circle cx="77.1" cy="259.8" r="11" class="f-papel s-cobalto" stroke-width="2"/>
+<text x="77.1" y="264.8" class="f-cobalto" font-size="14" font-weight="700" text-anchor="middle">A</text>
+<circle cx="538" cy="259.8" r="11" class="f-papel s-cobalto" stroke-width="2"/>
+<text x="538" y="264.8" class="f-cobalto" font-size="14" font-weight="700" text-anchor="middle">A</text>
+<text x="555" y="264.8" class="f-cobalto t-dado" font-size="13" font-weight="600">139.950</text>
+<line x1="62" y1="62.2" x2="524" y2="62.2" class="f-nenhum s-cobalto" stroke-width="2" stroke-dasharray="8 5"/>
+<circle cx="77.1" cy="62.2" r="11" class="f-papel s-cobalto" stroke-width="2"/>
+<text x="77.1" y="67.2" class="f-cobalto" font-size="14" font-weight="700" text-anchor="middle">B</text>
+<circle cx="538" cy="62.2" r="11" class="f-papel s-cobalto" stroke-width="2"/>
+<text x="538" y="67.2" class="f-cobalto" font-size="14" font-weight="700" text-anchor="middle">B</text>
+<text x="555" y="67.2" class="f-cobalto t-dado" font-size="13" font-weight="600">140.300</text>
+<line x1="62" y1="146.9" x2="524" y2="146.9" class="f-nenhum s-cobalto" stroke-width="2" stroke-dasharray="8 5"/>
+<circle cx="77.1" cy="146.9" r="11" class="f-papel s-cobalto" stroke-width="2"/>
+<text x="77.1" y="151.9" class="f-cobalto" font-size="14" font-weight="700" text-anchor="middle">C</text>
+<circle cx="538" cy="146.9" r="11" class="f-papel s-cobalto" stroke-width="2"/>
+<text x="538" y="151.9" class="f-cobalto" font-size="14" font-weight="700" text-anchor="middle">C</text>
+<text x="555" y="151.9" class="f-cobalto t-dado" font-size="13" font-weight="600">140.150</text>
+    </svg></div><figcaption>Mini-índice, gráfico de 5 minutos. As linhas A, B e C são candidatas.</figcaption></figure>
+  <div class="ex-opcoes">
+    <button type="button" class="ex-opcao" data-op="a">Linha A</button>
+    <button type="button" class="ex-opcao" data-op="b">Linha B</button>
+    <button type="button" class="ex-opcao" data-op="c">Linha C</button>
+  </div>
+  <p class="ex-explica" hidden><strong>Resposta certa: B.</strong> Em 140.300 o preço chegou três vezes e nas três voltou para baixo, deixando um pavio comprido em cima: é um teto, o lugar onde os vendedores aparecem. A linha A (139.950) nunca foi tocada, e a C (140.150) é atravessada pelo preço sem reação nenhuma: quem opera em cima delas aposta num nível que o gráfico nunca mostrou e toma stop à toa. Nível que vale é o que o próprio preço respeitou, e quanto mais toques, mais gente está de olho nele.</p>
+</div>
+<div class="exercicio" data-exercicio="t4" data-certa="c">
+  <p class="ex-num">Exercício 4 de 10</p>
+  <h3>O preço disparou. O que você faz?</h3>
+  <figure class="figura"><div class="diagrama"><svg viewBox="0 0 620 320" role="img" aria-label="Gráfico de candles de 5 minutos do mini-índice em alta suave, com o preço perto da MME 20 e acima da VWAP; o último candle verde sobe de 140.005 para 140.300 e fecha 340 pontos acima da MME 20"><defs><marker id="fig-t4-seta" viewBox="0 0 10 10" refX="8.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path class="f-alerta" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<line x1="62" y1="288" x2="604" y2="288" class="s-linha" stroke-width="1"/>
+<text x="56" y="292" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.700</text>
+<line x1="62" y1="269.9" x2="604" y2="269.9" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="251.7" x2="604" y2="251.7" class="s-linha" stroke-width="1"/>
+<text x="56" y="255.7" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.800</text>
+<line x1="62" y1="233.6" x2="604" y2="233.6" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="215.4" x2="604" y2="215.4" class="s-linha" stroke-width="1"/>
+<text x="56" y="219.4" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.900</text>
+<line x1="62" y1="197.3" x2="604" y2="197.3" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="179.1" x2="604" y2="179.1" class="s-linha" stroke-width="1"/>
+<text x="56" y="183.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="62" y1="161" x2="604" y2="161" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="142.9" x2="604" y2="142.9" class="s-linha" stroke-width="1"/>
+<text x="56" y="146.9" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="62" y1="124.7" x2="604" y2="124.7" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="106.6" x2="604" y2="106.6" class="s-linha" stroke-width="1"/>
+<text x="56" y="110.6" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="62" y1="88.4" x2="604" y2="88.4" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="70.3" x2="604" y2="70.3" class="s-linha" stroke-width="1"/>
+<text x="56" y="74.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="62" y1="52.1" x2="604" y2="52.1" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="34" x2="604" y2="34" class="s-linha" stroke-width="1"/>
+<text x="56" y="38" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.400</text>
+<line x1="62" y1="288" x2="604" y2="288" class="s-tinta3" stroke-width="1"/>
+<line x1="70.7" y1="288" x2="70.7" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="70.7" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<line x1="175.6" y1="288" x2="175.6" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="175.6" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<line x1="280.5" y1="288" x2="280.5" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="280.5" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<line x1="385.5" y1="288" x2="385.5" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="385.5" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<line x1="62" y1="12" x2="88" y2="12" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="94" y="16" class="f-tinta2" font-size="13">VWAP</text>
+<line x1="152" y1="12" x2="178" y2="12" class="f-nenhum s-alerta" stroke-width="2.5"/>
+<text x="184" y="16" class="f-tinta2" font-size="13">MME 20</text>
+<path d="M70.7,248.1 L88.2,244.7 L105.7,243.7 L123.2,242.3 L140.7,240.3 L158.2,239.3 L175.6,239 L193.1,238.2 L210.6,236.8 L228.1,235.1 L245.6,233.8 L263.1,233.1 L280.5,232.1 L298,230.8 L315.5,229.2 L333,228 L350.5,227.1 L368,226 L385.5,224.7 L402.9,223.2 L420.4,221.9 L437.9,220.6 L455.4,219.2 L472.9,210.5" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M70.7,254.5 L88.2,253 L105.7,252 L123.2,250.4 L140.7,248.3 L158.2,246.9 L175.6,246 L193.1,244.3 L210.6,241.9 L228.1,239 L245.6,236.9 L263.1,235.6 L280.5,233.5 L298,230.7 L315.5,227.5 L333,225.2 L350.5,223.6 L368,221.2 L385.5,218.3 L402.9,214.9 L420.4,212.3 L437.9,209.5 L455.4,206.5 L472.9,193.5" class="f-nenhum s-alerta" stroke-width="2.5"/>
+<line x1="70.7" y1="242.6" x2="70.7" y2="255.3" class="s-alta" stroke-width="1.5"/>
+<rect x="65.7" y="246.3" width="10" height="5.4" class="f-alta"/>
+<line x1="88.2" y1="235.4" x2="88.2" y2="248.1" class="s-alta" stroke-width="1.5"/>
+<rect x="83.2" y="239" width="10" height="7.3" class="f-alta"/>
+<line x1="105.7" y1="235.4" x2="105.7" y2="246.3" class="s-baixa" stroke-width="1.5"/>
+<rect x="100.7" y="239" width="10" height="3.6" class="f-baixa"/>
+<line x1="123.2" y1="231.8" x2="123.2" y2="244.5" class="s-alta" stroke-width="1.5"/>
+<rect x="118.2" y="235.4" width="10" height="7.3" class="f-alta"/>
+<line x1="140.7" y1="224.5" x2="140.7" y2="239" class="s-alta" stroke-width="1.5"/>
+<rect x="135.7" y="228.1" width="10" height="7.3" class="f-alta"/>
+<line x1="158.2" y1="226.3" x2="158.2" y2="237.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="153.2" y="228.1" width="10" height="5.4" class="f-baixa"/>
+<line x1="175.6" y1="231.8" x2="175.6" y2="242.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="170.6" y="233.6" width="10" height="3.6" class="f-baixa"/>
+<line x1="193.1" y1="224.5" x2="193.1" y2="239" class="s-alta" stroke-width="1.5"/>
+<rect x="188.1" y="228.1" width="10" height="9.1" class="f-alta"/>
+<line x1="210.6" y1="215.4" x2="210.6" y2="231.8" class="s-alta" stroke-width="1.5"/>
+<rect x="205.6" y="219.1" width="10" height="9.1" class="f-alta"/>
+<line x1="228.1" y1="208.2" x2="228.1" y2="220.9" class="s-alta" stroke-width="1.5"/>
+<rect x="223.1" y="211.8" width="10" height="7.3" class="f-alta"/>
+<line x1="245.6" y1="210" x2="245.6" y2="220.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="240.6" y="211.8" width="10" height="5.4" class="f-baixa"/>
+<line x1="263.1" y1="215.4" x2="263.1" y2="228.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="258.1" y="217.2" width="10" height="5.4" class="f-baixa"/>
+<line x1="280.5" y1="210" x2="280.5" y2="224.5" class="s-alta" stroke-width="1.5"/>
+<rect x="275.5" y="213.6" width="10" height="9.1" class="f-alta"/>
+<line x1="298" y1="200.9" x2="298" y2="217.2" class="s-alta" stroke-width="1.5"/>
+<rect x="293" y="204.5" width="10" height="9.1" class="f-alta"/>
+<line x1="315.5" y1="193.7" x2="315.5" y2="206.4" class="s-alta" stroke-width="1.5"/>
+<rect x="310.5" y="197.3" width="10" height="7.3" class="f-alta"/>
+<line x1="333" y1="195.5" x2="333" y2="206.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="328" y="197.3" width="10" height="5.4" class="f-baixa"/>
+<line x1="350.5" y1="200.9" x2="350.5" y2="213.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="345.5" y="202.7" width="10" height="5.4" class="f-baixa"/>
+<line x1="368" y1="195.5" x2="368" y2="210" class="s-alta" stroke-width="1.5"/>
+<rect x="363" y="199.1" width="10" height="9.1" class="f-alta"/>
+<line x1="385.5" y1="186.4" x2="385.5" y2="202.7" class="s-alta" stroke-width="1.5"/>
+<rect x="380.5" y="190" width="10" height="9.1" class="f-alta"/>
+<line x1="402.9" y1="179.1" x2="402.9" y2="191.8" class="s-alta" stroke-width="1.5"/>
+<rect x="397.9" y="182.8" width="10" height="7.3" class="f-alta"/>
+<line x1="420.4" y1="181" x2="420.4" y2="191.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="415.4" y="182.8" width="10" height="5.4" class="f-baixa"/>
+<line x1="437.9" y1="179.1" x2="437.9" y2="191.8" class="s-alta" stroke-width="1.5"/>
+<rect x="432.9" y="182.8" width="10" height="5.4" class="f-alta"/>
+<line x1="455.4" y1="173.7" x2="455.4" y2="184.6" class="s-alta" stroke-width="1.5"/>
+<rect x="450.4" y="177.3" width="10" height="5.4" class="f-alta"/>
+<line x1="472.9" y1="64.8" x2="472.9" y2="179.1" class="s-alta" stroke-width="1.5"/>
+<rect x="467.9" y="70.3" width="10" height="107" class="f-alta"/>
+<line x1="480.9" y1="70.3" x2="500.9" y2="70.3" class="s-alerta" stroke-width="1.5" stroke-dasharray="2 3"/>
+<line x1="480.9" y1="193.5" x2="500.9" y2="193.5" class="s-alerta" stroke-width="1.5" stroke-dasharray="2 3"/>
+<line x1="494.9" y1="72.3" x2="494.9" y2="191.5" class="s-alerta" stroke-width="2" marker-start="url(#fig-t4-seta)" marker-end="url(#fig-t4-seta)"/>
+<text x="506.9" y="127.9" class="f-alerta" font-size="15" font-weight="700"><tspan class="t-dado">340</tspan> pontos</text>
+<text x="506.9" y="145.9" class="f-tinta2" font-size="13">acima da MME 20</text>
+    </svg></div><figcaption>Mini-índice, gráfico de 5 minutos, tendência de alta.</figcaption></figure>
+  <div class="ex-opcoes">
+    <button type="button" class="ex-opcao" data-op="a">Compro agora, antes que ele suba ainda mais</button>
+    <button type="button" class="ex-opcao" data-op="b">Vendo agora, porque ele já subiu demais</button>
+    <button type="button" class="ex-opcao" data-op="c">Espero o preço voltar para perto da média</button>
+  </div>
+  <p class="ex-explica" hidden><strong>Resposta certa: C.</strong> O último candle fechou 340 pontos acima da MME 20 (e 385 acima da VWAP): o preço está esticado, e depois de uma esticada dessas é comum ele devolver parte da subida. Comprar agora é pagar quase o preço mais caro do dia, com o stop lá embaixo, abaixo do último recuo (139.965): 340 pontos de risco, R$ 68 por contrato. Vender também é ruim: a tendência é de alta, e apostar contra ela só porque “subiu demais” é ficar na frente do trem. O certo é esperar o preço voltar para perto da média e procurar o candle de retomada, o assunto do próximo exercício.</p>
+</div>
+<div class="exercicio" data-exercicio="t5" data-certa="a">
+  <p class="ex-num">Exercício 5 de 10</p>
+  <h3>Qual candle é o sinal de compra do pullback?</h3>
+  <figure class="figura"><div class="diagrama"><svg viewBox="0 0 620 320" role="img" aria-label="Gráfico de candles de 5 minutos do mini-índice em alta, acima da VWAP; o preço recua até a MME 20 e volta a subir. Candle B: vermelho, no meio do recuo. Candle A: verde, com a mínima na MME 20 e fechamento em alta. Candle C: bem depois, com o preço longe da média">
+<line x1="62" y1="288" x2="604" y2="288" class="s-linha" stroke-width="1"/>
+<text x="56" y="292" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.700</text>
+<line x1="62" y1="266.8" x2="604" y2="266.8" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="245.7" x2="604" y2="245.7" class="s-linha" stroke-width="1"/>
+<text x="56" y="249.7" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.800</text>
+<line x1="62" y1="224.5" x2="604" y2="224.5" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="203.3" x2="604" y2="203.3" class="s-linha" stroke-width="1"/>
+<text x="56" y="207.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.900</text>
+<line x1="62" y1="182.2" x2="604" y2="182.2" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="161" x2="604" y2="161" class="s-linha" stroke-width="1"/>
+<text x="56" y="165" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="62" y1="139.8" x2="604" y2="139.8" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="118.7" x2="604" y2="118.7" class="s-linha" stroke-width="1"/>
+<text x="56" y="122.7" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="62" y1="97.5" x2="604" y2="97.5" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="76.3" x2="604" y2="76.3" class="s-linha" stroke-width="1"/>
+<text x="56" y="80.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="62" y1="55.2" x2="604" y2="55.2" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="34" x2="604" y2="34" class="s-linha" stroke-width="1"/>
+<text x="56" y="38" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="62" y1="288" x2="604" y2="288" class="s-tinta3" stroke-width="1"/>
+<line x1="71.3" y1="288" x2="71.3" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="71.3" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<line x1="183.5" y1="288" x2="183.5" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="183.5" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<line x1="295.6" y1="288" x2="295.6" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="295.6" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<line x1="407.8" y1="288" x2="407.8" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="407.8" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<line x1="519.9" y1="288" x2="519.9" y2="292" class="s-tinta3" stroke-width="1"/>
+<text x="519.9" y="306" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">11h00</text>
+<line x1="62" y1="12" x2="88" y2="12" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="94" y="16" class="f-tinta2" font-size="13">VWAP</text>
+<line x1="152" y1="12" x2="178" y2="12" class="f-nenhum s-alerta" stroke-width="2.5"/>
+<text x="184" y="16" class="f-tinta2" font-size="13">MME 20</text>
+<path d="M71.3,242.8 L90,238.2 L108.7,236.3 L127.4,233.9 L146.1,231 L164.8,229.3 L183.5,227.1 L202.2,224.5 L220.9,222.5 L239.6,220.1 L258.2,217.4 L276.9,215.2 L295.6,212.8 L314.3,210 L333,207 L351.7,204.6 L370.4,202.6 L389.1,201.3 L407.8,200.3 L426.4,199.6 L445.1,198.5 L463.8,196.7 L482.5,194.5 L501.2,191.9 L519.9,189.7 L538.6,186.9 L557.3,183.7 L576,180.2 L594.7,177.4" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M71.3,256.6 L90,254.1 L108.7,252.1 L127.4,249.3 L146.1,245.9 L164.8,243.3 L183.5,239.9 L202.2,235.8 L220.9,232.5 L239.6,228.3 L258.2,223.5 L276.9,219.6 L295.6,214.8 L314.3,209.5 L333,203.6 L351.7,199 L370.4,195.6 L389.1,193.3 L407.8,191.8 L426.4,190.9 L445.1,188.5 L463.8,184.6 L482.5,179.6 L501.2,173.4 L519.9,168.1 L538.6,161.6 L557.3,154.1 L576,145.9 L594.7,139.1" class="f-nenhum s-alerta" stroke-width="2.5"/>
+<line x1="71.3" y1="235.1" x2="71.3" y2="254.1" class="s-alta" stroke-width="1.5"/>
+<rect x="66.3" y="239.3" width="10" height="10.6" class="f-alta"/>
+<line x1="90" y1="226.6" x2="90" y2="241.4" class="s-alta" stroke-width="1.5"/>
+<rect x="85" y="230.9" width="10" height="8.5" class="f-alta"/>
+<line x1="108.7" y1="226.6" x2="108.7" y2="235.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="103.7" y="230.9" width="10" height="2.1" class="f-baixa"/>
+<line x1="127.4" y1="218.2" x2="127.4" y2="235.1" class="s-alta" stroke-width="1.5"/>
+<rect x="122.4" y="222.4" width="10" height="10.6" class="f-alta"/>
+<line x1="146.1" y1="209.7" x2="146.1" y2="226.6" class="s-alta" stroke-width="1.5"/>
+<rect x="141.1" y="213.9" width="10" height="8.5" class="f-alta"/>
+<line x1="164.8" y1="211.8" x2="164.8" y2="222.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="159.8" y="213.9" width="10" height="4.2" class="f-baixa"/>
+<line x1="183.5" y1="203.3" x2="183.5" y2="220.3" class="s-alta" stroke-width="1.5"/>
+<rect x="178.5" y="207.6" width="10" height="10.6" class="f-alta"/>
+<line x1="202.2" y1="192.8" x2="202.2" y2="211.8" class="s-alta" stroke-width="1.5"/>
+<rect x="197.2" y="197" width="10" height="10.6" class="f-alta"/>
+<line x1="220.9" y1="192.8" x2="220.9" y2="205.5" class="s-baixa" stroke-width="1.5"/>
+<rect x="215.9" y="197" width="10" height="4.2" class="f-baixa"/>
+<line x1="239.6" y1="184.3" x2="239.6" y2="203.3" class="s-alta" stroke-width="1.5"/>
+<rect x="234.6" y="188.5" width="10" height="12.7" class="f-alta"/>
+<line x1="258.2" y1="173.7" x2="258.2" y2="192.8" class="s-alta" stroke-width="1.5"/>
+<rect x="253.2" y="177.9" width="10" height="10.6" class="f-alta"/>
+<line x1="276.9" y1="173.7" x2="276.9" y2="186.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="271.9" y="177.9" width="10" height="4.2" class="f-baixa"/>
+<line x1="295.6" y1="165.2" x2="295.6" y2="184.3" class="s-alta" stroke-width="1.5"/>
+<rect x="290.6" y="169.5" width="10" height="12.7" class="f-alta"/>
+<line x1="314.3" y1="154.6" x2="314.3" y2="173.7" class="s-alta" stroke-width="1.5"/>
+<rect x="309.3" y="158.9" width="10" height="10.6" class="f-alta"/>
+<line x1="333" y1="142" x2="333" y2="163.1" class="s-alta" stroke-width="1.5"/>
+<rect x="328" y="148.3" width="10" height="10.6" class="f-alta"/>
+<line x1="351.7" y1="146.2" x2="351.7" y2="158.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="346.7" y="148.3" width="10" height="6.3" class="f-baixa"/>
+<line x1="370.4" y1="150.4" x2="370.4" y2="165.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="365.4" y="154.6" width="10" height="8.5" class="f-baixa"/>
+<line x1="389.1" y1="161" x2="389.1" y2="175.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="384.1" y="163.1" width="10" height="8.5" class="f-baixa"/>
+<line x1="407.8" y1="167.4" x2="407.8" y2="182.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="402.8" y="171.6" width="10" height="6.4" class="f-baixa"/>
+<line x1="426.4" y1="175.8" x2="426.4" y2="186.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="421.4" y="177.9" width="10" height="4.2" class="f-baixa"/>
+<line x1="445.1" y1="161" x2="445.1" y2="188.5" class="s-alta" stroke-width="1.5"/>
+<rect x="440.1" y="165.2" width="10" height="16.9" class="f-alta"/>
+<line x1="463.8" y1="144.1" x2="463.8" y2="169.5" class="s-alta" stroke-width="1.5"/>
+<rect x="458.8" y="148.3" width="10" height="16.9" class="f-alta"/>
+<line x1="482.5" y1="127.1" x2="482.5" y2="150.4" class="s-alta" stroke-width="1.5"/>
+<rect x="477.5" y="131.4" width="10" height="16.9" class="f-alta"/>
+<line x1="501.2" y1="110.2" x2="501.2" y2="135.6" class="s-alta" stroke-width="1.5"/>
+<rect x="496.2" y="114.4" width="10" height="16.9" class="f-alta"/>
+<line x1="519.9" y1="110.2" x2="519.9" y2="122.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="514.9" y="114.4" width="10" height="4.2" class="f-baixa"/>
+<line x1="538.6" y1="95.4" x2="538.6" y2="120.8" class="s-alta" stroke-width="1.5"/>
+<rect x="533.6" y="99.6" width="10" height="19" class="f-alta"/>
+<line x1="557.3" y1="78.4" x2="557.3" y2="103.9" class="s-alta" stroke-width="1.5"/>
+<rect x="552.3" y="82.7" width="10" height="16.9" class="f-alta"/>
+<line x1="576" y1="61.5" x2="576" y2="84.8" class="s-alta" stroke-width="1.5"/>
+<rect x="571" y="67.9" width="10" height="14.8" class="f-alta"/>
+<line x1="594.7" y1="63.6" x2="594.7" y2="78.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="589.7" y="67.9" width="10" height="6.3" class="f-baixa"/>
+<line x1="445.1" y1="157" x2="445.1" y2="134" class="s-cobalto" stroke-width="1.5"/>
+<circle cx="445.1" cy="123" r="11" class="f-papel s-cobalto" stroke-width="2"/>
+<text x="445.1" y="128" class="f-cobalto" font-size="14" font-weight="700" text-anchor="middle">A</text>
+<line x1="389.1" y1="157" x2="389.1" y2="134" class="s-cobalto" stroke-width="1.5"/>
+<circle cx="389.1" cy="123" r="11" class="f-papel s-cobalto" stroke-width="2"/>
+<text x="389.1" y="128" class="f-cobalto" font-size="14" font-weight="700" text-anchor="middle">B</text>
+<line x1="576" y1="57.5" x2="576" y2="38.5" class="s-cobalto" stroke-width="1.5"/>
+<circle cx="576" cy="27.5" r="11" class="f-papel s-cobalto" stroke-width="2"/>
+<text x="576" y="32.5" class="f-cobalto" font-size="14" font-weight="700" text-anchor="middle">C</text>
+    </svg></div><figcaption>Mini-índice, gráfico de 5 minutos, tendência de alta.</figcaption></figure>
+  <div class="ex-opcoes">
+    <button type="button" class="ex-opcao" data-op="a">Candle A</button>
+    <button type="button" class="ex-opcao" data-op="b">Candle B</button>
+    <button type="button" class="ex-opcao" data-op="c">Candle C</button>
+  </div>
+  <p class="ex-explica" hidden><strong>Resposta certa: A.</strong> O candle A é verde, encostou na MME 20 (a linha contínua) e fechou perto da máxima: é o sinal de que o recuo acabou e os compradores voltaram. A compra entra 1 tick acima da máxima dele (140.005), com o stop 1 tick abaixo do fundo do recuo (139.930): só 75 pontos de risco, R$ 15 por contrato. O B ainda está caindo, e comprar ali é tentar adivinhar onde a queda para. O C está 185 pontos acima da média: com o stop no mesmo lugar, seriam 290 pontos de risco, o erro do exercício anterior.</p>
+</div>
+<div class="exercicio" data-exercicio="t6" data-certa="b">
+  <p class="ex-num">Exercício 6 de 10</p>
+  <h3>Onde vai o stop?</h3>
+  <figure class="figura"><div class="diagrama"><svg viewBox="0 0 640 372" role="img" aria-label="Gráfico de candles de 5 minutos do mini-índice em alta, de 9h00 a 10h35: o preço sobe até 140.260, recua até o fundo de 140.090 e volta a subir. Entrada de compra marcada em 140.205. Três stops candidatos: A em 140.185, a 20 pontos da entrada; B em 140.085, a 120 pontos; C em 139.800, a 405 pontos">
+<line x1="62" y1="311.2" x2="452" y2="311.2" class="s-linha" stroke-width="1"/>
+<text x="56" y="315.2" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.800</text>
+<line x1="62" y1="282.7" x2="452" y2="282.7" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="254.1" x2="452" y2="254.1" class="s-linha" stroke-width="1"/>
+<text x="56" y="258.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.900</text>
+<line x1="62" y1="225.6" x2="452" y2="225.6" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="197.1" x2="452" y2="197.1" class="s-linha" stroke-width="1"/>
+<text x="56" y="201.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="62" y1="168.6" x2="452" y2="168.6" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="140.1" x2="452" y2="140.1" class="s-linha" stroke-width="1"/>
+<text x="56" y="144.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="62" y1="111.6" x2="452" y2="111.6" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="83" x2="452" y2="83" class="s-linha" stroke-width="1"/>
+<text x="56" y="87" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="62" y1="54.5" x2="452" y2="54.5" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="26" x2="452" y2="26" class="s-linha" stroke-width="1"/>
+<text x="56" y="30" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="62" y1="334" x2="452" y2="334" class="s-tinta3" stroke-width="1"/>
+<line x1="99.5" y1="334" x2="99.5" y2="338" class="s-tinta3" stroke-width="1"/>
+<text x="99.5" y="352" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<line x1="189.5" y1="334" x2="189.5" y2="338" class="s-tinta3" stroke-width="1"/>
+<text x="189.5" y="352" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<line x1="279.5" y1="334" x2="279.5" y2="338" class="s-tinta3" stroke-width="1"/>
+<text x="279.5" y="352" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<line x1="369.5" y1="334" x2="369.5" y2="338" class="s-tinta3" stroke-width="1"/>
+<text x="369.5" y="352" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<line x1="62" y1="91.6" x2="458" y2="91.6" class="f-nenhum s-baixa" stroke-width="1.5" stroke-dasharray="6 5"/>
+<line x1="62" y1="148.6" x2="458" y2="148.6" class="f-nenhum s-baixa" stroke-width="1.5" stroke-dasharray="6 5"/>
+<line x1="62" y1="311.2" x2="458" y2="311.2" class="f-nenhum s-baixa" stroke-width="1.5" stroke-dasharray="6 5"/>
+<line x1="99.5" y1="237" x2="99.5" y2="271.3" class="s-alta" stroke-width="1.5"/>
+<rect x="94.5" y="242.7" width="10" height="22.8" class="f-alta"/>
+<line x1="114.5" y1="214.2" x2="114.5" y2="245.6" class="s-alta" stroke-width="1.5"/>
+<rect x="109.5" y="219.9" width="10" height="22.8" class="f-alta"/>
+<line x1="129.5" y1="191.4" x2="129.5" y2="225.6" class="s-alta" stroke-width="1.5"/>
+<rect x="124.5" y="200" width="10" height="20" class="f-alta"/>
+<line x1="144.5" y1="194.3" x2="144.5" y2="219.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="139.5" y="200" width="10" height="11.4" class="f-baixa"/>
+<line x1="159.5" y1="208.5" x2="159.5" y2="234.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="154.5" y="211.4" width="10" height="14.3" class="f-baixa"/>
+<line x1="174.5" y1="197.1" x2="174.5" y2="228.5" class="s-alta" stroke-width="1.5"/>
+<rect x="169.5" y="202.8" width="10" height="22.8" class="f-alta"/>
+<line x1="189.5" y1="174.3" x2="189.5" y2="208.5" class="s-alta" stroke-width="1.5"/>
+<rect x="184.5" y="180" width="10" height="22.8" class="f-alta"/>
+<line x1="204.5" y1="148.6" x2="204.5" y2="182.9" class="s-alta" stroke-width="1.5"/>
+<rect x="199.5" y="157.2" width="10" height="22.8" class="f-alta"/>
+<line x1="219.5" y1="151.5" x2="219.5" y2="174.3" class="s-baixa" stroke-width="1.5"/>
+<rect x="214.5" y="157.2" width="10" height="11.4" class="f-baixa"/>
+<line x1="234.5" y1="165.7" x2="234.5" y2="191.4" class="s-baixa" stroke-width="1.5"/>
+<rect x="229.5" y="168.6" width="10" height="14.3" class="f-baixa"/>
+<line x1="249.5" y1="154.3" x2="249.5" y2="185.7" class="s-alta" stroke-width="1.5"/>
+<rect x="244.5" y="160" width="10" height="22.8" class="f-alta"/>
+<line x1="264.5" y1="128.7" x2="264.5" y2="165.7" class="s-alta" stroke-width="1.5"/>
+<rect x="259.5" y="134.4" width="10" height="25.7" class="f-alta"/>
+<line x1="279.5" y1="105.9" x2="279.5" y2="137.2" class="s-alta" stroke-width="1.5"/>
+<rect x="274.5" y="111.6" width="10" height="22.8" class="f-alta"/>
+<line x1="294.5" y1="80.2" x2="294.5" y2="117.3" class="s-alta" stroke-width="1.5"/>
+<rect x="289.5" y="88.7" width="10" height="22.8" class="f-alta"/>
+<line x1="309.5" y1="48.8" x2="309.5" y2="91.6" class="s-alta" stroke-width="1.5"/>
+<rect x="304.5" y="63.1" width="10" height="25.7" class="f-alta"/>
+<line x1="324.5" y1="57.4" x2="324.5" y2="85.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="319.5" y="63.1" width="10" height="17.1" class="f-baixa"/>
+<line x1="339.5" y1="77.3" x2="339.5" y2="105.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="334.5" y="80.2" width="10" height="20" class="f-baixa"/>
+<line x1="354.5" y1="94.4" x2="354.5" y2="125.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="349.5" y="100.1" width="10" height="20" class="f-baixa"/>
+<line x1="369.5" y1="117.3" x2="369.5" y2="145.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="364.5" y="120.1" width="10" height="11.4" class="f-baixa"/>
+<line x1="384.5" y1="83" x2="384.5" y2="137.2" class="s-alta" stroke-width="1.5"/>
+<rect x="379.5" y="88.7" width="10" height="42.8" class="f-alta"/>
+<line x1="375.5" y1="80.2" x2="452" y2="80.2" class="f-nenhum s-cobalto" stroke-width="2.5"/>
+<circle cx="375.5" cy="80.2" r="4" class="f-cobalto"/>
+<text x="396.5" y="72.2" class="f-cobalto" font-size="14" font-weight="700">entrada <tspan class="t-dado">140.205</tspan></text>
+<circle cx="369.5" cy="145.8" r="3.5" class="f-tinta s-folha" stroke-width="1"/>
+<line x1="369.5" y1="149.8" x2="369.5" y2="175.4" class="s-tinta2" stroke-width="1"/>
+<text x="369.5" y="187.4" class="f-tinta2" font-size="12" text-anchor="middle">fundo do recuo <tspan class="t-dado">140.090</tspan></text>
+<text x="460" y="28" class="f-tinta3" font-size="12">preço e distância</text>
+<text x="460" y="43" class="f-tinta3" font-size="12">até a entrada</text>
+<circle cx="77" cy="91.6" r="11" class="f-papel s-baixa" stroke-width="2"/>
+<text x="77" y="96.6" class="f-baixa" font-size="14" font-weight="700" text-anchor="middle">A</text>
+<circle cx="470" cy="91.6" r="11" class="f-papel s-baixa" stroke-width="2"/>
+<text x="470" y="96.6" class="f-baixa" font-size="14" font-weight="700" text-anchor="middle">A</text>
+<text x="487" y="96.6" class="f-baixa" font-size="13" font-weight="700"><tspan class="t-dado">140.185</tspan><tspan class="f-tinta2" font-weight="400"> · <tspan class="t-dado">20</tspan> pts</tspan></text>
+<circle cx="77" cy="148.6" r="11" class="f-papel s-baixa" stroke-width="2"/>
+<text x="77" y="153.6" class="f-baixa" font-size="14" font-weight="700" text-anchor="middle">B</text>
+<circle cx="470" cy="148.6" r="11" class="f-papel s-baixa" stroke-width="2"/>
+<text x="470" y="153.6" class="f-baixa" font-size="14" font-weight="700" text-anchor="middle">B</text>
+<text x="487" y="153.6" class="f-baixa" font-size="13" font-weight="700"><tspan class="t-dado">140.085</tspan><tspan class="f-tinta2" font-weight="400"> · <tspan class="t-dado">120</tspan> pts</tspan></text>
+<circle cx="77" cy="311.2" r="11" class="f-papel s-baixa" stroke-width="2"/>
+<text x="77" y="316.2" class="f-baixa" font-size="14" font-weight="700" text-anchor="middle">C</text>
+<circle cx="470" cy="311.2" r="11" class="f-papel s-baixa" stroke-width="2"/>
+<text x="470" y="316.2" class="f-baixa" font-size="14" font-weight="700" text-anchor="middle">C</text>
+<text x="487" y="316.2" class="f-baixa" font-size="13" font-weight="700"><tspan class="t-dado">139.800</tspan><tspan class="f-tinta2" font-weight="400"> · <tspan class="t-dado">405</tspan> pts</tspan></text>
+    </svg></div><figcaption>Mini-índice, 5 minutos, tendência de alta. A compra entra em 140.205, 1 tick acima do candle que retomou a subida. Neste trecho, cada candle mede em média 57 pontos da mínima à máxima.</figcaption></figure>
+  <div class="ex-opcoes">
+    <button type="button" class="ex-opcao" data-op="a">Stop A</button>
+    <button type="button" class="ex-opcao" data-op="b">Stop B</button>
+    <button type="button" class="ex-opcao" data-op="c">Stop C</button>
+  </div>
+  <p class="ex-explica" hidden><strong>Resposta certa: B.</strong> O stop vai logo abaixo do fundo do recuo: 140.090 menos 1 tick dá 140.085, a 120 pontos da entrada. Se o preço perder esse fundo, o recuo virou queda e a ideia da compra acabou. O A, a só 20 pontos, é menor que o menor candle do gráfico (40 pontos): o vaivém normal te tira antes de o trade andar, e várias perdas pequenas somam uma grande. O C, a 405 pontos, custa R$ 81 por contrato quando dá errado (o B custa R$ 24, fora custos), e para o alvo ser o dobro do risco ele teria que ficar 810 pontos acima, um alvo que quase nunca chega.</p>
+</div>
+<div class="exercicio" data-exercicio="t7" data-certa="c">
+  <p class="ex-num">Exercício 7 de 10</p>
+  <h3>Vale a pena entrar?</h3>
+  <figure class="figura"><div class="diagrama"><svg viewBox="0 0 660 362" role="img" aria-label="Gráfico de candles de 5 minutos do mini-índice em alta: o preço sobe de 139.560 até 140.100, bate ali duas vezes e volta, recua até as médias e dá sinal de compra. Entrada em 140.000, stop em 139.850, 150 pontos abaixo; a resistência de 140.100 fica só 100 pontos acima da entrada">
+<line x1="62" y1="324" x2="532" y2="324" class="s-linha" stroke-width="1"/>
+<text x="56" y="328" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.500</text>
+<line x1="62" y1="301.7" x2="532" y2="301.7" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="279.4" x2="532" y2="279.4" class="s-linha" stroke-width="1"/>
+<text x="56" y="283.4" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.600</text>
+<line x1="62" y1="257.1" x2="532" y2="257.1" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="234.8" x2="532" y2="234.8" class="s-linha" stroke-width="1"/>
+<text x="56" y="238.8" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.700</text>
+<line x1="62" y1="212.5" x2="532" y2="212.5" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="190.2" x2="532" y2="190.2" class="s-linha" stroke-width="1"/>
+<text x="56" y="194.2" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.800</text>
+<line x1="62" y1="167.8" x2="532" y2="167.8" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="145.5" x2="532" y2="145.5" class="s-linha" stroke-width="1"/>
+<text x="56" y="149.5" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.900</text>
+<line x1="62" y1="123.2" x2="532" y2="123.2" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="100.9" x2="532" y2="100.9" class="s-linha" stroke-width="1"/>
+<text x="56" y="104.9" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="62" y1="78.6" x2="532" y2="78.6" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="56.3" x2="532" y2="56.3" class="s-linha" stroke-width="1"/>
+<text x="56" y="60.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="62" y1="34" x2="532" y2="34" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="324" x2="532" y2="324" class="s-tinta3" stroke-width="1"/>
+<line x1="68.9" y1="324" x2="68.9" y2="328" class="s-tinta3" stroke-width="1"/>
+<text x="68.9" y="342" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<line x1="151.9" y1="324" x2="151.9" y2="328" class="s-tinta3" stroke-width="1"/>
+<text x="151.9" y="342" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<line x1="234.8" y1="324" x2="234.8" y2="328" class="s-tinta3" stroke-width="1"/>
+<text x="234.8" y="342" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<line x1="317.7" y1="324" x2="317.7" y2="328" class="s-tinta3" stroke-width="1"/>
+<text x="317.7" y="342" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<line x1="62" y1="14" x2="88" y2="14" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4" stroke-opacity="0.6"/>
+<text x="94" y="18" class="f-tinta2" font-size="13">VWAP</text>
+<line x1="152" y1="14" x2="178" y2="14" class="f-nenhum s-alerta" stroke-width="2.5" stroke-opacity="0.6"/>
+<text x="184" y="18" class="f-tinta2" font-size="13">MME 20</text>
+<rect x="395.9" y="56.3" width="136.1" height="44.6" class="f-alta-fundo" opacity="0.8"/>
+<rect x="395.9" y="100.9" width="136.1" height="66.9" class="f-baixa-fundo" opacity="0.8"/>
+<path d="M68.9,285.3 L82.7,276.6 L96.6,273.5 L110.4,269.6 L124.2,264 L138,257.7 L151.9,253.5 L165.7,248.7 L179.5,243 L193.3,237 L207.1,232.4 L221,227.2 L234.8,221.3 L248.6,214.9 L262.4,208 L276.3,201.3 L290.1,196.7 L303.9,192.1 L317.7,187.1 L331.6,183.6 L345.4,181.1 L359.2,179.5 L373,178.6 L386.9,176.2" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4" stroke-opacity="0.6"/>
+<path d="M68.9,303.6 L82.7,299.6 L96.6,296.6 L110.4,292.2 L124.2,286.3 L138,279.3 L151.9,273.6 L165.7,266.5 L179.5,258.1 L193.3,248.7 L207.1,240.8 L221,231.7 L234.8,221.4 L248.6,209.9 L262.4,197.4 L276.3,186.5 L290.1,177.9 L303.9,168.7 L317.7,160.7 L331.6,155.3 L345.4,152.2 L359.2,151.4 L373,151.9 L386.9,147.7" class="f-nenhum s-alerta" stroke-width="2.5" stroke-opacity="0.6"/>
+<line x1="62" y1="56.3" x2="532" y2="56.3" class="f-nenhum s-tinta" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="68.9" y1="274.9" x2="68.9" y2="301.7" class="s-alta" stroke-width="1.5"/>
+<rect x="64.9" y="279.4" width="8" height="17.8" class="f-alta"/>
+<line x1="82.7" y1="257.1" x2="82.7" y2="281.6" class="s-alta" stroke-width="1.5"/>
+<rect x="78.7" y="261.5" width="8" height="17.8" class="f-alta"/>
+<line x1="96.6" y1="257.1" x2="96.6" y2="272.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="92.6" y="261.5" width="8" height="6.7" class="f-baixa"/>
+<line x1="110.4" y1="245.9" x2="110.4" y2="270.5" class="s-alta" stroke-width="1.5"/>
+<rect x="106.4" y="250.4" width="8" height="17.8" class="f-alta"/>
+<line x1="124.2" y1="225.8" x2="124.2" y2="254.8" class="s-alta" stroke-width="1.5"/>
+<rect x="120.2" y="230.3" width="8" height="20.1" class="f-alta"/>
+<line x1="138" y1="208" x2="138" y2="232.5" class="s-alta" stroke-width="1.5"/>
+<rect x="134" y="212.5" width="8" height="17.8" class="f-alta"/>
+<line x1="151.9" y1="210.2" x2="151.9" y2="223.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="147.9" y="212.5" width="8" height="6.7" class="f-baixa"/>
+<line x1="165.7" y1="194.6" x2="165.7" y2="221.4" class="s-alta" stroke-width="1.5"/>
+<rect x="161.7" y="199.1" width="8" height="20.1" class="f-alta"/>
+<line x1="179.5" y1="174.5" x2="179.5" y2="203.5" class="s-alta" stroke-width="1.5"/>
+<rect x="175.5" y="179" width="8" height="20.1" class="f-alta"/>
+<line x1="193.3" y1="154.5" x2="193.3" y2="181.2" class="s-alta" stroke-width="1.5"/>
+<rect x="189.3" y="158.9" width="8" height="20.1" class="f-alta"/>
+<line x1="207.1" y1="156.7" x2="207.1" y2="170.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="203.1" y="158.9" width="8" height="6.7" class="f-baixa"/>
+<line x1="221" y1="141.1" x2="221" y2="167.8" class="s-alta" stroke-width="1.5"/>
+<rect x="217" y="145.5" width="8" height="20.1" class="f-alta"/>
+<line x1="234.8" y1="118.8" x2="234.8" y2="150" class="s-alta" stroke-width="1.5"/>
+<rect x="230.8" y="123.2" width="8" height="22.3" class="f-alta"/>
+<line x1="248.6" y1="96.5" x2="248.6" y2="125.5" class="s-alta" stroke-width="1.5"/>
+<rect x="244.6" y="100.9" width="8" height="22.3" class="f-alta"/>
+<line x1="262.4" y1="74.2" x2="262.4" y2="105.4" class="s-alta" stroke-width="1.5"/>
+<rect x="258.4" y="78.6" width="8" height="22.3" class="f-alta"/>
+<line x1="276.3" y1="56.3" x2="276.3" y2="87.5" class="s-baixa" stroke-width="1.5"/>
+<rect x="272.3" y="78.6" width="8" height="4.5" class="f-baixa"/>
+<line x1="290.1" y1="80.8" x2="290.1" y2="100.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="286.1" y="83.1" width="8" height="13.4" class="f-baixa"/>
+<line x1="303.9" y1="76.4" x2="303.9" y2="98.7" class="s-alta" stroke-width="1.5"/>
+<rect x="299.9" y="80.8" width="8" height="15.6" class="f-alta"/>
+<line x1="317.7" y1="56.3" x2="317.7" y2="89.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="313.7" y="80.8" width="8" height="4.5" class="f-baixa"/>
+<line x1="331.6" y1="83.1" x2="331.6" y2="107.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="327.6" y="85.3" width="8" height="17.8" class="f-baixa"/>
+<line x1="345.4" y1="98.7" x2="345.4" y2="127.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="341.4" y="103.2" width="8" height="20.1" class="f-baixa"/>
+<line x1="359.2" y1="121" x2="359.2" y2="147.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="355.2" y="123.2" width="8" height="20.1" class="f-baixa"/>
+<line x1="373" y1="141.1" x2="373" y2="165.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="369" y="143.3" width="8" height="13.4" class="f-baixa"/>
+<line x1="386.9" y1="103.2" x2="386.9" y2="161.2" class="s-alta" stroke-width="1.5"/>
+<rect x="382.9" y="107.6" width="8" height="49.1" class="f-alta"/>
+<circle cx="276.3" cy="56.3" r="7" class="f-nenhum s-alerta" stroke-width="2"/>
+<circle cx="317.7" cy="56.3" r="7" class="f-nenhum s-alerta" stroke-width="2"/>
+<line x1="395.9" y1="100.9" x2="532" y2="100.9" class="f-nenhum s-cobalto" stroke-width="2.5"/>
+<line x1="395.9" y1="167.8" x2="532" y2="167.8" class="f-nenhum s-baixa" stroke-width="2" stroke-dasharray="7 5"/>
+<circle cx="395.9" cy="100.9" r="4" class="f-cobalto"/>
+<text x="407.9" y="75.6" class="f-tinta2" font-size="12">ganho possível</text>
+<text x="407.9" y="92.6" class="f-alta" font-size="15" font-weight="700">+<tspan class="t-dado">100</tspan> pts</text>
+<text x="407.9" y="131.4" class="f-tinta2" font-size="12">risco</text>
+<text x="407.9" y="148.4" class="f-baixa" font-size="15" font-weight="700">−<tspan class="t-dado">150</tspan> pts</text>
+<text x="540" y="51.3" class="f-tinta" font-size="13" font-weight="700">resistência</text>
+<text x="540" y="69.3" class="f-tinta t-dado" font-size="13">140.100</text>
+<text x="540" y="95.9" class="f-cobalto" font-size="13" font-weight="700">entrada</text>
+<text x="540" y="113.9" class="f-cobalto t-dado" font-size="13">140.000</text>
+<text x="540" y="162.8" class="f-baixa" font-size="13" font-weight="700">stop</text>
+<text x="540" y="180.8" class="f-baixa t-dado" font-size="13">139.850</text>
+<line x1="387.9" y1="164.2" x2="392.9" y2="173.8" class="s-cobalto" stroke-width="1.5"/>
+<text x="393.9" y="184.8" class="f-cobalto" font-size="12" font-weight="700">sinal</text>
+    </svg></div><figcaption>Mini-índice, 5 minutos. O recuo até as médias deu sinal de compra às 10h55, e a resistência de 140.100 está logo acima.</figcaption></figure>
+  <div class="ex-opcoes">
+    <button type="button" class="ex-opcao" data-op="a">Sim: o setup apareceu certinho, então é só entrar</button>
+    <button type="button" class="ex-opcao" data-op="b">Sim, mas dobro a mão para o ganho compensar o risco</button>
+    <button type="button" class="ex-opcao" data-op="c">Não: o alvo (100 pts) é menor que o risco (150 pts)</button>
+  </div>
+  <p class="ex-explica" hidden><strong>Resposta certa: C.</strong> O alvo tem que ficar na resistência de 140.100, onde o preço já bateu e voltou duas vezes hoje: você arriscaria 150 pontos para ganhar 100. Para empatar ganhando 100 e perdendo 150 (fora custos) você precisa acertar 60% das vezes (150 ÷ 250), e com R$ 1,50 de custo por contrato isso sobe para 63%: quase ninguém sustenta isso. Entrar “porque o setup apareceu” ignora essa conta, e dobrar a mão dobra o ganho e a perda juntos: a proporção ruim continua lá, só que maior. Ficar de fora também é uma decisão, e das boas.</p>
+</div>
+<div class="exercicio" data-exercicio="t8" data-certa="a">
+  <p class="ex-num">Exercício 8 de 10</p>
+  <h3>Apareceu um martelo. Você compra?</h3>
+  <figure class="figura"><div class="diagrama"><svg viewBox="0 0 640 330" role="img" aria-label="Gráfico de candles de 5 minutos do mini-índice em queda, de 9h00 a 11h10: topos em 140.235, 140.155, 140.070, 139.980 e fundos em 140.175, 140.085, 140.000, 139.910, abaixo da VWAP e da MME 20 desde as 9h20. O último candle é um martelo, com pavio inferior longo até 139.660">
+<line x1="62" y1="296" x2="624" y2="296" class="s-linha" stroke-width="1"/>
+<text x="56" y="300" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.600</text>
+<line x1="62" y1="278.5" x2="624" y2="278.5" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="261.1" x2="624" y2="261.1" class="s-linha" stroke-width="1"/>
+<text x="56" y="265.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.700</text>
+<line x1="62" y1="243.6" x2="624" y2="243.6" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="226.1" x2="624" y2="226.1" class="s-linha" stroke-width="1"/>
+<text x="56" y="230.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.800</text>
+<line x1="62" y1="208.7" x2="624" y2="208.7" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="191.2" x2="624" y2="191.2" class="s-linha" stroke-width="1"/>
+<text x="56" y="195.2" class="f-tinta3 t-dado" font-size="12" text-anchor="end">139.900</text>
+<line x1="62" y1="173.7" x2="624" y2="173.7" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="156.3" x2="624" y2="156.3" class="s-linha" stroke-width="1"/>
+<text x="56" y="160.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.000</text>
+<line x1="62" y1="138.8" x2="624" y2="138.8" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="121.3" x2="624" y2="121.3" class="s-linha" stroke-width="1"/>
+<text x="56" y="125.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.100</text>
+<line x1="62" y1="103.9" x2="624" y2="103.9" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="86.4" x2="624" y2="86.4" class="s-linha" stroke-width="1"/>
+<text x="56" y="90.4" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.200</text>
+<line x1="62" y1="68.9" x2="624" y2="68.9" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="51.5" x2="624" y2="51.5" class="s-linha" stroke-width="1"/>
+<text x="56" y="55.5" class="f-tinta3 t-dado" font-size="12" text-anchor="end">140.300</text>
+<line x1="62" y1="34" x2="624" y2="34" class="s-linha" stroke-width="1"/>
+<line x1="62" y1="296" x2="624" y2="296" class="s-tinta3" stroke-width="1"/>
+<line x1="70.8" y1="296" x2="70.8" y2="300" class="s-tinta3" stroke-width="1"/>
+<text x="70.8" y="314" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<line x1="176.2" y1="296" x2="176.2" y2="300" class="s-tinta3" stroke-width="1"/>
+<text x="176.2" y="314" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<line x1="281.5" y1="296" x2="281.5" y2="300" class="s-tinta3" stroke-width="1"/>
+<text x="281.5" y="314" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<line x1="386.9" y1="296" x2="386.9" y2="300" class="s-tinta3" stroke-width="1"/>
+<text x="386.9" y="314" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<line x1="492.3" y1="296" x2="492.3" y2="300" class="s-tinta3" stroke-width="1"/>
+<text x="492.3" y="314" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">11h00</text>
+<line x1="62" y1="12" x2="88" y2="12" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="94" y="16" class="f-tinta2" font-size="13">VWAP</text>
+<line x1="152" y1="12" x2="178" y2="12" class="f-nenhum s-alerta" stroke-width="2.5"/>
+<text x="184" y="16" class="f-tinta2" font-size="13">MME 20</text>
+<path d="M70.8,61.9 L88.3,57.8 L105.9,58.6 L123.5,61.8 L141,66 L158.6,68.3 L176.2,69.5 L193.7,71.4 L211.3,74.2 L228.8,77.6 L246.4,80 L264,81.6 L281.5,83.7 L299.1,86.4 L316.7,89.6 L334.2,92 L351.8,93.9 L369.3,96.2 L386.9,99 L404.5,102.3 L422,104.9 L439.6,106.9 L457.2,109.5 L474.7,112.6 L492.3,116 L509.8,119.6 L527.4,124.8" class="f-nenhum s-tinta2" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M70.8,42.7 L88.3,43.5 L105.9,45.4 L123.5,48.5 L141,52.4 L158.6,55.2 L176.2,57.5 L193.7,60.9 L211.3,65.3 L228.8,70.7 L246.4,74.5 L264,77.4 L281.5,81.6 L299.1,86.7 L316.7,92.9 L334.2,97.4 L351.8,101 L369.3,105.8 L386.9,111.6 L404.5,118.3 L422,123.4 L439.6,127.7 L457.2,133.1 L474.7,139.6 L492.3,147.2 L509.8,155.4 L527.4,162.1" class="f-nenhum s-alerta" stroke-width="2.5"/>
+<line x1="70.8" y1="55" x2="70.8" y2="72.4" class="s-alta" stroke-width="1.5"/>
+<rect x="65.8" y="58.5" width="10" height="10.5" class="f-alta"/>
+<line x1="88.3" y1="46.2" x2="88.3" y2="61.9" class="s-alta" stroke-width="1.5"/>
+<rect x="83.3" y="51.5" width="10" height="7" class="f-alta"/>
+<line x1="105.9" y1="49.7" x2="105.9" y2="67.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="100.9" y="51.5" width="10" height="12.2" class="f-baixa"/>
+<line x1="123.5" y1="60.2" x2="123.5" y2="81.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="118.5" y="63.7" width="10" height="14" class="f-baixa"/>
+<line x1="141" y1="75.9" x2="141" y2="95.1" class="s-baixa" stroke-width="1.5"/>
+<rect x="136" y="77.7" width="10" height="12.2" class="f-baixa"/>
+<line x1="158.6" y1="77.7" x2="158.6" y2="91.6" class="s-alta" stroke-width="1.5"/>
+<rect x="153.6" y="81.2" width="10" height="8.7" class="f-alta"/>
+<line x1="176.2" y1="74.2" x2="176.2" y2="84.7" class="s-alta" stroke-width="1.5"/>
+<rect x="171.2" y="79.4" width="10" height="1.7" class="f-alta"/>
+<line x1="193.7" y1="77.7" x2="193.7" y2="96.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="188.7" y="79.4" width="10" height="14" class="f-baixa"/>
+<line x1="211.3" y1="89.9" x2="211.3" y2="110.9" class="s-baixa" stroke-width="1.5"/>
+<rect x="206.3" y="93.4" width="10" height="14" class="f-baixa"/>
+<line x1="228.8" y1="105.6" x2="228.8" y2="126.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="223.8" y="107.4" width="10" height="14" class="f-baixa"/>
+<line x1="246.4" y1="107.4" x2="246.4" y2="123.1" class="s-alta" stroke-width="1.5"/>
+<rect x="241.4" y="110.9" width="10" height="10.5" class="f-alta"/>
+<line x1="264" y1="102.1" x2="264" y2="114.3" class="s-alta" stroke-width="1.5"/>
+<rect x="259" y="105.6" width="10" height="5.2" class="f-alta"/>
+<line x1="281.5" y1="103.9" x2="281.5" y2="124.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="276.5" y="105.6" width="10" height="15.7" class="f-baixa"/>
+<line x1="299.1" y1="117.8" x2="299.1" y2="138.8" class="s-baixa" stroke-width="1.5"/>
+<rect x="294.1" y="121.3" width="10" height="14" class="f-baixa"/>
+<line x1="316.7" y1="133.6" x2="316.7" y2="156.3" class="s-baixa" stroke-width="1.5"/>
+<rect x="311.7" y="135.3" width="10" height="15.7" class="f-baixa"/>
+<line x1="334.2" y1="137.1" x2="334.2" y2="152.8" class="s-alta" stroke-width="1.5"/>
+<rect x="329.2" y="140.5" width="10" height="10.5" class="f-alta"/>
+<line x1="351.8" y1="131.8" x2="351.8" y2="144" class="s-alta" stroke-width="1.5"/>
+<rect x="346.8" y="135.3" width="10" height="5.2" class="f-alta"/>
+<line x1="369.3" y1="133.6" x2="369.3" y2="154.5" class="s-baixa" stroke-width="1.5"/>
+<rect x="364.3" y="135.3" width="10" height="15.7" class="f-baixa"/>
+<line x1="386.9" y1="147.5" x2="386.9" y2="170.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="381.9" y="151" width="10" height="15.7" class="f-baixa"/>
+<line x1="404.5" y1="165" x2="404.5" y2="187.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="399.5" y="166.7" width="10" height="15.7" class="f-baixa"/>
+<line x1="422" y1="168.5" x2="422" y2="184.2" class="s-alta" stroke-width="1.5"/>
+<rect x="417" y="172" width="10" height="10.5" class="f-alta"/>
+<line x1="439.6" y1="163.3" x2="439.6" y2="175.5" class="s-alta" stroke-width="1.5"/>
+<rect x="434.6" y="168.5" width="10" height="3.5" class="f-alta"/>
+<line x1="457.2" y1="166.7" x2="457.2" y2="187.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="452.2" y="168.5" width="10" height="15.7" class="f-baixa"/>
+<line x1="474.7" y1="180.7" x2="474.7" y2="205.2" class="s-baixa" stroke-width="1.5"/>
+<rect x="469.7" y="184.2" width="10" height="17.5" class="f-baixa"/>
+<line x1="492.3" y1="199.9" x2="492.3" y2="222.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="487.3" y="201.7" width="10" height="17.5" class="f-baixa"/>
+<line x1="509.8" y1="217.4" x2="509.8" y2="236.6" class="s-baixa" stroke-width="1.5"/>
+<rect x="504.8" y="219.1" width="10" height="14" class="f-baixa"/>
+<line x1="527.4" y1="222.6" x2="527.4" y2="275" class="s-alta" stroke-width="1.5"/>
+<rect x="522.4" y="226.1" width="10" height="7" class="f-alta"/>
+<rect x="548.4" y="242.1" width="76.6" height="52" class="f-papel"/>
+<line x1="534.4" y1="254.1" x2="547.4" y2="254.1" class="s-cobalto" stroke-width="1.5"/>
+<text x="552.4" y="259.1" class="f-cobalto" font-size="14" font-weight="700">martelo</text>
+<text x="552.4" y="275.1" class="f-tinta2" font-size="12">pavio longo</text>
+<text x="552.4" y="289.1" class="f-tinta2" font-size="12">embaixo</text>
+    </svg></div><figcaption>Mini-índice, 5 minutos. O último candle, das 11h10, é um martelo: corpo pequeno e pavio longo embaixo.</figcaption></figure>
+  <div class="ex-opcoes">
+    <button type="button" class="ex-opcao" data-op="a">Não: a tendência é de baixa, e um candle só não muda isso</button>
+    <button type="button" class="ex-opcao" data-op="b">Sim: martelo depois de uma queda costuma ser sinal de alta</button>
+    <button type="button" class="ex-opcao" data-op="c">Sim, e com mão maior, porque o sinal é forte</button>
+  </div>
+  <p class="ex-explica" hidden><strong>Resposta certa: A.</strong> Os topos vêm descendo (140.235, 140.155, 140.070 e 139.980), os fundos também, e desde as 9h20 nenhum candle voltou a encostar na VWAP nem na MME 20: é tendência de baixa. O martelo só mostra que alguém comprou naquele fundo por 5 minutos; comprar aqui é remar contra a maré, com um stop que a próxima perna de queda costuma atropelar. Aumentar a mão porque “o sinal é forte” só transforma um palpite numa perda maior. Para pensar em compra, o gráfico primeiro teria que parar de fazer topos mais baixos e voltar para cima das médias.</p>
+</div>
+<div class="exercicio" data-exercicio="t9" data-certa="b">
+  <p class="ex-num">Exercício 9 de 10</p>
+  <h3>Quantos contratos você pode usar, no máximo?</h3>
+  <figure class="figura"><div class="diagrama"><svg viewBox="0 0 700 286" role="img" aria-label="Quadro com os números: capital de R$ 5.000, risco máximo de 1% por trade, R$ 50; stop de 100 pontos; 1 ponto do mini-índice vale R$ 0,20 por contrato; custos de R$ 1,50 por contrato. Ao lado, um trade de compra com entrada em 140.100 e stop em 140.000, 100 pontos abaixo"><defs><marker id="fig-t9-seta" viewBox="0 0 10 10" refX="8.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path class="f-baixa" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect x="16" y="26" width="304" height="234" class="f-folha s-linha" rx="6" stroke-width="1.5"/>
+<text x="32" y="56" class="f-tinta" font-size="16" font-weight="700">Seus números</text>
+<line x1="32" y1="70" x2="304" y2="70" class="s-linha" stroke-width="1"/>
+<text x="32" y="102" class="f-tinta2" font-size="14">Capital</text>
+<text x="304" y="102" class="f-tinta t-dado" font-size="15" font-weight="700" text-anchor="end">R$ 5.000</text>
+<line x1="32" y1="116" x2="304" y2="116" class="s-linha" stroke-width="1" stroke-dasharray="2 4"/>
+<text x="32" y="138" class="f-tinta2" font-size="14">Risco máximo por trade (1%)</text>
+<text x="304" y="138" class="f-tinta t-dado" font-size="15" font-weight="700" text-anchor="end">R$ 50</text>
+<line x1="32" y1="152" x2="304" y2="152" class="s-linha" stroke-width="1" stroke-dasharray="2 4"/>
+<text x="32" y="174" class="f-tinta2" font-size="14">Stop do trade</text>
+<text x="304" y="174" class="f-tinta t-dado" font-size="15" font-weight="700" text-anchor="end">100 pts</text>
+<line x1="32" y1="188" x2="304" y2="188" class="s-linha" stroke-width="1" stroke-dasharray="2 4"/>
+<text x="32" y="210" class="f-tinta2" font-size="14">1 ponto do WIN, por contrato</text>
+<text x="304" y="210" class="f-tinta t-dado" font-size="15" font-weight="700" text-anchor="end">R$ 0,20</text>
+<line x1="32" y1="224" x2="304" y2="224" class="s-linha" stroke-width="1" stroke-dasharray="2 4"/>
+<text x="32" y="246" class="f-tinta2" font-size="14">Custos, por contrato</text>
+<text x="304" y="246" class="f-tinta t-dado" font-size="15" font-weight="700" text-anchor="end">R$ 1,50</text>
+<text x="358" y="30" class="f-tinta2" font-size="13" font-weight="600">O trade: compra no WIN, 5 minutos</text>
+<rect x="490" y="122" width="136" height="100" class="f-baixa-fundo" opacity="0.8"/>
+<line x1="373" y1="177" x2="373" y2="212" class="s-alta" stroke-width="1.5"/>
+<rect x="368" y="187" width="10" height="20" class="f-alta"/>
+<line x1="391" y1="147" x2="391" y2="192" class="s-alta" stroke-width="1.5"/>
+<rect x="386" y="157" width="10" height="30" class="f-alta"/>
+<line x1="409" y1="112" x2="409" y2="167" class="s-alta" stroke-width="1.5"/>
+<rect x="404" y="122" width="10" height="35" class="f-alta"/>
+<line x1="427" y1="77" x2="427" y2="127" class="s-alta" stroke-width="1.5"/>
+<rect x="422" y="92" width="10" height="30" class="f-alta"/>
+<line x1="445" y1="87" x2="445" y2="137" class="s-baixa" stroke-width="1.5"/>
+<rect x="440" y="92" width="10" height="35" class="f-baixa"/>
+<line x1="463" y1="122" x2="463" y2="172" class="s-baixa" stroke-width="1.5"/>
+<rect x="458" y="127" width="10" height="35" class="f-baixa"/>
+<line x1="481" y1="157" x2="481" y2="217" class="s-baixa" stroke-width="1.5"/>
+<rect x="476" y="162" width="10" height="30" class="f-baixa"/>
+<line x1="499" y1="127" x2="499" y2="202" class="s-alta" stroke-width="1.5"/>
+<rect x="494" y="137" width="10" height="55" class="f-alta"/>
+<line x1="490" y1="122" x2="626" y2="122" class="f-nenhum s-cobalto" stroke-width="2.5"/>
+<line x1="490" y1="222" x2="626" y2="222" class="f-nenhum s-baixa" stroke-width="2" stroke-dasharray="7 5"/>
+<circle cx="490" cy="122" r="4" class="f-cobalto"/>
+<line x1="554" y1="126" x2="554" y2="218" class="f-nenhum s-baixa" stroke-width="1.5" marker-start="url(#fig-t9-seta)" marker-end="url(#fig-t9-seta)"/>
+<text x="563" y="177" class="f-baixa" font-size="15" font-weight="700"><tspan class="t-dado">100</tspan> pts</text>
+<text x="634" y="117" class="f-cobalto" font-size="13" font-weight="700">entrada</text>
+<text x="634" y="135" class="f-cobalto t-dado" font-size="13">140.100</text>
+<text x="634" y="217" class="f-baixa" font-size="13" font-weight="700">stop</text>
+<text x="634" y="235" class="f-baixa t-dado" font-size="13">140.000</text>
+    </svg></div><figcaption>Compra no mini-índice com o stop 100 pontos abaixo da entrada. Use os números do quadro.</figcaption></figure>
+  <div class="ex-opcoes">
+    <button type="button" class="ex-opcao" data-op="a">1 contrato</button>
+    <button type="button" class="ex-opcao" data-op="b">2 contratos</button>
+    <button type="button" class="ex-opcao" data-op="c">5 contratos</button>
+  </div>
+  <p class="ex-explica" hidden><strong>Resposta certa: B.</strong> Por contrato, o stop custa 100 pontos × R$ 0,20 = R$ 20, mais R$ 1,50 de custos: R$ 21,50. Seu limite é R$ 50, então R$ 50 ÷ R$ 21,50 = 2,3, e arredondando para baixo ficam 2 contratos (risco de R$ 43). Com 5 contratos o risco vai a R$ 107,50, mais que o dobro do permitido: três stops assim levam quase 6,5% da conta numa manhã. Já 1 contrato respeita a regra (e é um ótimo jeito de começar), só não é o máximo que ela permite.</p>
+</div>
+<div class="exercicio" data-exercicio="t10" data-certa="c">
+  <p class="ex-num">Exercício 10 de 10</p>
+  <h3>O que você faz agora?</h3>
+  <figure class="figura"><div class="diagrama"><svg viewBox="0 0 700 326" role="img" aria-label="Resultado acumulado do dia, trade a trade, numa conta de R$ 10.000: +R$ 40, −R$ 95, −R$ 95; às 10h40 o acumulado é −R$ 150, depois de 2 perdas seguidas. O stop diário está em −R$ 300. Ao lado, um setup bonito de compra aparecendo agora">
+<line x1="84" y1="52" x2="410" y2="52" class="s-linha" stroke-width="1"/>
+<text x="76" y="56" class="f-tinta3 t-dado" font-size="12" text-anchor="end">+R$ 100</text>
+<line x1="84" y1="103.1" x2="410" y2="103.1" class="s-tinta3" stroke-width="1.5"/>
+<text x="76" y="107.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">R$ 0</text>
+<line x1="84" y1="154.1" x2="410" y2="154.1" class="s-linha" stroke-width="1"/>
+<text x="76" y="158.1" class="f-tinta3 t-dado" font-size="12" text-anchor="end">−R$ 100</text>
+<line x1="84" y1="205.2" x2="410" y2="205.2" class="s-linha" stroke-width="1"/>
+<text x="76" y="209.2" class="f-tinta3 t-dado" font-size="12" text-anchor="end">−R$ 200</text>
+<line x1="84" y1="256.3" x2="410" y2="256.3" class="s-linha" stroke-width="1"/>
+<text x="76" y="260.3" class="f-tinta3 t-dado" font-size="12" text-anchor="end">−R$ 300</text>
+<line x1="84" y1="292" x2="410" y2="292" class="s-tinta3" stroke-width="1"/>
+<line x1="84" y1="292" x2="84" y2="296" class="s-tinta3" stroke-width="1"/>
+<text x="84" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h00</text>
+<line x1="181.8" y1="292" x2="181.8" y2="296" class="s-tinta3" stroke-width="1"/>
+<text x="181.8" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">9h30</text>
+<line x1="279.6" y1="292" x2="279.6" y2="296" class="s-tinta3" stroke-width="1"/>
+<text x="279.6" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h00</text>
+<line x1="377.4" y1="292" x2="377.4" y2="296" class="s-tinta3" stroke-width="1"/>
+<text x="377.4" y="310" class="f-tinta3 t-dado" font-size="12" text-anchor="middle">10h30</text>
+<text x="14" y="24" class="f-tinta2" font-size="13" font-weight="700">Resultado do dia, trade a trade · conta de R$ 10.000</text>
+<line x1="84" y1="256.3" x2="410" y2="256.3" class="f-nenhum s-baixa" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="92" y="249.3" class="f-baixa" font-size="13" font-weight="700">stop diário: −R$ 300</text>
+<line x1="410" y1="46" x2="410" y2="292" class="s-cobalto" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="410" y="40" class="f-cobalto" font-size="13" font-weight="700" text-anchor="middle">agora, 10h40</text>
+<line x1="84" y1="103.1" x2="149.2" y2="103.1" class="s-tinta2" stroke-width="2.5"/>
+<line x1="149.2" y1="103.1" x2="149.2" y2="82.6" class="s-alta" stroke-width="3.5"/>
+<line x1="149.2" y1="82.6" x2="263.3" y2="82.6" class="s-tinta2" stroke-width="2.5"/>
+<line x1="263.3" y1="82.6" x2="263.3" y2="131.1" class="s-baixa" stroke-width="3.5"/>
+<line x1="263.3" y1="131.1" x2="361.1" y2="131.1" class="s-tinta2" stroke-width="2.5"/>
+<line x1="361.1" y1="131.1" x2="361.1" y2="179.7" class="s-baixa" stroke-width="3.5"/>
+<line x1="361.1" y1="179.7" x2="410" y2="179.7" class="s-tinta2" stroke-width="2.5"/>
+<circle cx="149.2" cy="82.6" r="4.5" class="f-alta"/>
+<text x="149.2" y="72.6" class="f-alta t-dado" font-size="13" font-weight="700" text-anchor="middle">+R$ 40</text>
+<circle cx="263.3" cy="131.1" r="4.5" class="f-baixa"/>
+<text x="255.3" y="122.1" class="f-baixa t-dado" font-size="13" font-weight="700" text-anchor="end">−R$ 95</text>
+<circle cx="361.1" cy="179.7" r="4.5" class="f-baixa"/>
+<text x="353.1" y="171.9" class="f-baixa t-dado" font-size="13" font-weight="700" text-anchor="end">−R$ 95</text>
+<text x="418" y="184.7" class="f-baixa t-dado" font-size="15" font-weight="700">−R$ 150</text>
+<text x="418" y="200.7" class="f-tinta2" font-size="12">no dia</text>
+<path d="M263.3,189.7 L263.3,196.7 L361.1,196.7 L361.1,189.7" class="f-nenhum s-alerta" stroke-width="2"/>
+<text x="312.2" y="219.2" class="f-alerta" font-size="13" font-weight="700" text-anchor="middle"><tspan class="t-dado">2</tspan> perdas seguidas</text>
+<rect x="498" y="52" width="186" height="240" class="f-folha s-linha" rx="6" stroke-width="1.5"/>
+<text x="512" y="76" class="f-tinta2" font-size="13">aparecendo agora:</text>
+<text x="512" y="96" class="f-tinta" font-size="15" font-weight="700">um setup bonito</text>
+<line x1="520" y1="222" x2="520" y2="261" class="s-alta" stroke-width="1.5"/>
+<rect x="515.5" y="230.7" width="9" height="26" class="f-alta"/>
+<line x1="535" y1="191.7" x2="535" y2="235" class="s-alta" stroke-width="1.5"/>
+<rect x="530.5" y="200.3" width="9" height="30.3" class="f-alta"/>
+<line x1="550" y1="161.3" x2="550" y2="204.7" class="s-alta" stroke-width="1.5"/>
+<rect x="545.5" y="170" width="9" height="30.3" class="f-alta"/>
+<line x1="565" y1="131" x2="565" y2="174.3" class="s-alta" stroke-width="1.5"/>
+<rect x="560.5" y="139.7" width="9" height="30.3" class="f-alta"/>
+<line x1="580" y1="135.3" x2="580" y2="170" class="s-baixa" stroke-width="1.5"/>
+<rect x="575.5" y="139.7" width="9" height="21.7" class="f-baixa"/>
+<line x1="595" y1="157" x2="595" y2="191.7" class="s-baixa" stroke-width="1.5"/>
+<rect x="590.5" y="161.3" width="9" height="21.7" class="f-baixa"/>
+<line x1="610" y1="178.7" x2="610" y2="209" class="s-baixa" stroke-width="1.5"/>
+<rect x="605.5" y="183" width="9" height="13" class="f-baixa"/>
+<line x1="625" y1="139.7" x2="625" y2="200.3" class="s-alta" stroke-width="1.5"/>
+<rect x="620.5" y="148.3" width="9" height="47.7" class="f-alta"/>
+<line x1="617" y1="135.3" x2="672" y2="135.3" class="f-nenhum s-cobalto" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="672" y="127.3" class="f-cobalto" font-size="13" font-weight="700" text-anchor="end">compra?</text>
+    </svg></div><figcaption>Seu dia até agora, 10h40. Conta de R$ 10.000, risco de R$ 95 por trade e stop diário de 3%.</figcaption></figure>
+  <div class="ex-opcoes">
+    <button type="button" class="ex-opcao" data-op="a">Entro com o dobro da mão para recuperar as duas perdas de hoje</button>
+    <button type="button" class="ex-opcao" data-op="b">Troco para o mini-dólar, que está se mexendo mais que o índice hoje</button>
+    <button type="button" class="ex-opcao" data-op="c">Pauso 20 minutos e só volto se o checklist passar inteiro</button>
+  </div>
+  <p class="ex-explica" hidden><strong>Resposta certa: C.</strong> Duas perdas seguidas são a hora em que a cabeça quer “recuperar”, e é para isso que existe a pausa de 20 minutos: o setup pode até ser bom, mas quem está decidindo agora é a raiva. Dobrar a mão é o atalho para o estrago: mais um stop custaria R$ 190 e levaria o dia a −R$ 340, passando do stop diário de −R$ 300. Trocar para o mini-dólar é operar um ativo sem plano e sem histórico só porque está mexendo: é aposta, não setup. Depois da pausa, se o checklist passar inteiro, volte com a mão normal; mesmo que dê stop, o dia fica em −R$ 245, dentro do limite.</p>
+</div>
 <!-- /conteudo:treino -->
   </div>
-  <div class="fim-modulo"><button type="button" class="botao botao-sec" id="treino-reiniciar">Recomeçar o treino</button><span class="espaco"></span><a href="#simulador">Agora pratique no simulador →</a></div>
+  <div class="fim-modulo"><button type="button" class="botao botao-sec" id="treino-reiniciar">Recomeçar o treino</button><span class="espaco"></span><a href="#simulador">Treinar a execução no simulador →</a></div>
 </section>
 
 <!-- ===================== MÓDULO 0 ===================== -->
