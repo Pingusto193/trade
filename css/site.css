@@ -475,6 +475,17 @@ body.pip-corpo .dta { max-width: none; }
   .prosa, .pagina.leitura > p:not(.sobretitulo):not(.lead), .pagina.leitura > ul, .pagina.leitura > ol { font-size: 16.5px; }
   .sim-grafico { height: 320px; }
 }
+/* No celular, as figuras são mais largas que a tela e rolam de lado dentro da caixa. */
+@media (max-width: 580px) {
+  figure.figura::before {
+    content: "Arraste a figura para o lado ou gire o celular →";
+    display: block;
+    margin-bottom: 6px;
+    font: 600 12.5px/1.3 var(--f-ui);
+    color: var(--cobalto);
+    text-align: right;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .trilha { transition: none; }
   .barra span { transition: none; }
