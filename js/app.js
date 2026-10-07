@@ -38,7 +38,7 @@
 
   function paginaAtual() {
     var h = (global.location.hash || '').replace('#', '');
-    return nomes.indexOf(h) >= 0 ? h : 'inicio';
+    return nomes.indexOf(h) >= 0 ? h : 'leitura';
   }
 
   function mostrar(focar) {
@@ -327,6 +327,63 @@
     renderTreino();
     global.scrollTo(0, 0);
   });
+
+  /* ---------- Placar de sinais (Sobe ou desce?) ---------- */
+  var SINAIS = [
+    ['estrutura', 'Topos e fundos'], ['vwap', 'Preço e VWAP'], ['medias', 'Médias móveis'], ['rompimento', 'Rompimento'],
+    ['pavios', 'Pavios de rejeição'], ['forca', 'Força dos candles'], ['volume', 'Volume'], ['padroes', 'Topo/fundo duplo ou OCO'],
+    ['divergencia', 'Divergência no IFR'], ['tempo', 'Tempo gráfico maior']
+  ];
+  var EXEMPLOS = {
+    alta: { estrutura: 'alta', vwap: 'alta', medias: 'alta', forca: 'alta', volume: 'alta' },
+    baixa: { estrutura: 'baixa', vwap: 'baixa', medias: 'baixa', rompimento: 'baixa', pavios: 'baixa' }
+  };
+  var placar = $('#placar');
+  if (placar) {
+    placar.innerHTML = SINAIS.map(function (s) {
+      var op = function (v, rot) {
+        return '<label class="pl-' + v + '"><input type="radio" id="pl-' + s[0] + '-' + v + '" name="pl-' + s[0] + '" value="' + v + '"' + (v === 'nao' ? ' checked' : '') + '><span>' + rot + '</span></label>';
+      };
+      return '<fieldset class="placar-linha"><legend>' + esc(s[1]) + '</legend><div class="placar-ops">' + op('alta', '▲ Alta') + op('baixa', '▼ Baixa') + op('nao', 'Não vi') + '</div></fieldset>';
+    }).join('');
+    var resultado = $('#placar-resultado');
+    var calcularPlacar = function () {
+      var v = {};
+      SINAIS.forEach(function (s) { var r = placar.querySelector('input[name="pl-' + s[0] + '"]:checked'); v[s[0]] = r ? r.value : 'nao'; });
+      var a = 0, b = 0;
+      Object.keys(v).forEach(function (k) { if (v[k] === 'alta') a++; else if (v[k] === 'baixa') b++; });
+      var est = v.estrutura, lado, titulo, txt;
+      if (a + b < 3) { lado = 'indefinido'; titulo = 'Poucos sinais'; txt = 'Com menos de 3 sinais marcados, o gráfico ainda não está dizendo nada. Fique de fora e espere.'; }
+      else if ((a > b && est === 'baixa') || (b > a && est === 'alta')) { lado = 'indefinido'; titulo = 'Indefinido'; txt = 'Os topos e fundos apontam para o lado contrário da maioria. Sinais brigando: fique de fora.'; }
+      else if (a > b) {
+        lado = 'alta';
+        titulo = (b === 0 || a - b >= 3) ? 'Pende para ALTA' : 'Alta fraca';
+        txt = b === 0 ? a + ' sinais de alta e nenhum contra. Os compradores estão mais fortes.' : a + ' de alta contra ' + b + ' de baixa. ' + (a - b >= 3 ? 'Os compradores estão mais fortes.' : 'Há sinais contra: cuidado, ou espere ficar mais claro.');
+      } else if (b > a) {
+        lado = 'baixa';
+        titulo = (a === 0 || b - a >= 3) ? 'Pende para BAIXA' : 'Baixa fraca';
+        txt = a === 0 ? b + ' sinais de baixa e nenhum contra. Os vendedores estão mais fortes.' : b + ' de baixa contra ' + a + ' de alta. ' + (b - a >= 3 ? 'Os vendedores estão mais fortes.' : 'Há sinais contra: cuidado, ou espere ficar mais claro.');
+      } else { lado = 'indefinido'; titulo = 'Empate'; txt = a + ' sinais para cada lado. O gráfico não escolheu um lado: fique de fora.'; }
+      var total = Math.max(1, a + b);
+      resultado.dataset.lado = lado;
+      resultado.innerHTML = '<p class="placar-veredito">' + esc(titulo) + '</p><p>' + esc(txt) + '</p>' +
+        '<div class="placar-barra" aria-hidden="true"><span class="pb-alta" style="width:' + (a / total * 100) + '%"></span><span class="pb-baixa" style="width:' + (b / total * 100) + '%"></span></div>' +
+        '<p class="pequeno">▲ ' + a + ' de alta · ▼ ' + b + ' de baixa · ' + (SINAIS.length - a - b) + ' não vistos</p>';
+    };
+    placar.addEventListener('change', calcularPlacar);
+    $$('[data-placar-exemplo]').forEach(function (bt) {
+      bt.addEventListener('click', function () {
+        var ex = EXEMPLOS[bt.dataset.placarExemplo];
+        SINAIS.forEach(function (s) { var r = $('#pl-' + s[0] + '-' + (ex[s[0]] || 'nao')); if (r) r.checked = true; });
+        calcularPlacar();
+      });
+    });
+    $('#placar-limpar').addEventListener('click', function () {
+      SINAIS.forEach(function (s) { $('#pl-' + s[0] + '-nao').checked = true; });
+      calcularPlacar();
+    });
+    calcularPlacar();
+  }
 
   /* ---------- Figuras no celular: ampliar e mostrar o fim do gráfico ---------- */
   var celular = global.matchMedia ? global.matchMedia('(max-width: 580px)') : { matches: false };

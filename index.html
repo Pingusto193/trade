@@ -43,6 +43,7 @@
     <h2>Comece aqui</h2>
     <ul>
       <li><a href="#inicio"><span class="n">→</span><span>Início</span><span></span></a></li>
+      <li><a href="#leitura"><span class="n">▲</span><span>Sobe ou desce? Ler o gráfico</span><span></span></a></li>
       <li><a href="#guia"><span class="n">★</span><span>Guia direto (15 min)</span><span></span></a></li>
       <li><a href="#treino"><span class="n">✓</span><span>Treino de gráfico</span><span class="ok" data-ok-treino></span></a></li>
     </ul>
@@ -107,6 +108,25 @@
     <p class="rotulo-quadro">Pergunta para qualquer vendedor de curso</p>
     <p>Se alguém promete renda diária com day trade, peça o extrato completo e auditado de pelo menos um ano, com perdas, custos e impostos. Depois pergunte qual parte da renda dessa pessoa vem do trade e qual vem de alunos.</p>
   </div>
+</section>
+
+<!-- ===================== SOBE OU DESCE ===================== -->
+<section class="pagina leitura" data-pagina="leitura" hidden>
+  <p class="sobretitulo">Leitura de gráfico · alta ou baixa</p>
+  <h1>Sobe ou desce? Como ler o gráfico</h1>
+  <p class="lead">Onze sinais, cada um com o desenho de alta ao lado do desenho de baixa, e o caso em que o gráfico não diz nada. Aprenda a reconhecer, some os sinais no placar no fim da página e veja para que lado o gráfico está pendendo.</p>
+  <div class="quadro dado">
+    <p class="rotulo-quadro">A regra de ouro</p>
+    <p>Ninguém sabe com certeza para onde o preço vai. O gráfico mostra quem está mais forte agora, compradores ou vendedores. Quanto mais sinais apontam para o mesmo lado, maior a chance. Quando eles brigam entre si, o gráfico não está dizendo nada, e o certo é ficar de fora.</p>
+  </div>
+<!-- conteudo:leitura -->
+<!-- /conteudo:leitura -->
+  <h2>Placar: some os sinais</h2>
+  <p>Abra o gráfico que você está olhando e marque, em cada sinal, o que você vê. O placar soma e diz para que lado o gráfico pende. Os topos e fundos pesam mais: se eles discordarem da maioria, o placar manda esperar.</p>
+  <div class="linha-botoes"><button type="button" class="botao botao-sec" data-placar-exemplo="alta">Ver exemplo de alta</button><button type="button" class="botao botao-sec" data-placar-exemplo="baixa">Ver exemplo de baixa</button><button type="button" class="botao botao-sec" id="placar-limpar">Limpar</button></div>
+  <div class="placar" id="placar"></div>
+  <div class="placar-resultado" id="placar-resultado" aria-live="polite"></div>
+  <div class="fim-modulo"><a href="#treino">Testar o olho no treino de gráfico →</a></div>
 </section>
 
 <!-- ===================== GUIA DIRETO ===================== -->
