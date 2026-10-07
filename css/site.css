@@ -266,9 +266,39 @@ h1, h2, h3 { text-wrap: balance; color: var(--tinta); }
 }
 
 figure { margin: 0; max-width: 72ch; }
-figcaption { font-size: 13px; color: var(--tinta-3); margin-top: 6px; }
+figure.larga { max-width: 980px; }
+figcaption { font-size: 14px; line-height: 1.5; color: var(--tinta-2); margin-top: 8px; max-width: 72ch; }
+figcaption strong { color: var(--tinta); }
 .diagrama { background: var(--folha); border: 1px solid var(--linha); border-radius: var(--raio); padding: 12px; overflow-x: auto; }
-.diagrama svg { display: block; width: 100%; height: auto; min-width: 480px; }
+.diagrama svg { display: block; width: 100%; height: auto; min-width: 520px; }
+.diagrama svg text { font-family: var(--f-ui); }
+.diagrama svg .t-dado { font-family: var(--f-dado); }
+
+/* Cores para SVG: preenchimento (f-) e traço (s-). Seguem o tema claro/escuro. */
+.f-tinta { fill: var(--tinta); }
+.f-tinta2 { fill: var(--tinta-2); }
+.f-tinta3 { fill: var(--tinta-3); }
+.f-folha { fill: var(--folha); }
+.f-papel { fill: var(--papel); }
+.f-linha { fill: var(--linha); }
+.f-cobalto { fill: var(--cobalto); }
+.f-realce { fill: var(--realce); }
+.f-alta { fill: var(--alta); }
+.f-alta-fundo { fill: var(--alta-fundo); }
+.f-baixa { fill: var(--baixa); }
+.f-baixa-fundo { fill: var(--baixa-fundo); }
+.f-alerta { fill: var(--alerta); }
+.f-alerta-fundo { fill: var(--alerta-fundo); }
+.f-nenhum { fill: none; }
+.s-tinta { stroke: var(--tinta); }
+.s-tinta2 { stroke: var(--tinta-2); }
+.s-tinta3 { stroke: var(--tinta-3); }
+.s-linha { stroke: var(--linha); }
+.s-folha { stroke: var(--folha); }
+.s-cobalto { stroke: var(--cobalto); }
+.s-alta { stroke: var(--alta); }
+.s-baixa { stroke: var(--baixa); }
+.s-alerta { stroke: var(--alerta); }
 .svg-tinta { fill: var(--tinta); }
 .svg-tinta2 { fill: var(--tinta-2); }
 .svg-linha { stroke: var(--tinta-3); }
